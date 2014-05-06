@@ -1,0 +1,424 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#FrontPage {
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	-ms-perspective: 1200px;
+	-o-perspective: 1200px;
+	perspective: 1200px;
+	
+}
+
+.wrap {
+   position: relative;
+   	display:block;
+	width: 250px;
+	height: 100px;
+	top: 270px;
+  	left:20px;  
+	transition: -webkit-transform 1s ease-in;
+	transition: -moz-transform 1s ease-in;
+	transition: -ms-transform 1s ease-in;
+	transition: -o-transform 1s ease-in;
+	transition: transform 1s ease-in;
+	
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	cursor: pointer;
+}
+
+.wrap div {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-position: 50% 50%;
+	background-size: 150px;
+	background-repeat: no-repeat;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;*/
+}
+
+.side-a {
+	background: url('/images/emblemsolo.gif');
+	z-index: 100;
+}	
+
+
+.side-b {
+	background: url('/images/emblemsolo.gif');
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}	
+
+
+.wrap:hover {
+	-webkit-transform: rotateY(.5turn);
+	-webkit-transform: rotateY(.5turn);
+	-moz-transform: rotateY(.5turn);
+	-ms-transform: rotateY(.5turn);
+	-o-transform: rotateY(.5turn);
+	transform: rotateY(.5turn);
+
+}
+
+.homeButton {
+	display: block;
+	width: 109px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_03_hover.jpg");
+	z-index: 200;
+	
+}
+.GWAButton {
+	display: block;
+	width: 109px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_04_hover.jpg");
+	z-index: 200;
+	
+}
+.GOButton {
+	display: block;
+	width: 109px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_05_hover.jpg");
+	z-index: 200;
+
+}
+
+.SIButton {
+	display: block;
+	width: 109px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_06_hover.jpg");
+	z-index: 200;
+
+}
+
+.GAButton {
+	display: block;
+	width: 109px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_07_hover.jpg");
+	z-index: 200;
+
+}
+
+.AssemButton {
+	display: block;
+	width: 109px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_08_hover.jpg");
+	z-index: 200;
+
+}
+
+.FoundButton {
+	display: block;
+	width: 108px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_09_hover.jpg");
+	z-index: 200;
+}
+
+.contactButton {
+	display: block;
+	width: 108px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_10_hover.jpg");
+	z-index: 200;
+
+}
+@media all and (min-width: 600px) and (max-width: 1024px){
+.homeButton:hover {
+	top:0px;
+}
+.GWAButton:hover {
+	top:0px;
+}
+.GOButton:hover {
+	top:0px;
+}
+.SIButton:hover {
+	top:0px;
+}
+.GAButton:hover {
+	top:0px;
+}
+.AssemButton:hover {
+	top:0px;
+}
+.FoundButton:hover {
+	top:0px;
+}
+.contactButton:hover {
+		top:0px;
+}
+}
+@media all and (min-width: 1025px){
+.homeButton {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.homeButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+}
+.GWAButton {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+.GWAButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+.GOButton {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+.GOButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+
+.SIButton {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+.SIButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+
+.GAButton {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+.GAButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+
+.AssemButton {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+.AssemButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+
+.FoundButton {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+.FoundButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+
+.contactButton {
+
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+
+}
+.contactButton:hover {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	-ms-transform: translateY(20px);
+	-o-transform: translateY(20px);
+	transform: translateY(20px);
+
+}
+}
+@media all and (max-width: 600px){
+
+
+.homeButton img{
+	display:none;
+		margin:0px;
+}
+.homeButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 238px;
+	height: 50px;
+	margin:0px;
+	background:url(/images/index_03_phone.jpg) no-repeat top left;
+}
+.GWAButton img{
+	display:none;
+}
+.GWAButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 236px;
+	height: 50px;
+		margin:0px;
+	background:url(/images/index_04_phone.jpg) no-repeat top left;
+}
+.GOButton img{
+	display:none;
+}
+.GOButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 237px;
+	height: 50px;
+		margin:0px;
+	background:url(/images/index_05_phone.jpg) no-repeat top left;
+}
+.SIButton img{
+	display:none;
+}
+.SIButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 237px;
+	height: 50px;
+		margin:0px;
+	background:url(/images/index_06_phone.jpg) no-repeat top left;
+}
+
+.GAButton img{
+	display:none;
+}
+.GAButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 248px;
+	height: 50px;
+		margin:0px;
+	background:url(/images/index_07_phone.jpg) no-repeat top right;
+}
+.AssemButton img{
+	display:none;
+}
+.AssemButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 237px;
+	height: 50px;
+		margin:0px;
+	background:url(/images/index_08_phone.jpg) no-repeat top left;
+}
+.FoundButton img{
+	display:none;
+}
+.FoundButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 237px;
+	height: 50px;
+		margin:0px;
+	background:url(/images/index_09_phone.jpg) no-repeat top left;
+}
+.ContactButton img{
+	display:none;
+}
+.ContactButton{
+	display: block;
+	position:relative;
+	top:0px;
+	width: 237px;
+	height: 50px;
+	margin:0px;
+	background:url(/images/index_10_phone.jpg) no-repeat top left;
+}
+.wrap {
+	top: 365px;
+  	left:20px;  
+}
+}

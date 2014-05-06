@@ -1,0 +1,1116 @@
+@import "height.css";
+@import "corrections.css";
+
+
+/* CSS Document */
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'ashburylight';
+    src: url('/fonts/AshburyLig-webfont.eot');
+    src: url('/fonts/AshburyLig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/AshburyLig-webfont.woff') format('woff'),
+         url('/fonts/AshburyLig-webfont.ttf') format('truetype'),
+         url('/fonts/AshburyLig-webfont.svg#ashburylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body  {
+	/*background-color: #005e9d;*/
+	background: #666666;
+	margin: 0;          /* it's good practice to zero the margin and padding */
+	                    /*  of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then */
+	                    /* set to the left aligned default in the #container selector */
+	color: #000000;
+
+	/*font-family: 'Gilda Display', serif;*/
+	font-family: 'AshburyLig-webfont', serif;
+}
+
+.wrapper{
+  display:    -moz-flex;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-flex-direction: row;
+     -moz-flex-direction: row;
+          flex-direction: row;
+         justify-content: flex-center;
+ -webkit-justify-content: flex-center;
+    -moz-justify-content: flex-center;
+
+}
+a, a:visited, a:active, a:hover {
+	color:#000;
+	font-weight: bold;
+	text-align: left;
+}
+
+h3 {
+  
+  	font-size: 16px;
+	font-weight:bold;
+	color: #FFFFFF;
+	text-align: center;
+}
+p {
+  	font-size: 18px;
+	color: #000000;
+	/*text-align: center;*/
+}
+h1 {
+	font-size: 30px;
+	font-weight:bold;
+	color: #000;
+}
+/* Miscellaneous classes for reuse */
+
+.fltlft {              /* this class can be used to float an element left in your page */
+	float: left;
+}
+
+.fltrt {
+	float: right;      /* this class can be used to float an element right in your page. */
+                       /* The floated element must precede the element it should be next */
+					   /* to on the page. */
+	
+}
+
+.clearfloat {          /* this class should be placed on a div or break element */
+                       /* and should be the final element before the close of a */
+					   /* container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+#container {
+	background: #FFFFFF; 
+	text-align: left;  /* this overrides the text-align: center on the body element. */
+	width: 960px;
+	margin: auto;
+} 
+
+/*************************************************/
+/*  Header                                       */
+/*************************************************/
+#header {
+	background-color: #FFFFFF;
+	margin-bottom: 15px;
+	} 
+
+#header h1 {
+	margin: 0;        /* zeroing the margin of the last element in the #header div will */
+	                  /*avoid margin collapse - an unexplainable space between divs. */
+			          /*If the div has a border around it, this is not necessary as that also */
+			          /* avoids the margin collapse */
+	padding: 10px 0;  /* using padding instead of margin will allow you to keep the element */
+	                  /*away from the edges of the div */
+}
+#headerImage {
+	display: block;
+	position: relative;
+	z-index:300;
+}
+.fb-wrap{
+    display: inline-block;
+	width:33;
+	height:43;
+	position: relative;	
+}
+.fb {
+	display: block;
+	position: absolute;
+	background: url(/images/fb-capture.gif) no-repeat;
+	background-size:33px 33px;
+	width:38;
+	height:38;
+	left:20;
+	top:0;
+}
+
+/* font-family: 'Lustria', serif; */
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+/*************************************************/
+/*  Sidebar                                      */
+/*************************************************/
+#sidebar, #sidebarGWA{
+    -webkit-flex: none;
+    -moz-flex: none;
+    flex: none;				  
+	/*position: relative;
+	float: left; */ 
+	width: 180px;   /* the background color will be displayed for the length of the content */
+	                  /* in the column, but no further. */
+					  
+	background-color: #990000;
+	/*background-color: rgba(255,0,0,.2); */
+	color: #FFF;
+	/*height: 100%;*/
+	text-align: left;
+	font-size: 18px;
+ 
+}
+
+#sidebar, .nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+  	display: flex;
+  -webkit-flex-direction: column;
+     -moz-flex-direction: column;
+          flex-direction: column;
+
+}
+.iorg {
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+    /*border: 1px solid #000;
+	position: absolute;
+	bottom: 0px;
+	left: 5px;*/
+}
+
+.nav{
+	-webkit-justify-content: flex-begin;
+ 	-moz-justify-content: flex-begin;
+  	justify-content: flex-begin;
+    -webkit-flex: 10 0 0;
+    -moz-flex: 10 0 0;
+    flex: 10 0 0;
+}
+.nav li{
+	list-style: none;
+}
+#sidebar {
+ }
+#sideBarItem, #multiline {  
+	text-align:center;
+	font-variant:small-caps;
+    font-size: 40px;    
+	display: block;
+	width: 180px;
+	height: 60px;
+	margin-left: -40px;
+  transition: 200ms ease-in-out;
+    /*border-bottom: 1px solid #999;*/
+}
+#sideBarItem{
+	padding-top: 30px;
+}
+#multiline{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#sideBarItem:hover, #multiline:hover {
+  background: rgba(255,255,255,0.2);
+  color: #FFF;
+
+}
+#sidebar p a {
+	color: #FFF;
+	font-size: 20px;
+	text-decoration:none;
+}
+#GWATitle{
+	display: block;
+	width: 180px;
+	height: 20px;
+    text-indent: 10px;
+	color:white;
+	font-size:15px;
+	font-variant:small-caps;
+	margin-left: -40px;
+	padding: 10px 0px ;
+	font-weight:900px;
+}
+#GWAList a{
+	color:white;
+    transition: 200ms ease-in-out;
+}
+#GWAList a:hover{
+	color:white;
+	font-size:16px;
+}
+
+#GWADate {
+	display: block;
+	width: 180px;
+	height: 20px;
+	margin-left: -40px;
+	font-variant:small-caps;
+    list-style:none;
+	text-indent:20px;
+	font-size: 18px;
+	padding: 10px 0px;
+	color:white;
+	transition: 200ms ease-in-out;
+	-webkit-transition: 200ms ease-in-out;
+	-moz-transition: 200ms ease-in-out;
+}
+
+#GWADate a{
+	color:white;
+	text-decoration:none;
+
+}
+#GWADate:hover{
+	color:white;
+	  background: rgba(255,255,255,0.2);
+}
+#GWAName {
+	font-size: 14px;
+	list-style:none;
+	color:white;
+	font-variant:small-caps;
+}
+#GWAName a{
+	/*text-indent:50px;*/
+	display: block;
+	width: 180px;
+	height: 30px;
+    margin: 0;
+    margin-left: -80px;
+	padding: 10px 0px 10px 40px;
+	color:white;
+	text-decoration:none;
+	transition: 200ms ease-in-out;
+	-webkit-transition: 200ms ease-in-out;
+	-moz-transition: 200ms ease-in-out;
+}
+
+#GWAName a:hover{
+	color:white;
+	  background: rgba(255,255,255,0.2);
+}
+#GWANoLink {
+    margin-left: -40px;
+	padding: 10px 0px;
+}
+#Registration {
+	text-align:left;
+	margin-left: 20px;
+	margin-top: 60px;
+}
+#GAItems {
+	margin: -40px 0px 0px -7px;
+	list-style:none;
+	color:white;
+}
+#GAItems li a{
+	font-variant:small-caps;
+	text-indent:35px;
+	color: #fff;
+	font-size: 16px;
+	line-height:32px;
+	list-style:none;
+	color:white;
+	text-decoration:none;
+	display: block;
+	width: 180px;
+	height: 30px;
+	margin:10px 0px 0px -72px;
+	padding: 10px 0px;
+
+}
+
+#GAItems li a:hover{
+	  background: rgba(255,255,255,0.2);
+  color: #fff;
+
+	color:white;
+	/*font-size:19px;*/
+}
+
+#bug {
+	text-align: center; 
+	float: right; 
+	height: 150px; 
+	width: 125px; 
+	text-shadow: 2px 2px 5px #b9b9b9; 
+	font-weight: bold; font-size: 12px; 
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+ }
+#bug a {
+ 	color: black;
+ 	text-decoration: none;
+ }
+#space {
+	display:block;
+	content: "";
+	height: 50px;
+	width: 600px;
+}
+#smallSpace {
+	display:block;
+	content: "";
+	height: 20px;
+	width: 600px;
+}
+
+/*************************************************/
+/*  Main Content                                 */
+/*************************************************/
+#mainContent {
+	/*float: left;*/
+	 -webkit-flex: none;
+	 -moz-flex: none;
+    flex: none;
+	width: 780px;
+	background-image: url(/images/Graphics/emblemNM.gif);
+	font-weight: bold;
+	/*height: 100%;*/
+	color: #000;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #990000;
+
+	/*position: relative;*/	 
+	/*overflow: scroll;*/
+} 
+.freehand {
+	font-family: 'Freehand575BT-RegularB', serif;
+	font-weight: 500;
+	font-size: 48px;
+	margin: 25px 0px 0px 50px;
+}
+.freehand-h2 {
+	font-family: 'Freehand575BT-RegularB', serif;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1em;
+	margin: 10px 0px 0px 50px;
+}
+
+.freehand-h4 {
+	font-family: 'Freehand575BT-RegularB', serif;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 1em;
+	margin: 5px 0px -3px 50px;
+}
+
+#mainContent h1 {
+    font-weight: 500;
+	font-variant:small-caps;
+	/*font-family: 'Raleway', sans-serif;
+	font-family: 'Droid Sans', sans-serif;*/
+	color: #000000;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+}
+#mainContent h2 {
+	font-weight: 500;
+	font-style:italic;
+	/*font-variant:small-caps;*/
+	color: #000000;
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#mainContent h3 {
+	font-weight: 500;
+	font-style:italic;
+		color: #000000;
+	font-size: 22px;
+	line-height: 30px;
+	padding-left: 50px;
+	text-align: left;
+}
+
+#mainContent h4 {
+	font-weight: 400;
+	font-variant:small-caps;
+	color: #000000;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+}
+#mainContent p {
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 1.25em;
+	color: #000;
+	margin: 0px 20px 0px 20px; /*30px;*/
+}
+#mainContent a {
+	color: #990000;
+	text-decoration:none;
+}
+#GWAText {
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 1.25em;
+	color: #000;
+	margin: 30px 0px;
+}
+#drop-quote {
+	font-size: 18px;
+	font-weight: 600;
+}
+#check {
+	font-size: 30px;
+	vertical-align:middle;
+	font-weight:100;
+}
+#bio{
+   	 font-size: 16px;
+     font-weight: 500;
+     text-align: justify;
+	 padding: 0px 75px;
+	 line-height: 1.5em;
+	 font-stretch:semi-expanded;
+	 text-indent:-8px;
+}
+#rainbow{
+	width:650px;
+	 text-align: left;
+	 padding: 0px 20px 0px 50px;
+	 	 }
+.red{
+	color: #cc0000;
+}
+.orange{
+	color: #F60;
+}
+.yellow{
+	color: #FD0;
+}
+.green{
+	color: #093;
+}
+.blue{
+	color: #09F;
+}
+.indigo{
+	color: #039;
+}
+.violet{
+	color: #96F;
+}
+#blueBg{
+	display:block;
+	height:225;
+	width:700;
+	/*background: url(/images/blue-bg.jpg);*/
+	/*background-color: rgba(0,150,255,0.5);*/
+	/* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#06b), to(#09F));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #06b, #09F);
+	background-size: cover;
+}
+#blueBg img {
+	opacity: 1;
+}
+#twoColumn{
+    -webkit-column-gap: 1em;
+	-webkit-columns: 400px 2; 
+	 text-align: justify;
+}
+#mission{
+	font-size: 16px;
+	font-family: 'AshburyLig-webfont', serif;
+     font-weight: 500;
+     text-align: justify;
+	 padding: 10px 100px;
+	 line-height: 1.5em;
+	 font-stretch:semi-expanded;
+	 text-indent:20px;
+}
+#foundLogo img {
+	display: block;
+	width:780px; 
+
+	border:0px;
+}
+#titleOffset {
+	position:relative;
+	left: -100px;
+}
+.Registration {
+  margin-left: 50px;
+  font-size: 20px;
+}
+.regItem {
+	padding-bottom: 25px;
+	list-style: none;
+    font-size: 16px;
+}
+#office{
+	font-family: 'AshburyLig-webfont', serif;
+ font-style: italic;
+ font-size: 24px;
+ font-weight: 400;
+}
+#go {
+	font-family: 'AshburyLig-webfont', serif;
+	font-weight: 500;
+	/*font-variant:small-caps;*/
+	color: #000000;
+	font-size: 24px;
+	text-align: center;
+	line-height: 36px;
+}
+#officeTight{
+ font-style: italic;
+ font-size: 24px;
+ font-weight: 400;
+}
+#goTight {
+	font-weight: 500;
+	/*font-variant:small-caps;*/
+	color: #000000;
+	font-size: 24px;
+	text-align: center;
+	line-height: 30px;
+}
+
+#officeRep{
+	font-family: 'AshburyLig-webfont', serif;
+ font-style: italic;
+ font-size: 20px;
+ font-weight: 400;
+}
+#goRep {
+	font-family: 'AshburyLig-webfont', serif;
+	font-weight: 500;
+	/*font-variant:small-caps;*/
+	color: #000000;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+#countdownTable table{
+	position: relative;
+	top: 0px; left: 0px;
+	margin: 0;
+	width: 100%;
+	background: none;
+}
+
+#GWAMainPic img{
+
+  border-radius: 20px;
+  -moz-box-shadow: 10px 10px 10px #888;
+  -webkit-box-shadow: 10px 10px 10px #888;
+  box-shadow: 10px 10px 10px #888;
+
+}
+
+#GWAImg img{
+	width: 780px;
+	float: left;
+
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom:1px solid #990000;
+  -moz-box-shadow: 1px 10px 10px #888;
+  -webkit-box-shadow: 1px 10px 10px #888;
+  box-shadow: 1px 10px 10px #888;
+  
+
+}
+#GWATitles{
+    width:150 px; 
+	padding-top:24px; 
+	text-align:center;
+}
+#GWAHeadPic td{
+    border: 0px solid white;
+}
+#GWAHeadPic img{
+	width: 150px;
+	padding-right: 0px;
+    border-radius: 150px;
+	height:200px;
+    -moz-box-shadow: 10px 10px 10px #888;
+    -webkit-box-shadow: 10px 10px 10px #888;
+    box-shadow: 10px 10px 10px #888;
+}
+#GWAHeadText {
+	display: inline-block;
+	position: relative;
+	left: 125px;
+	padding: 0px 25px;
+	/*border: 1px solid black;*/
+}
+#ClearTwoColumn table{
+	width: 780px;
+}
+#ClearTwoColumn td{
+	padding: 20px;
+	border: 0px solid white;
+}
+#ClearFiveColumnTable th, td{
+  border: 0px solid white;
+}
+
+#FullBorderTable table{
+  width:780px;
+}
+
+#FullBorderTable table,td,th{
+ border-collapse:collapse;
+  
+}
+#FullBorderTable th{
+ font-family: 'AshburyLig-webfont', serif;
+	color: #990000;
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid #c0c0c0;
+}
+#FullBorderTable td{
+	border: 1px solid #c0c0c0;
+	 text-align: left;
+	  font-family: 'AshburyLig-webfont', serif;
+	 font-weight:500px;
+	 font-stretch:expanded;
+     font-size: 1em;
+     margin: 0px;
+	 padding:10px;
+	 line-height:1.25;
+}
+#schedule table{
+  width:700px;
+}
+
+#schedule td{
+	line-height: 1;
+	padding: 5px;
+}
+#scheduleFull td{
+	line-height: 1;
+	padding: 5px;
+}
+
+.colOneTerm{
+	     font-size: 1.25em;
+		 font-style:italic;
+}
+#countdownTable{
+ font-family: 'AshburyLig-webfont', serif;
+	float: left;
+	margin: 0;
+	width: 760pxs;
+	background: none;
+}
+
+#FrontPage {
+	position: relative;
+	display: block;
+	background-image: url("/images/CoverCork3.gif");
+	content: "";
+	width: 780;
+	height: 1000;
+    border-bottom-width: 0px;
+	}
+.GAReg {
+	display: block;
+    position: absolute;
+	width: 320px;
+	height: 180px;
+	left: 75px;
+	top: 500px;
+}
+.what {
+	display: block;
+    position: absolute;
+	left: -30px;
+	top: -20px;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.what:hover{
+	z-index:1000;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.how {
+display: block;
+    position: absolute;
+    width: 275;
+	left: 220px;
+	top: 38px;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+.how:hover{
+	z-index:1000;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.wordDoc::before {
+	margin: 0 8px;
+	width: 5px;
+	content: url(/images/word.gif);
+}
+.pdfDoc::before {
+	margin: 0 8px;
+	content: url(/images/pdf.gif) ;
+}
+.excelDoc::before {
+	margin: 0 8px;
+	content: url(/images/excel.gif) ;
+}
+
+
+.collagePicsCard{
+	opacity: 1;
+	margin-top: -5px;
+	width:690px;
+	height:225px;
+}
+/*************************************************/
+/*  Footer                                       */
+/*************************************************/
+
+#footerMain {
+	height: 80px;
+	margin: 0px 30px;
+} 
+#footerAll {
+	height: 30px;
+} 
+#footer {
+	background-color: #FFFFFF;
+	width: 940px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #990000;
+	border-bottom-color: #990000;
+	margin: 0px;  
+	text-align: center;
+    font-size: 14px;
+} 
+#siteCounter {
+	display:none;
+}
+
+@media all and (min-width: 600px){
+#redHeader{
+	display:none;
+}
+.clearfloatplus { 
+    line-height: -100px;
+}
+}
+@media screen and (max-width: 600px), print {
+	 
+#mainContent .freehand {
+	font-size: 84px;
+}
+#mainContent .freehand-h4 {
+	font-size: 40px;
+}
+
+.what {
+	 width: 340;
+	left: -30px;
+	top: -10px;
+	
+}
+
+.how {
+    width: 340;
+	left: 260px;
+	top: 60px;
+	
+}
+
+#HeaderImage img{
+	display:none;
+		margin:0px;
+}
+#HeaderImage {
+	display: block;
+	width: 960px;
+	height: 294px;
+	background:url(/images/index_01_phone.jpg) no-repeat top left;
+}
+.fb-wrap{display:none}
+.fb-m-wrap{
+    display: inline-block;
+	width:50;
+	height:50;
+	position: relative;	
+}
+.fb-m {
+	display: block;
+	position: absolute;
+	background: url(/images/fb-capture.gif) no-repeat;
+	background-size:46px 46px;
+	width:49;
+	height:49;
+	left:2;
+	top:0;
+}
+/* Red Header for mobile */
+#redHeader table{
+	background-color:#990000;
+	border-collapse:collapse;
+	border: 1px solid white;
+}
+
+#redHeader tr{
+	height: 50px;
+}
+#redHeader td{
+    font-weight: 500;
+	font-family: 'AshburyLig-webfont', serif;
+	font-variant:small-caps;
+	text-align:center;
+	font-size: 30px;
+	border-collapse:collapse;
+	border: 1px solid #c0c0c0;
+}
+#redHeader td a{
+    color: white;
+}
+
+#sidebar {
+display: none;
+}
+
+
+#mainContent {
+	display:block;
+	position: relative;
+	top: -15px;
+	width: 960px;
+} 
+#FrontPage {
+	background-size: cover; 
+	background-clip: padding-box;
+	width: 960;
+	height: 1200;
+}
+.GAReg {
+     top: 650px;
+	 left: 120px;
+}
+
+#mainContent h1 {
+	font-size: 48px;
+}
+
+#mainContent h2 {
+	font-size: 40px;
+	line-height: 1.25em;
+}
+#mainContent h3 {
+	font-size: 32px;
+	line-height: 1.25em;
+}
+#mainContent h4 {
+	font-size: 30px;
+	line-height: 1.25em;
+}
+#mainContent p {
+	font-size: 32px;
+	line-height: 1.25em;
+}
+#drop-quote {
+	font-size: 34px;
+}
+
+#bio {
+	font-size: 30px;
+	line-height: 1.25em;
+}
+#go{
+	font-size: 30px;
+	line-height: 1.25em;
+}
+#office{
+	font-size: 30px;
+	line-height: 1.25em;
+}
+#officeRep{
+ font-size: 36px;
+}
+#goRep {
+	
+	font-size: 36px;
+	line-height: 1.25em;
+}
+
+#GWAImg{
+	margin-left: 0px;
+    margin-right: 0px;
+}
+#GWAImg img{
+	width: 960px;
+}
+
+/* Grand Worthy Advisor Oval Head Shots */
+#ClearFiveColumnTable{
+	margin-left: -30px;
+}
+#ClearFiveColumnTable table{
+	width: 960px;
+}
+#GWATitles{
+	font-size: 28px;
+}
+#ClearTwoColumn table{
+	width: 920px;
+}
+
+/* Full Screen Tables with boarders */
+#FullBorderTable table{
+	
+    width:960px;
+}
+#FullBorderTable th{
+     font-size: 2em;
+}
+#FullBorderTable td{
+     font-size: 34px;
+	 height:100%
+}
+#schedule table{
+	width:880px;
+}
+#schedule td{
+	font-size: 27px;
+}
+
+#mission{
+	 font-size: 36px;
+     font-weight: 500;
+     text-align: justify;
+	 padding: 10px 100px;
+	 line-height: 1.5em;
+	 font-stretch:semi-expanded;
+	 text-indent:20px;
+}
+#foundLogo img {
+	width:960px; 
+	border:0px;
+}
+#title img{
+	width: 360px;
+}
+
+#rainbow{
+	width:775px;
+	 text-align: left;
+	 padding: 0px 0px;
+	 margin-left: 50px;
+}
+
+#countdownTable {
+  margin-left:0px;
+  margin-right:1000px;
+
+}
+#countdownTable table {
+	width:960px; 
+}
+#countdownTable td{
+	font-size: 30px;
+}
+
+.colOne {
+	font-size: 30px;
+}
+
+.GRepColOne {
+	font-size: 22px;
+}
+
+.clearfloat { 
+    line-height: 500px;
+}
+.clearfloatplus { 
+    line-height: 100px;
+}
+
+.collagePics {
+	display:block;
+	margin-left: -10px;
+	width: 920px;
+}
+#regList {
+	  font-size: 50px;
+}
+.Registration ol, li {
+  margin-left: 25px;
+  font-size: 36px;
+}
+.regItem {
+	padding-bottom: 25px;
+    font-size: 30px;
+}
+
+#blueBg{
+	height:325;
+	width:900;
+}
+
+.collagePicsCard{
+	opacity: 1;
+	width:880px;
+	height:300px;
+}
+
+#footer {
+  display: block;
+  position: relative;
+  top: -15px;
+  font-size:30px;
+}
+#footerMain {
+  font-size:26px;
+  height: 200px;
+  margin: 0px 35px ;
+}
+}
+
+@media print {
+#header, #header img, #sidebar, #redheader, #footer {
+  display: none; !important;
+}
+
+#mainContent {
+  background: #fff; !important;
+}
+#mainContent a{
+	color: #000; !important;
+}
+
+#FullBorderTable td, #mainContent p {
+	font-size: 14px; !important;
+}
+
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+* Corrects `block` display not defined in IE6/7/8/9 & FF3.
+*/
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+   display: block;
+}
+
+/*
+* Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
+*/
+
+audio,
+canvas,
+video {
+   display: inline-block;
+   *display: inline;
+   *zoom: 1;
+}
+
+/*
+* Prevents modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS5 devices.
+*/
+
+audio:not([controls]) {
+   display: none;
+   height: 0;
+}
+
+/*
+* Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
+* Known issue: no IE6 support.
+*/
+
+[hidden] {
+   display: none;
+}
+
+/* ==========================================================================
+  Base
+  ========================================================================== */
+
+/*
+* 1. Corrects text resizing oddly in IE6/7 when body `font-size` is set using
+*    `em` units.
+* 2. Prevents iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
+
+html {
+   font-size: 100%; /* 1 */
+   -webkit-text-size-adjust: 100%; /* 2 */
+   -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+* Addresses `font-family` inconsistency between `textarea` and other form
+* elements.
+
+
+html,
+button,
+input,
+select,
+textarea {
+   font-family: sans-serif;
+}
+*/
+/*
+* Addresses margins handled incorrectly in IE6/7.
+*/
+
+body {
+   margin: 0;
+}

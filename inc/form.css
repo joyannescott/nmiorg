@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*form {width: 375px; margin: 34px auto;
+	    font-family: 'Gilda Display', serif;
+    font-variant:small-caps;
+    font-size: 22px;
+}
+form tr {
+    border: 1px solid #CCC;
+    background: #f4f3f2;
+}
+form table {width: 375px; margin-bottom: 16px;}
+form th {
+    width: 85px;
+    border-right: 1px solid #CCC;
+    vertical-align: middle;
+    padding: 8px;
+}
+form td {
+    padding: 15px 15px;
+}
+form td select,
+form td input,
+form td textarea {
+    width: 100%;
+}*/
+
+
+
+.button:hover, input[type="submit"] {
+    background: #333;
+    cursor: pointer;
+}
+.hidden {
+	display:none;
+}
+.button {
+   color: #FFF;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;    
+    border: 1px solid #990000;
+	text-align: center;
+    padding: 0px 20px 10px 20px;
+	height: 30px;
+	width: 100px;
+	position: relative;
+	left: 310px;
+	font-family: 'Gilda Display', serif;
+    font-variant:small-caps;
+    font-size: 18px;
+	font-weight: 300;
+	background: #990000;
+	margin-bottom: 50px;
+	}
+form label {
+    font-variant:normal;
+	font-size: 16px;
+}
+form select {
+    font-family: 'Gilda Display', serif;
+    font-variant:small-caps;
+    font-size: 22px;
+
+	   color: #FFF;
+    font-size: 16px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;    
+    border: 1px solid #990000;
+    padding: 14px;
+	height: 30px;
+	background: #990000;
+	margin-bottom: 50px;
+	}
+form input[type="submit"] {
+    width: 375px;
+    text-align: center;
+    border: 1px solid #990000;
+    background: #990000;
+    color: #FFF;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;    
+    font-family: 'Gilda Display', serif;
+    font-variant:small-caps;
+    font-size: 22px;
+    margin-top: 20px;
+    padding: 14px;
+}
+.search form {
+    width: auto;
+    text-align: center;
+}
+.search form input[type="text"] {
+    font-size: 24px;
+    width: 70%;
+    line-height: 1.5;
+    vertical-align: top;
+    padding: 3px;
+}
+.search form input[type="submit"] {
+    width: auto;
+    vertical-align: top;    
+}
