@@ -18,10 +18,15 @@
       <div class="postit">
         <a href="<?php //echo BASE_URL;?>GrandAssembly/Registration"> 
             <div class="blue">Grand Assembly <br>Registration</div></a>
-
-        <div class="green"><div class="congrats">
-          Congratulations!</div> Grand Worthy Advisor-Elect <br> Alexa Templeton
-        </div>
+        <div class="green" ><div class="item2">
+          <div class="congrats">
+            Congratulations!
+          </div> 
+          Grand Worthy Advisor-Elect 
+          <div class="congrats">
+            Alexa Templeton
+          </div>
+        </div></div>
       </div>
     </div>
 
