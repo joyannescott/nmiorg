@@ -56,6 +56,7 @@
         <li><p><a id="sideBarItem" href='/JoinRainbow'>What is Rainbow?</a></p></li>
         <li><p><a id="sideBarItem" href='/Calendar'>Calendar</a></p></li>
         <li><p><a id="sideBarItem" href='/SunsetGazette'>Sunset Gazette</a></p></li>
+        <li><p><a id="sideBarItem" href='/Alumni'>Alumni</a></p></li>
 
       <?php } ?>
       <?php if($pageType == "GO"){ ?>
