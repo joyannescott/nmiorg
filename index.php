@@ -11,9 +11,20 @@
 
 <div id="mainContent">
    <div id="Frontpage">
-     <a href="<?php echo BASE_URL;?>GrandAssembly/Registration"> 
+     <!--<a href="<?php //echo BASE_URL;?>GrandAssembly/Registration"> 
                                    <img src="/images/RegBG.gif" 
-                                   class="GAReg" alt="GA Registration"border="0" /></a>
+                                   class="GAReg" alt="GA Registration"border="0" /></a>-->
+    <div class="GAReg">
+      <div class="postit">
+        <a href="<?php //echo BASE_URL;?>GrandAssembly/Registration"> 
+            <div class="blue">Grand Assembly <br>Registration</div></a>
+
+        <div class="green"><div class="congrats">
+          Congratulations!</div> Grand Worthy Advisor-Elect <br> Alexa Templeton
+        </div>
+      </div>
+    </div>
+
      <a href="<?php echo BASE_URL;?>JoinRainbow/#&panel1-1"> 
                                    <img src="/images/WhatIsRainbow.gif" 
                                    class="what" alt="What is Rainbow?" border="0" /></a>
