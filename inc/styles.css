@@ -155,6 +155,24 @@ h1 {
 	font-size: 18px;
  
 }
+#sidebar ul{
+	position: relative;
+}
+
+
+.selected {
+	display: block;
+	position: relative;
+	width: 0;
+
+	height: 0;
+	padding-bottom: 3px;
+	top: -20;
+	left: 173px;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-right: 7px solid #fff;
+}
 
 #sidebar, .nav {
     display: -webkit-flex;
@@ -352,6 +370,13 @@ h1 {
 	height: 20px;
 	width: 600px;
 }
+
+@-moz-document url-prefix() {
+ #sidebar p a {
+	font-size: 18px;
+}
+}
+
 
 /*************************************************/
 /*  Main Content                                 */
@@ -820,6 +845,14 @@ display: block;
 	width:690px;
 	height:225px;
 }
+@-moz-document url-prefix() {
+ .mozilla {
+ 	display: block;
+ 	height: 75px;
+ 	width: 960px;
+ }
+}
+
 /*************************************************/
 /*  Footer                                       */
 /*************************************************/

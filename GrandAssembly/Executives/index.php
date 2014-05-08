@@ -1,6 +1,6 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "GExecHeight";
+   $pageSubType = "GExec";
    $pageType   = "GA";
 
    include( INC . 'header.php');

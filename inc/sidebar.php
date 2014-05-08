@@ -74,6 +74,7 @@
               <li>
                 <p><a id="sideBarItem" href="/GrandAssembly">Grand Assembly</a></p>
               </li>
+              <?php if($pageSubType != "GDep" && $pageSubType != "GExec"){ ?>
               <ul id="GAItems">
                 <li>
                   <a class="GASchedule" href="http://www.nmiorg.org/GrandAssembly/#&panel1-2">Schedule</a>
@@ -86,6 +87,7 @@
                                     Competitions</a> 
                 </li>
                </ul>
+                <?php } ?>
              <li>
                 <p><a id="sideBarItem" href="/GrandAssembly/Registration">Registration</a></p>
             </li>

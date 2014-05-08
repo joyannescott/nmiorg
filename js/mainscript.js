@@ -25,13 +25,42 @@ function navMouseOutWidth(elm, imgNum, width){
 
 $( ".GASchedule" ).click(function() {
 	$("#sliderGA").anythingSlider(2);
+
 })
 $( ".GASSS" ).click(function() {
 	$("#sliderGA").anythingSlider(6);
+	console.log("ga schedule");
 })
 $( ".GACompetitions" ).click(function() {
 	$("#sliderGA").anythingSlider(7);
 })
+
+selected = "<span class='selected'></span>";
+$(function() {
+	console.log(location.pathname.split("/"));
+    path = "";
+    console.log(path);
+    path_array = location.pathname.split("/");
+    	console.log(path_array.length);
+     length = path_array.length - 1
+    if(path_array[path_array.length-1] ^= "#&panel") {
+    	console.log("panel");
+    	length -= 1;
+    }
+    for(i=1; i < length; i++){
+		path += "/" + path_array[i];
+		console.log(path);
+	}
+   console.log("nav a[href^='" + path + "']");
+  $(".nav a[href='" + path + "']").append(selected);
+});
+
+//selected = "<span class='selected'></span>";
+//$( "#sideBarItem").click(function() {
+//	console.log("clicked on sidebaritem");
+//	$(selected).insertAfter($this);
+//})
+
 
 //change your event date event here.      
 var eventdate = new Date("June 17, 2014 02:00:00 GMT");

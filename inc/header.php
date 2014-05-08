@@ -49,9 +49,9 @@
 	<link rel="stylesheet" href="demos/css/page.css">-->
 
 	<!-- Anything Slider -->
-	<link rel="stylesheet" href="../css/anythingslider.css">
-    <link rel="stylesheet" href="../css/theme-minimalist-round.css">
-	<script src="../js/jquery.anythingslider.js"></script>
+	<link rel="stylesheet" href="<?php echo BASE_URL;?>css/anythingslider.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL;?>css/theme-minimalist-round.css">
+	<script src= "<?php echo BASE_URL;?>js/jquery.anythingslider.js"></script>
     
 
 	<!-- AnythingSlider optional extensions -->

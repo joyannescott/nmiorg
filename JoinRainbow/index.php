@@ -41,7 +41,8 @@
    <p>Thank You for your interest. For additional information on our order please contact a <a href="<?php echo BASE_URL;?>LocalAssemblies">Mother Advisor</a></a> in your area, our Supreme Inspector, <a href="mailto:gbmyers2@comcast.net">Mrs. Bobby Myers</a>, or visit <a href="http://www.gorainbow.org">www.gorainbow.org</a>.</p></div></li>
 
 	</ul>
-
+  <div class="mozilla"></div>
+    <div class="mozilla"></div>
 </div>
   <?php 
   include( INC . 'footer.php');
