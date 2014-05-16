@@ -1,7 +1,7 @@
-
- <?php
+<?php
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php"); 
-   $pageHeight = "HomeHeight";
+   require( INC . "database.php");
+
    $pageType = "Home";
    $mainPage  = true;
 
@@ -11,9 +11,9 @@
 
 <div id="mainContent">
    <div id="Frontpage">
-     <!--<a href="<?php //echo BASE_URL;?>GrandAssembly/Registration"> 
-                                   <img src="/images/RegBG.gif" 
-                                   class="GAReg" alt="GA Registration"border="0" /></a>-->
+   <div id="FrontLogin">
+      <?php include(LOGIN . "login_header.php"); ?>
+   </div>
     <div class="GAReg">
       <div class="postit">
         <a href="<?php //echo BASE_URL;?>GrandAssembly/Registration"> 

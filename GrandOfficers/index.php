@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "GOHeight";
+   require( INC . "database.php");
+
    $pageType   = "GO";
 
    include( INC . 'header.php');
@@ -11,6 +12,7 @@
   ?>
   
   <div id="mainContent">
+  <?php include(LOGIN . "login_header.php"); ?>
   	<h1><img src="<?php echo BASE_URL;?>images/GrandOfficers.gif" 
       alt="Grand Officers" width="302" height="104" /></h1>
       <center>

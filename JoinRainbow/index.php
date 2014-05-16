@@ -1,6 +1,6 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "RainbowHeight";
+   require_once( INC . "database.php");
    $pageType   = "Home";
 
    include( INC . 'header.php');
@@ -8,6 +8,8 @@
   ?>
  
   <div id="mainContent">
+      <?php include(LOGIN . "login_header.php"); ?>
+
   &nbsp;
       	<ul id="slider">
 

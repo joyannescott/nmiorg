@@ -1,5 +1,0 @@
-AuthType Basic  
-AuthName "restricted area"  
-AuthUserFile /home/colors7/nmiorg/Import/.htpasswd  
-require valid-user
-

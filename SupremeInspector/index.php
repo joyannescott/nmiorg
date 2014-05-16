@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "SIHeight";
+   require_once( INC . "database.php");
+
    $pageType   = "SI";
 
    include( INC . 'header.php');
@@ -8,6 +9,7 @@
   ?>
 
   <div id="mainContent">
+  <?php include(LOGIN . "login_header.php"); ?>
     <div align=left style="margin-right:300px"><h1><img src="<?php echo BASE_URL;?>images/SI.gif"  alt="Supreme Inspector" width="303" height="123" /></h1></div>
     <h1>Mrs. Roberta Boney Myers<br />
          &#147;Aunt Bobby&#148;</h1>

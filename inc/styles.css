@@ -206,7 +206,7 @@ h1 {
 }
 #sidebar {
  }
-#sideBarItem, #multiline {  
+#sideBarItem, #multiline, #sideBarItem_bs {  
 	text-align:center;
 	font-variant:small-caps;
     font-size: 40px;    
@@ -214,8 +214,12 @@ h1 {
 	width: 180px;
 	height: 60px;
 	margin-left: -40px;
+	margin-bottom: -15px;
   transition: 200ms ease-in-out;
     /*border-bottom: 1px solid #999;*/
+}
+#sidebarItem_bs{
+	margin-left: 0px;
 }
 #sideBarItem{
 	padding-top: 30px;
@@ -395,10 +399,20 @@ h1 {
 	border-top-style: solid;
 	border-top-color: #990000;
 
+	min-height: 600px;
+
 	/*position: relative;*/	 
 	/*overflow: scroll;*/
 } 
-
+#FrontLogin{
+	display: block;
+	height: 25px;
+	
+	position: relative;
+	top: -25px;
+	right: 0px;
+	z-index: 1000;
+}
 .freehand {
 	font-family: 'Freehand575BT-RegularB', serif;
 	font-weight: 500;
@@ -476,6 +490,28 @@ h1 {
 #mainContent a {
 	color: #990000;
 	text-decoration:none;
+}
+
+#login_header{
+  display:    -moz-flex;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-flex-direction: row;
+     -moz-flex-direction: row;
+          flex-direction: row;
+         justify-content: flex-end;
+ -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+}
+
+#login_header p {
+	padding: 0 5px;
+    margin: 0 0px;
+    border-right: 1px solid #990000;
+}
+
+#login_header #last p {
+	border-right: none;
 }
 #GWAText {
 	font-size: 17px;
@@ -844,6 +880,13 @@ display: block;
 	margin-top: -5px;
 	width:690px;
 	height:225px;
+}
+
+.login{
+	width: 25%;
+	min-height: 600px;
+	margin: 50px auto;	
+	padding: 100px 0px;
 }
 @-moz-document url-prefix() {
  .mozilla {

@@ -1,7 +1,8 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "AlumniHeight";
-   $pageType   = "Home";
+   require( INC . "database.php");
+
+   $pageType      = "Home";
    $pageSubType   = "Alumni";
 
 
@@ -10,7 +11,7 @@
   ?>
 
   <div id="mainContent">
-    <FORM name="clock">
+    <?php include(LOGIN . "login_header.php"); ?>
   
       <h1> IORG Alumni Association - New Mexico </h1> 
            &nbsp;&nbsp;

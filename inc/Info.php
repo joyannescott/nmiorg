@@ -180,5 +180,3 @@ function get_most_recent_year(){
 	//var_dump($year);
 	return $year["year"];
 }
-
-?>

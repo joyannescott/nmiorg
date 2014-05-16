@@ -1,12 +1,14 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "CalendarHeight";
+   require( INC . "database.php");
+
    $pageType   = "Home";
 
    include( INC . 'header.php');
    include( INC . 'sidebar.php');
   ?>
   <div id="mainContent">
+      <?php include(LOGIN . "login_header.php"); ?>
   	<h1>2013 &ndash; 2014 Calendar</h1>
     <div id=FullBorderTable>
   	<table>

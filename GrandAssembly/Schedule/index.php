@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "GAScheduleHeight";
+   require( INC . "database.php");
+
    $pageType   = "GA";
    $pageSubType = "GASchedule";
 
@@ -8,6 +9,7 @@
    include( INC . 'sidebar.php');
   ?>
 <div id="mainContent">
+  <?php include(LOGIN . "login_header.php"); ?>
   <h1>2014 Paint Your Rainbow &mdash; Be the Change <br>Grand Assembly Schedule</h1>
     <div id="FullBorderTable"><div id="scheduleFull">
       <table width="760">

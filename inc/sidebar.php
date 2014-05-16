@@ -1,5 +1,6 @@
 <?php
   require_once( INC . 'Info.php');
+  require_once(TABLE . "entries.php");
 
   if($pageType == "GWA") {
     $start = $pageSubType;
@@ -48,7 +49,7 @@
                      <?php } //SubType ?>
                 <?php } //for ?>
     <?php } else { //Else !GWA?>
-    <p>&nbsp;</p>
+
 
      <?php if($pageType == "Home"){?>
 
@@ -57,7 +58,9 @@
         <li><p><a id="sideBarItem" href='/Calendar'>Calendar</a></p></li>
         <li><p><a id="sideBarItem" href='/SunsetGazette'>Sunset Gazette</a></p></li>
         <li><p><a id="sideBarItem" href='/Alumni'>Alumni</a></p></li>
-
+        <?php  if(!empty($_SESSION['user']) && is_administrator($_SESSION['user']['email'])) { ?>
+            <li><p><a id="sideBarItem" href='/Import'>Administrator</a></p></li>
+        <?php } ?>
       <?php } ?>
       <?php if($pageType == "GO"){ ?>
               <li><p><a id="sideBarItem" href="/GrandOfficers">Grand Officers</a></p></li>
@@ -98,6 +101,12 @@
               <li ><p><a id="sideBarItem" href="/Foundation/Donation">Donation Form</a></p></li>
               <li ><p><a id="multiline"   href="/Foundation/Scholarship">Scholarship Application</a></p></li>
               <li ><p><a id="sideBarItem" href="/Foundation/Board">Foundation Board</a></p></li>
+      <?php } ?>
+      <?php if($pageType == "import"){ ?>
+              <li ><p><a id="sideBarItem_bs" href="/Import">Import Data</a></p></li>
+              <li ><p><a id="sideBarItem_bs" href="/Import/MA">Mother Advisors</a></p></li>
+              <li ><p><a id="sideBarItem_bs"   href="/Import/Admin">Administrators</a></p></li>
+              <li ><p><a id="sideBarItem_bs"   href="/login/membershiplist.php">Users</a></p></li>
       <?php } ?>
       <?php } ?>
       </ul> <!-- nav -->

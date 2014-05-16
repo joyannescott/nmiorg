@@ -37,21 +37,18 @@ $( ".GACompetitions" ).click(function() {
 
 selected = "<span class='selected'></span>";
 $(function() {
-	console.log(location.pathname.split("/"));
     path = "";
-    console.log(path);
+
     path_array = location.pathname.split("/");
-    	console.log(path_array.length);
      length = path_array.length - 1
+
     if(path_array[path_array.length-1] ^= "#&panel") {
-    	console.log("panel");
     	length -= 1;
     }
     for(i=1; i < length; i++){
 		path += "/" + path_array[i];
-		console.log(path);
 	}
-   console.log("nav a[href^='" + path + "']");
+
   $(".nav a[href='" + path + "']").append(selected);
 });
 

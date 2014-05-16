@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "ContactHeight";
+   require( INC . "database.php");
+
    $pageType   = "Contact";
 
    include( INC . 'header.php');
@@ -8,6 +9,7 @@
   ?>
 
   <div id="mainContent">
+     <?php include(LOGIN . "login_header.php"); ?>
 
   	<div id="offsetTitle"><h1> <img src="<?php echo BASE_URL;?>images/Contact.gif" /><br /></h1></div>
     

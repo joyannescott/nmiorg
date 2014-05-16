@@ -1,6 +1,7 @@
 <?php 
     require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
     require_once(INC . 'Info.php');
+
     $pageType   = "GWA";
    if(isset($_GET["y"])){
      $year = intval($_GET["y"]);

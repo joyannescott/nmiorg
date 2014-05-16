@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "FoundScholarHeight";
+   require( INC . "database.php");
+
    $pageType   = "Foundation";
 
    include( INC . 'header.php');
@@ -8,6 +9,7 @@
 ?>
 
 <div id="mainContent">
+  <?php include(LOGIN . "login_header.php"); ?>
 	<center>
 	  <span id="foundLogo">
 	  	<img src="<?php echo BASE_URL;?>images/FoundScholarcover.jpg"  alt="Application Information 1" /> 

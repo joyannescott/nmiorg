@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "AssemHeight";
+   require_once( INC . "database.php");
+
    $pageType = "Assemblies";
 
    include( INC . 'header.php');
@@ -8,6 +9,7 @@
   ?>
 
   <div id="mainContent">
+  <?php include(LOGIN . "login_header.php"); ?>
   	<h1 align=left style="margin-right:150px"><img src="<?php echo BASE_URL;?>images/Assemblies.gif"  
         alt="local assemblies" /></h1>
     <div id="FullBorderTable">

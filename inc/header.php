@@ -33,64 +33,27 @@
 <?php if($pageType == "import"){?>
   <title>New Mexico: IORG Import</title>
 <?php } ?>
+  
+<?php if($bootstrap_inc == "true"){?>
+  <link href="<?php echo BASE_URL;?>css/bootstrap.css" type="text/css" rel="stylesheet" media="screen" title="no title" charset="utf-8">
+  <link href="<?php echo BASE_URL;?>css/bootstrap.icon-large.min.css" rel="stylesheet" type="text/css" >
+  <link href="<?php echo BASE_URL;?>tables/tables.css" type="text/css" media="screen" rel="stylesheet"  title="no title" charset="utf-8">
+<?php } ?>
 
 <link rel="icon" href="<?php echo BASE_URL;?>images/graphics/emblemicon.jpg">
 <link href="<?php echo BASE_URL;?>fonts/MyFontsWebfontsKit.css"; rel="stylesheet" type="text/css" >
 <link href="<?php echo BASE_URL;?>inc/styles.css"; rel="stylesheet" type="text/css" />
 <link href="<?php echo BASE_URL;?>inc/form.css"; rel="stylesheet" type="text/css" />
 <link href="<?php echo BASE_URL;?>inc/animate.css"; rel="stylesheet" type="text/css" />
+
+
 <meta name="viewport" content="width=device-width">
 
 	<!-- jQuery (required) -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script>
 
-	<!-- Demo stuff 
-	<link rel="stylesheet" href="demos/css/page.css">-->
-
-	<!-- Anything Slider -->
-	<link rel="stylesheet" href="<?php echo BASE_URL;?>css/anythingslider.css">
-  <link rel="stylesheet" href="<?php echo BASE_URL;?>css/theme-minimalist-round.css">
-	<script src= "<?php echo BASE_URL;?>js/jquery.anythingslider.js"></script>
-    
-
-	<!-- AnythingSlider optional extensions -->
-	<!-- <script src="js/jquery.anythingslider.fx.js"></script> -->
-	<!-- <script src="js/jquery.anythingslider.video.js"></script> -->
-
-	<!-- Define slider dimensions here 
-	<style>
-	#slider { width: 700px; height: 550px; }
-	@media all and (max-width: 600px){
-		#slider { width: 900px; height: 700px; }
-	}
-	</style>-->
-
-	<!-- AnythingSlider initialization -->
-	<script>
-		// DOM Ready
-		$(function(){
-			$('#slider').anythingSlider({
-				theme           : 'minimalist-round',
-				easing          : 'easeInOutBack',
-				navigationFormatter : function(index, panel){
-					                  return ['What is Rainbow?', 'History', 'Who Can Join?', 
-					                          'How do I Join?'][index - 1];
-				}
-			});
-     $('#sliderGA').anythingSlider({
-        theme           : 'minimalist-round',
-        easing          : 'easeInOutBack',
-        navigationFormatter : function(index, panel){
-                            return ['Grand Assembly', 'Schedule Mon-Tues', 'Schedule Wed', 
-							        'Schedule Thurs','Schedule Fri-Sat','Sunshine Service', 
-									'Competitions 1','Competitions 2'][index - 1];
-       }
-      });
-		});
-
-	</script>
-
+	
 </head>
 <body class="twoColElsLtHdr" <?php if($pageSubType == "GACount"){
 	                        echo 'OnLoad="javascript:countdown();"';} ?> >

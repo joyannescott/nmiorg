@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "GARegHeight";
+   require( INC . "database.php");
+
    $pageType   = "GA";
 
    include( INC . 'header.php');
@@ -8,9 +9,10 @@
   ?>
 
   <div id="mainContent">
+  <?php include(LOGIN . "login_header.php"); ?>
     <h1>Grand Assembly Registration 2014</h1>
-<div id="reglist"> 
-   <ol list-style: decimal; class="Registration">
+    <div id="reglist"> 
+    <ol list-style: decimal; class="Registration">
 
        <li> General Information 
         <ul class="regItem">

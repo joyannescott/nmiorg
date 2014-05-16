@@ -1,6 +1,7 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "GAHeight";
+   require( INC . "database.php");
+
    $pageType   = "GA";
    $pageSubType = "GACount";
 
@@ -9,6 +10,7 @@
   ?>
 
   <div id="mainContent">
+  <?php include(LOGIN . "login_header.php"); ?>
     <FORM name="clock">
   <div id="FullBorderTable">
     

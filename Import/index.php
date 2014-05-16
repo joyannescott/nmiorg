@@ -2,7 +2,7 @@
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
    $pageHeight = "importHeight";
    $pageType   = "import";
-
+   $bootstrap_inc = "true";
    include( INC . 'header.php');
    include( INC . 'sidebar.php');   
 
