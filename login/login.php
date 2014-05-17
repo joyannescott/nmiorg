@@ -6,7 +6,8 @@
     // login form if they fail to enter the correct password.  It is initialized here 
     // to an empty value, which will be shown if the user has not submitted the form. 
     $submitted_username = ''; 
-
+    $alert_message = $_SESSION['alert_message'];
+    $_SESSION['alert_message'] = "";
     // This if statement checks to determine whether the login form has been submitted 
     // If it has, then the login code is run, otherwise the form is displayed 
     if(!empty($_POST)) 
@@ -17,6 +18,7 @@
             SELECT 
                 id, 
                 username, 
+                fullname, 
                 password, 
                 salt, 
                 email 
@@ -88,8 +90,11 @@
             $_SESSION['user'] = $row; 
 
             // Redirect the user to the private members-only page. 
-            header("Location: ". BASE_URL); 
-            die("Redirecting to: " . BASE_URL); 
+            if($_SESSION['last_url'])
+                header("location: " . $_SESSION['last_url']);
+            else
+                header("location: " . BASE_URL);
+            die("Redirecting to: previous page"); 
         } 
         else 
         { 
@@ -114,26 +119,41 @@
 ?> 
 <div id="mainContent">
     <?php include("../login/login_header.php"); ?>
+
     <?php if($login_failed) { ?>
         <div class="alert alert-danger">
            <button type="button" class="close" data-dismiss="alert">&times;</button>
             <strong>Error!</strong> Login failed for User: <?php echo $submitted_username ?> 
         </div>
     <?php } ?>
-<div class="login">
-<h1>Login</h1> 
+    <?php if($alert_message) { ?>
+        <div class="alert alert-info">
+           <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <?php echo $alert_message; ?> 
+        </div>
+    <?php } ?>
+
 
 <form action="login.php" method="post"> 
-    Username:<br /> 
-    <input type="text" name="username" value="<?php echo $submitted_username; ?>" />
-    <br /><br /> 
-    Password:<br /> 
-    <input type="password" name="password" value="" /> 
-    <br /><br /> 
-    <button class="btn btn-large btn-primary" type="submit"> Login </button> 
+    <h1>Login</h1> 
+        <p>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" value="<?php echo $submitted_username; ?>">
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" value="">
+        </p>
+        <p>
+            <input type="submit" value="Login" id="submit">
+        </p>
+
+   <h4> <a href="reset_password.php">Forgot Your Password?</a> </h4>
+   <h4> or </h4>
+
+   <h4> <a href="register.php">Register</a> </h4>
 </form> 
-<a href="register.php">Register</a>
-</div>
+
 </div>
 
 <?php 

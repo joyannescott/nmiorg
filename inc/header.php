@@ -52,6 +52,36 @@
 	<!-- jQuery (required) -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script>
+<!-- Anything Slider -->
+  <link rel="stylesheet" href="<?php echo BASE_URL;?>css/anythingslider.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL;?>css/theme-minimalist-round.css">
+  <script src= "<?php echo BASE_URL;?>js/jquery.anythingslider.js"></script>
+    
+
+  <!-- AnythingSlider initialization -->
+  <script>
+    // DOM Ready
+    $(function(){
+      $('#slider').anythingSlider({
+        theme           : 'minimalist-round',
+        easing          : 'easeInOutBack',
+        navigationFormatter : function(index, panel){
+                            return ['What is Rainbow?', 'History', 'Who Can Join?', 
+                                    'How do I Join?'][index - 1];
+        }
+      });
+     $('#sliderGA').anythingSlider({
+        theme           : 'minimalist-round',
+        easing          : 'easeInOutBack',
+        navigationFormatter : function(index, panel){
+                            return ['Grand Assembly', 'Schedule Mon-Tues', 'Schedule Wed', 
+                      'Schedule Thurs','Schedule Fri-Sat','Sunshine Service', 
+                  'Competitions 1','Competitions 2'][index - 1];
+       }
+      });
+    });
+
+  </script>
 
 	
 </head>

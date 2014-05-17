@@ -83,6 +83,16 @@
     // http://us.php.net/manual/en/book.session.php 
     session_start(); 
 
+    $current_url = str_replace("index.php", "", $_SERVER['PHP_SELF']);
+    
+    if( ($current_url != "/login/login.php")    &&
+        ($current_url != "/login/logout.php")   &&
+        ($current_url != "/login/register.php") &&
+        ($current_url != "/login/reset_password.php") &&
+        ($current_url != "/login/edit_account.php")) {
+        $_SESSION['last_url'] = $current_url;
+    }
+
     // Note that it is a good practice to NOT end your PHP files with a closing PHP tag. 
     // This prevents trailing newlines on the file from being included in your output, 
     // which can cause problems with redirecting users.

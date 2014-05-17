@@ -1,6 +1,18 @@
  <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   $pageHeight = "importHeight";
+   require( INC . "database.php");
+   require(TABLE . "entries.php");
+   
+    // Check to see whether the user is logged in or not 
+    if(empty($_SESSION['user']) || !is_administrator($_SESSION['user']['email'])) 
+    {  
+        $_SESSION['alert_message'] = "Adminitrators, please login to access this page.";
+        header("Location: ". BASE_URL . "login/login.php"); 
+         
+        // This die statement is absolutely critical.   
+        die("Redirecting to login"); 
+    } 
+
    $pageType   = "import";
    $bootstrap_inc = "true";
    include( INC . 'header.php');
@@ -185,29 +197,35 @@
 }
 ?> 
   <div id="mainContent">
+    <?php include(LOGIN . "login_header.php"); ?>
 
-
-<h1>
- &nbsp;
 <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1"> 
-  Choose your import type: <br/>
-  <select id="type" name="type" requried>
-    <option value = "None" disabled selected> Select</option>
-    <option value = "GWA"> GWA</option>
-    <option value = "Term"> GWA Term</option>
-    <option value = "Girls"> Girls</option>
-    <option value = "GrandOfficers"> Grand Floor Officers</option>
-    <option value = "GrandReps"> Grand Representatives</option>
-    <option value = "GCCT"> Grand Cross Of Color Team</option>
-    <option value = "Pages"> Pages</option>
-  </select> <br/>
-  Choose your file: <sp/> <br />
-  <input type="file" class="hidden" id="uploadFile" name="csv" onchange="pressed()"/><label id="fileLabel">File:</label>
+  <h4> Choose your import type: </h4>
+  <center>
+	  <select id="type" name="type" requried>
+	    <option value = "None" disabled selected> Select</option>
+	    <option value = "GWA"> GWA</option>
+	    <option value = "Term"> GWA Term</option>
+	    <option value = "Girls"> Girls</option>
+	    <option value = "GrandOfficers"> Grand Floor Officers</option>
+	    <option value = "GrandReps"> Grand Representatives</option>
+	    <option value = "GCCT"> Grand Cross Of Color Team</option>
+	    <option value = "Pages"> Pages</option>
+	  </select> 
+  </center>
+
+  <h4>Choose your file: </h4>
+  <center>
+  	<input type="file" class="hidden" id="uploadFile" name="csv" onchange="pressed()"/><label id="fileLabel">File:</label>
+  </center>
    <div class="button" id="uploadTrigger">Upload File</div>
-  <!--<input name="csv" type="file" id="csv" /> <br> -->
-  <input type="submit" name="Submit" value="Submit" /> 
+
+        <p>
+            <input type="submit" value="Submit" id="submit">
+        </p>
+
 </form> 
-</h1>
+
 <?php if ($success) { echo "<h3><b>Your " . $type .  " file has been imported.</b></h3><br><br>"; } ?> 
 
 </div>

@@ -11,7 +11,7 @@
 
   <div id="mainContent">
   <?php include(LOGIN . "login_header.php"); ?>
-    <FORM name="clock">
+    <FORM name="clock" id="clock">
   <div id="FullBorderTable">
     
     <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 width="760" 

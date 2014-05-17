@@ -14,7 +14,11 @@
 ?>
 
 <div class="wrapper">
-  <div id="sidebar">
+  <?php if($no_sidebar){?>
+      <div id="no-sidebar">
+  <?php } else { ?>
+      <div id="sidebar">
+  <?php } ?>
     <ul class="nav">
       <?php if($pageType == "GWA"){ ?>
            <div id="GWATitle">Grand Worthy Advisors </div>
@@ -94,7 +98,12 @@
              <li>
                 <p><a id="sideBarItem" href="/GrandAssembly/Registration">Registration</a></p>
             </li>
-
+            <?php  if(!empty($_SESSION['user']) && (is_administrator($_SESSION['user']['email']) ||
+                                                    is_mother_advisor($_SESSION['user']['email']))) { ?>
+              <li>
+                  <p><a id="sideBarItem" href="/GrandAssembly/Ritual">Ritual Reg</a></p>
+              </li>
+            <?php } ?>
       <?php } ?>
       <?php if($pageType == "Foundation"){ ?>
               <li ><p><a id="sideBarItem" href="/Foundation">Foundation</a></p></li>
@@ -103,6 +112,7 @@
               <li ><p><a id="sideBarItem" href="/Foundation/Board">Foundation Board</a></p></li>
       <?php } ?>
       <?php if($pageType == "import"){ ?>
+         <p>&nbsp;</p>
               <li ><p><a id="sideBarItem_bs" href="/Import">Import Data</a></p></li>
               <li ><p><a id="sideBarItem_bs" href="/Import/MA">Mother Advisors</a></p></li>
               <li ><p><a id="sideBarItem_bs"   href="/Import/Admin">Administrators</a></p></li>

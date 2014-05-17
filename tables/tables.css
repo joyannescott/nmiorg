@@ -1,3 +1,9 @@
+.ritual table{
+  background: #fff;
+}
+.ritual table th{
+  background: #fff;
+}
 .table-editable {
   position: relative; }
   .table-editable .glyphicon {
@@ -15,14 +21,19 @@
   .table-up:hover, .table-down:hover {
     color: #00f; }
 
-.table-add {
+.table-add, .ritual-add{
   color: #070;
   cursor: pointer;
   position: absolute;
   top: 8px;
   right: 8px; }
-  .table-add:hover {
-    color: #0b0; }
+
+.ritual-add{
+  top: 108px;
+}
+
+.table-add:hover {
+  color: #0b0; }
 
 .save-button{
   margin: 20px 20px;
@@ -30,4 +41,9 @@
 
 .btn-large{
   padding: 8px 30px;
+}
+
+.table-centered th{
+  text-align: center;
+  vertical-align: middle !important;
 }

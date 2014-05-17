@@ -25,12 +25,8 @@
 <script type="text/javascript"> var base_url = "<?php echo BASE_URL; ?>";</script>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>js/mainscript.js"></script>
 
-<script src="http://code.jquery.com/jquery.js"></script> 
+<!--<script src="http://code.jquery.com/jquery.js"></script> -->
 <script type="text/javascript" language="javascript" src="<?php echo BASE_URL; ?>js/bootstrap.min.js"></script>
 <script type="text/javascript" language="javascript" src="<?php echo BASE_URL; ?>js/underscore.js"></script>
-<?php if( !empty($table_url)) { ?>
-  <script type="text/javascript"> var table_url = "<?php echo $table_url; ?>";</script>
-  <script type="text/javascript" language="javascript" src="<?php echo BASE_URL; ?>js/table.js"></script>
-<?php } ?>
 </body>
 </html>

@@ -14,6 +14,7 @@
     // Check to see whether the user is logged in or not 
     if(empty($_SESSION['user'])) 
     {  
+        $_SESSION['alert_message'] = "Adminitrators, please login to access this page.";
         header("Location:" . BASE_URL . "login/login.php"); 
          
         // This die statement is absolutely critical.   
@@ -34,3 +35,5 @@
 <?php 
     include( INC . 'footer.php');
 ?>
+<script type="text/javascript"> var table_url = "<?php echo $table_url; ?>";</script>
+<script type="text/javascript" language="javascript" src="<?php echo BASE_URL; ?>js/table.js"></script>

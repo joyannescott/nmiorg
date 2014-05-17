@@ -1,4 +1,5 @@
 <?php 
+  echo "hello";
     if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");

@@ -29,12 +29,12 @@ $( ".GASchedule" ).click(function() {
 })
 $( ".GASSS" ).click(function() {
 	$("#sliderGA").anythingSlider(6);
-	console.log("ga schedule");
 })
 $( ".GACompetitions" ).click(function() {
 	$("#sliderGA").anythingSlider(7);
 })
 
+//Mark selected if the link matches the current URL
 selected = "<span class='selected'></span>";
 $(function() {
     path = "";
@@ -52,11 +52,6 @@ $(function() {
   $(".nav a[href='" + path + "']").append(selected);
 });
 
-//selected = "<span class='selected'></span>";
-//$( "#sideBarItem").click(function() {
-//	console.log("clicked on sidebaritem");
-//	$(selected).insertAfter($this);
-//})
 
 
 //change your event date event here.      

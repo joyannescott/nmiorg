@@ -138,6 +138,9 @@ h1 {
 /*************************************************/
 /*  Sidebar                                      */
 /*************************************************/
+#no-sidebar{
+	display: none;
+}
 #sidebar, #sidebarGWA{
     -webkit-flex: none;
     -moz-flex: none;
@@ -385,7 +388,7 @@ h1 {
 /*************************************************/
 /*  Main Content                                 */
 /*************************************************/
-#mainContent {
+#mainContent, #mainContent-nosidebar {
 	/*float: left;*/
 	 -webkit-flex: none;
 	 -moz-flex: none;
@@ -404,6 +407,14 @@ h1 {
 	/*position: relative;*/	 
 	/*overflow: scroll;*/
 } 
+
+#mainContent-nosidebar{
+	width:960px;
+}
+#mainContent-nosidebar a{
+	color: #990000;
+}
+
 #FrontLogin{
 	display: block;
 	height: 25px;
@@ -442,7 +453,7 @@ h1 {
 	margin: 5px 0px -3px 50px;
 }
 
-#mainContent h1 {
+#mainContent h1, #mainContent-nosidebar h1 {
     font-weight: 500;
 	font-variant:small-caps;
 	/*font-family: 'Raleway', sans-serif;

@@ -8,5 +8,5 @@
     unset($_SESSION['user']); 
      
     // We redirect them to the login page 
-    header("Location: ../login/login.php"); 
-    die("Redirecting to: login.php");
+    header("Location: " . $_SESSION['last_url']); 
+    die("Redirecting to: last page");
