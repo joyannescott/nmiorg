@@ -29,7 +29,7 @@
   right: 8px; }
 
 .ritual-add{
-  top: 108px;
+  top: 78px;
 }
 
 .table-add:hover {
@@ -43,7 +43,8 @@
   padding: 8px 30px;
 }
 
-.table-centered th{
-  text-align: center;
+.table-centered th, td{
+  text-align: center !important;
   vertical-align: middle !important;
 }
+

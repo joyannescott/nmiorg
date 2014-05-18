@@ -36,11 +36,8 @@ $BTN.click(function () {
             "office",
             "go",
             "master",
-            "supreme",
-            "grand",
-            "floor",
+            "category",
             "bow",
-            "begining",
             "day",
             "time"];
   var data = [];
@@ -56,21 +53,32 @@ $BTN.click(function () {
   $rows.each(function () {
     var $td = $(this).find('td');
     var h = {};
-    
+    var offset = 0;
+
     if($td.eq(0).text() != ""){
+
       // Use the headers from earlier to name our hash keys
       headers.forEach(function (header, i) {
-      if(assembly != 0) {
-        if(header == "assembly"){
-          h["assembly"] = assembly;
-        }else{
-          h[header] = $td.eq(i-1).text();   
-        }
-      } else {
-         h[header] = $td.eq(i).text();   
-      }
-      });
-      
+        switch(header) {
+          case "assembly":
+              if(assembly != 0) {
+                h["assembly"] = assembly;
+                offset = 1;
+              }else{
+                h[header] = $td.eq(i + offset).text();   
+              }
+              break;
+          case "master":
+              h[header] = $td.eq(i+offset).find('input:checked').is(':checked');
+              break;
+          case "category":
+              h[header] = $td.eq(i+offset).find('option:selected').text();
+             break;
+          default:
+              h[header] = $td.eq(i + offset).text(); 
+              break;
+        }  
+      });     
       data.push(h);
     }
   });

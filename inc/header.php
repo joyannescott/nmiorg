@@ -116,7 +116,9 @@
     <div id="redHeader">
     <table width="960"> <tr>
         <?php if($pageType == "Home"){?>
-                  <td> <a href='<?php echo BASE_URL;?>'>Home</a></td>
+                <?php if($mainPage) { ?>
+                    <td> <a href='<?php echo BASE_URL;?>Login'>Login</a></td>
+                <?php } ?>
                   <td> <a href='<?php echo BASE_URL;?>JoinRainbow'>What is </br>Rainbow?</a></td>
                   <td><a href='<?php echo BASE_URL;?>Calendar'>Calendar</a></td>
                   <td><a href='<?php echo BASE_URL;?>SunsetGazette'>Sunset Gazette</a></td>

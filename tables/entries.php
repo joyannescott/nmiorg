@@ -79,11 +79,8 @@ function get_ritual_registration_all() {
             office,
             go,
             master,
-            supreme,
-            grand,
-            floor,
+            category,
             bow,
-            begining,
             day,
             time
             FROM ritual");
@@ -97,7 +94,6 @@ function get_ritual_registration_assembly($assembly) {
     $entries = array();
     require( INC . "database.php");
     try {
-        echo "by assembly " . $assembly;
         $results = $db->prepare("SELECT    
             assembly,         
             name,
@@ -106,17 +102,46 @@ function get_ritual_registration_assembly($assembly) {
             office,
             go,
             master,
-            supreme,
-            grand,
-            floor,
+            category,
             bow,
-            begining,
             day,
             time
             FROM ritual WHERE assembly=?");
         $results->bindParam(1, $assembly, PDO::PARAM_INT);
         $results->execute();
-        echo "finished query ";
+    } catch(Exception $e) {
+        echo "Data could not be retrieved";
+    }
+    $entries = $results->fetchAll(PDO::FETCH_ASSOC);
+    return $entries;
+}
+
+function get_girls_all() {
+    $entries = array();
+    require( INC . "database.php");
+    try {
+        $results = $db->query("SELECT      
+            assembly,       
+            name,
+            email
+            FROM assembly_girls");
+    } catch(Exception $e) {
+        echo "Data could not be retrieved";
+    }
+    $entries = $results->fetchAll(PDO::FETCH_ASSOC);
+    return $entries;
+}
+function get_girls_assembly($assembly) {
+    $entries = array();
+    require( INC . "database.php");
+    try {
+        $results = $db->prepare("SELECT    
+            assembly,       
+            name,
+            email
+            FROM assembly_girls WHERE assembly=?");
+        $results->bindParam(1, $assembly, PDO::PARAM_INT);
+        $results->execute();
     } catch(Exception $e) {
         echo "Data could not be retrieved";
     }

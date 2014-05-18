@@ -3,16 +3,13 @@
 
     require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
     require( INC . "database.php");
-
+    require_once(TABLE . "entries.php");
     $pageType   = "import";
     $table_url = BASE_URL . "tables/table_data_admin.php";
     $bootstrap_inc = "true";
  
-    include(INC . 'header.php');
-    include(INC . 'sidebar.php');   
-
     // Check to see whether the user is logged in or not 
-    if(empty($_SESSION['user'])) 
+   if(empty($_SESSION['user']))// || !is_administrator( $_SESSION['user']['email']))
     {  
         $_SESSION['alert_message'] = "Adminitrators, please login to access this page.";
         header("Location:" . BASE_URL . "Login"); 
@@ -21,8 +18,11 @@
         die("Redirecting to Login"); 
     } 
 
-    require_once(TABLE . "entries.php");
+
     $entries = get_administrators_all();
+    include(INC . 'header.php');
+    include(INC . 'sidebar.php');   
+
 ?> 
 
 <div id="mainContent">

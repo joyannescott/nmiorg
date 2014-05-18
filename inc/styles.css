@@ -976,6 +976,7 @@ display: block;
 }
 #HeaderImage {
 	display: block;
+	position: relative;
 	width: 960px;
 	height: 294px;
 	background:url(/images/index_01_phone.jpg) no-repeat top left;
@@ -1036,6 +1037,18 @@ display: none;
 	background-clip: padding-box;
 	width: 960;
 	height: 1200;
+}
+#FrontLogin{
+	display: block;
+	height: 25px;
+	
+	position: relative;
+	top: -450px;
+	right: 0px;
+	z-index: 1000;
+}
+#FrontLogin a{
+ 	color: #000;
 }
 .GAReg {
      top: 650px;

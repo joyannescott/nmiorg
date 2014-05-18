@@ -10,25 +10,52 @@
           <th rowspan="2">Date<br>Inititiated</th>
           <th rowspan="2">Office<br>In<br>January<br>2014</th>
           <th rowspan="2">Grand<br>Office<br>or<br>Page</th>
-          <th colspan="6">Ritual Competition Category<br>(Specify One, plus the "Master of the Bow")</th>
+          <th colspan="3">Specify One Category<br> Plus the "Master of the Bow"</th>
           <th colspan="2">Arrival at Grand<br>Assembly</th>
       </tr>
       <tr>
-        <th>Master<br>of the<br>Bow</th>
-        <th>Supreme</th>
-        <th>Grand</th>
-        <th>Floor</th>
-        <th>Bow</th>
-        <th>Begin</th>
-        <th>Day</th>
+        <th>Bow <br>Master</th>
+        <th>Category</th>
+        <th>Specify <br> for Bow</th>
+         <th>Day</th>
         <th>Time</th>
       </tr></center>
 
-      <?php foreach($entries as $entry) {  ?>
-      <tr>
-        <?php foreach($cells as $cell) {  ?>
-          <td contenteditable="true"><?php echo $entry[strtolower($cell)]; ?></td>
-        <?php } ?>
+      <?php foreach($entries as $entry) { ?>
+        <tr>
+          <?php if($assembly == 0) {?>
+            <td contenteditable="true"><?php echo $entry['assembly']; ?></td>
+          <?php } ?>
+          <td contenteditable="true"><?php echo $entry['name']; ?></td>
+          <td contenteditable="true"><?php echo $entry['age']; ?></td>
+          <td contenteditable="true"><?php echo $entry['inititated']; ?></td>
+          <td contenteditable="true"><?php echo $entry['office']; ?></td>
+          <td contenteditable="true"><?php echo $entry['go']; ?></td>
+          <td contenteditable="true">
+            <div class="checkbox">
+            <label>
+              <input type="checkbox" value="" <?php if($entry['master']) echo "checked"; ?> >
+            </label>
+          </div>
+          </td>
+          <td contenteditable="true">   
+            <select id="type" name="type" requried>
+                <option  value = "Supreme" 
+                    <?php if($entry['category'] == "Supreme") echo "selected"; ?> >Supreme</option>
+                <option  value = "Grand" 
+                    <?php if($entry['category'] == "Grand") echo "selected"; ?> >Grand</option>
+                <option  value = "Floor" 
+                    <?php if($entry['category'] == "Floor") echo "selected"; ?> >Floor</option>
+                <option  value = "Bow" 
+                    <?php if($entry['category'] == "Bow") echo "selected"; ?> >Bow</option>
+                <option  value = "Beginning" 
+                    <?php if($entry['category'] == "Beginning") echo "selected"; ?> >Beginning</option>
+            </select> 
+          </td>
+          <td contenteditable="true"><?php echo $entry['bow']; ?></td>
+          <td contenteditable="true">day</td>
+          <td contenteditable="true">time</td>
+
        <td>
           <span class="table-remove glyphicon glyphicon-remove"></span>
         </td>
@@ -39,19 +66,30 @@
           <?php if($assembly == 0) {?>
             <td contenteditable="true">100</td>
           <?php } ?>
-          <td contenteditable="true">Editible Example</td>
-          <td contenteditable="true">12</td>
-          <td contenteditable="true">1-20-2001</td>
-          <td contenteditable="true">Hope</td>
-          <td contenteditable="true">Grand Charity</td>
-          <td contenteditable="true">X</td>
           <td contenteditable="true"></td>
           <td contenteditable="true"></td>
           <td contenteditable="true"></td>
-          <td contenteditable="true">Religion</td>
           <td contenteditable="true"></td>
-          <td contenteditable="true">Tues</td>
-          <td contenteditable="true">12:00</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true">
+            <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+            </label>
+          </div>
+          </td>
+          <td contenteditable="true">   
+            <select id="type" name="type" requried>
+                <option value = "Supreme" selected>Supreme</option>
+                <option value = "Grand">Grand</option>
+                <option value = "Floor">Floor</option>
+                <option value = "Bow">Bow</option>
+                <option value = "Beginning">Beginning</option>
+            </select> 
+          </td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
         <td>
           <span class="table-remove glyphicon glyphicon-remove"></span>
         </td>
