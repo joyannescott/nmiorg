@@ -25,7 +25,7 @@
       </tr>
       <?php } ?>
       <!-- This is our clonable table line -->
-      <tr <?php if(count($entries) != 0) echo 'class="hide"' ?>>
+      <tr class="hide">
        <?php for($i = 0; $i < count($headers); $i++) {  ?>        
           <td contenteditable="true">Edit</td>
        <?php } ?>
@@ -37,6 +37,21 @@
           <span class="table-down glyphicon glyphicon-arrow-down"></span>
         </td>
       </tr>
+
+       <?php if(count($entries) == 0) {?>
+        <tr>
+         <?php for($i = 0; $i < count($headers); $i++) {  ?>        
+            <td contenteditable="true">Edit</td>
+         <?php } ?>
+           <td>
+            <span class="table-remove glyphicon glyphicon-remove"></span>
+          </td>
+          <td>
+            <span class="table-up glyphicon glyphicon-arrow-up"></span>
+            <span class="table-down glyphicon glyphicon-arrow-down"></span>
+          </td>
+        </tr>
+      <?php } ?>
     </table>
   </div>
   <div class="save-button">

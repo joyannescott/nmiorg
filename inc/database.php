@@ -85,11 +85,11 @@
 
     $current_url = str_replace("index.php", "", $_SERVER['PHP_SELF']);
     
-    if( ($current_url != "/login/login.php")    &&
-        ($current_url != "/login/logout.php")   &&
-        ($current_url != "/login/register.php") &&
-        ($current_url != "/login/reset_password.php") &&
-        ($current_url != "/login/edit_account.php")) {
+    if( ($current_url != "/Login/")    &&
+        ($current_url != "/Login/logout.php")   &&
+        ($current_url != "/Login/Register/") &&
+        ($current_url != "/Login/Reset/") &&
+        ($current_url != "/Login/Account/")) {
         $_SESSION['last_url'] = $current_url;
     }
 

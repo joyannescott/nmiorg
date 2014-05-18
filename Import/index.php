@@ -7,7 +7,7 @@
     if(empty($_SESSION['user']) || !is_administrator($_SESSION['user']['email'])) 
     {  
         $_SESSION['alert_message'] = "Adminitrators, please login to access this page.";
-        header("Location: ". BASE_URL . "login/login.php"); 
+        header("Location: ". BASE_URL . "Login"); 
          
         // This die statement is absolutely critical.   
         die("Redirecting to login"); 

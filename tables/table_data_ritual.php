@@ -26,7 +26,8 @@
       $db->query("TRUNCATE TABLE ritual");
       echo("truncated table");
       foreach($data as $row){
-          $db->query("INSERT INTO ritual 
+        try {
+          $results = $db->prepare("INSERT INTO ritual 
               ( name,
                 age,
                 assembly,
@@ -41,22 +42,25 @@
                 begining,
                 day,
                 time
-                 ) VALUES (
-                '" . $row->name  . "',
-                '" . intval($row->age)  . "',
-                '" . intval($row->assembly)  . "',
-                '" . $row->initiated  . "',
-                '" . $row->office  . "',
-                '" . $row->go  . "',
-                '" . $row->master  . "',
-                '" . $row->supreme  . "',
-                '" . $row->grand  . "',
-                '" . $row->floor  . "',
-                '" . $row->bow  . "',
-                '" . $row->beginning  . "',
-                '" . $row->day  . "',
-                '" . $row->time . "' 
-              )");  
+                 ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                $results->bindParam(1,  $row->name , PDO::PARAM_STR);
+                $results->bindParam(2,  intval($row->age), PDO::PARAM_INT);
+                $results->bindParam(3,  intval($row->assembly) , PDO::PARAM_INT);
+                $results->bindParam(4,  $row->initiated , PDO::PARAM_STR);
+                $results->bindParam(5,  $row->office , PDO::PARAM_STR);
+                $results->bindParam(6,  $row->go , PDO::PARAM_STR);
+                $results->bindParam(7,  $row->master , PDO::PARAM_STR);
+                $results->bindParam(8,  $row->supreme , PDO::PARAM_STR);
+                $results->bindParam(9,  $row->grand , PDO::PARAM_STR);
+                $results->bindParam(10, $row->floor , PDO::PARAM_STR);
+                $results->bindParam(11, $row->bow  , PDO::PARAM_STR);
+                $results->bindParam(12, $row->beginning , PDO::PARAM_STR);
+                $results->bindParam(13, $row->day , PDO::PARAM_STR);
+                $results->bindParam(14, $row->time , PDO::PARAM_STR);
+                $results->execute();
+        } catch(Exception $e) {
+              echo "Data could not be updated";
+        }
       }
     }
 ?>

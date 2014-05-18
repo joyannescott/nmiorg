@@ -1,4 +1,6 @@
 //Validate the Registration Form before allowing for submit
+var $fullname = $("#fullname");
+var $username = $("#username");
 var $email = $("#email");
 var $password = $("#password");
 var $confirmPassword = $("#confirm_password");
@@ -9,10 +11,18 @@ $("form span").hide();
 function isPasswordEmpty() {
       return $password.val().length == 0
 }
+function isFulllNameEmpty() {
+      return $fullname.val().length == 0
+}
+function isUsernameEmpty() {
+      return $username.val().length == 0
+}
+function isEmailEmpty() {
+      return $email.val().length == 0
+}
 
 function isPasswordValid() {
     if(edit && isPasswordEmpty()) {
-      console.log("editing empty pass");
       return true;
     }
     return $password.val().length > 6;
@@ -23,7 +33,12 @@ function arePasswordsMatching() {
 }
 
 function canSubmit() {
-  return isPasswordValid() && arePasswordsMatching();
+  console.log(isPasswordValid()  + arePasswordsMatching() +
+         !isUsernameEmpty()+ !isFulllNameEmpty()    +         !isEmailEmpty());
+
+  return isPasswordValid()  && arePasswordsMatching() &&
+         !isUsernameEmpty() && !isFulllNameEmpty()    &&
+         !isEmailEmpty();
 }
 
 function passwordEvent(){
@@ -49,8 +64,6 @@ function confirmPasswordEvent() {
 }
 
 function enableSubmitEvent() {
-  sub = !canSubmit();
-  console.log("enable button? " + sub);
   $("#submit").prop("disabled", !canSubmit());
 }
 
@@ -64,6 +77,9 @@ $password.blur(function(){ if(isPasswordEmpty()) $password.next().hide();});
 
 $email.focus(function(){$email.next().show()});
 $email.blur(function(){$email.next().hide()});
+$email.keyup(enableSubmitEvent).blur(enableSubmitEvent);
+$username.keyup(enableSubmitEvent).blur(enableSubmitEvent);
+$fullname.keyup(enableSubmitEvent).blur(enableSubmitEvent);
 
 enableSubmitEvent();
 

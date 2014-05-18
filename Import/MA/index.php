@@ -7,7 +7,7 @@
     if(empty($_SESSION['user']) || !is_administrator($_SESSION['user']['email'])) 
     {  
         $_SESSION['alert_message'] = "Adminitrators, please login to access this page.";
-        header("Location: ". BASE_URL . "login/login.php"); 
+        header("Location: ". BASE_URL . "Login"); 
          
         // This die statement is absolutely critical.   
         die("Redirecting to login"); 
@@ -17,7 +17,7 @@
     $bootstrap_inc = "true";
 
     $table_url = BASE_URL . "tables/table_data_ma.php";
-    $headers = array("Name", "Assembly", "Email");
+    $headers = array("Name",  "Assembly", "Num", "Location", "Email");
     $entries = get_mother_advisors_all();
 
     include(INC . 'header.php');

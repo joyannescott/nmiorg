@@ -4,7 +4,7 @@ define("ROOT",$_SERVER["DOCUMENT_ROOT"] );
 define("ROOT_PATH", ROOT . "/");
 
 define("INC", ROOT_PATH . "inc/");
-define("LOGIN", ROOT_PATH . "login/");
+define("LOGIN", ROOT_PATH . "Login/");
 define("TABLE", ROOT_PATH . "tables/");
 define("IMAGES", ROOT_PATH ."images/");
 define("GRAPHICS", IMAGES . "graphics/");

@@ -15,10 +15,10 @@
     if(empty($_SESSION['user'])) 
     {  
         $_SESSION['alert_message'] = "Adminitrators, please login to access this page.";
-        header("Location:" . BASE_URL . "login/login.php"); 
+        header("Location:" . BASE_URL . "Login"); 
          
         // This die statement is absolutely critical.   
-        die("Redirecting to login.php"); 
+        die("Redirecting to Login"); 
     } 
 
     require_once(TABLE . "entries.php");

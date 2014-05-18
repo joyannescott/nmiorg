@@ -5,7 +5,7 @@ function get_mother_advisors_all() {
     $entries = array();
     require( INC . "database.php");
     try {
-        $results = $db->query("SELECT name, assembly, email FROM mother_advisors");
+        $results = $db->query("SELECT name, assembly, num, location, email FROM mother_advisors");
     } catch(Exception $e) {
         echo "Data could not be retrieved";
     }
@@ -52,7 +52,7 @@ function is_mother_advisor($email_id) {
 
     $email_lower = strtolower($email_id);
     try {
-        $results = $db->prepare("SELECT email, assembly FROM mother_advisors WHERE LOWER(email)=?");   
+        $results = $db->prepare("SELECT email, assembly, num FROM mother_advisors WHERE LOWER(email)=?");   
         $results->bindParam(1, $email_lower, PDO::PARAM_STR);
         $results->execute();
     } catch(Exception $e) {
@@ -62,7 +62,7 @@ function is_mother_advisor($email_id) {
     if($entry["email"] == "") {
       $exists = 0;
     }else{
-      $exists = $entry["assembly"];
+      $exists = $entry;
     }
     return $exists;
 

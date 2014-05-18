@@ -13,11 +13,15 @@
       $db->query("TRUNCATE TABLE administrators");
 
       foreach($data as $row){
-          $db->query("INSERT INTO administrators 
-              (name, email) VALUES (
-                '" . $row->name  . "',
-                '" . $row->email . "' 
-              )");  
+        try {
+          $results = $db->prepare("INSERT INTO administrators 
+                (name, email) VALUES (?,?)");  
+                $results->bindParam(1, $row->name, PDO::PARAM_STR);
+                $results->bindParam(2, $row->email, PDO::PARAM_STR);
+                $results->execute();
+        } catch(Exception $e) {
+              echo "Data could not be updated";
+        }
       }
     }
 ?>
