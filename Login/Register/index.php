@@ -201,14 +201,19 @@
                 $email_body = "";
                 $email_body = $email_body . "Hello, " . $_POST['fullname'] . "!<br><br>";
 
-                $email_body = $email_body . "Access to parts of this site are limited based on ";
+                $email_body = $email_body . "Thank you for your interest in New Mexico Rainbow. <br><br>"
+                $email_body = $email_body . "The majority of our site is available to the public."
+                $email_body = $email_body . "Access to certain parts are limited based on ";
                 $email_body = $email_body . "approval from the Mother Advisors, and the Supreme Inspector.<br> ";
                 $email_body = $email_body . "To verify your access, go to: http://www.nmiorg.org/Login/Account  <br>";
-                $email_body = $email_body . "Your assembly or role will be listed under your username. <br>";
-                $email_body = $email_body . "We are still in the process of implementing this feature, so access lists are still being added.<br> <br>";
+                $email_body = $email_body . "Your assembly and/or role will be listed under your username. <br>";
+                $email_body = $email_body . "We are still in the process of implementing this feature, so access lists are still being updated.<br>";
+
                 $email_body = $email_body . "Please be patient with us. <br><br>";
-                $email_body = $email_body . "If you have any questions, feel free to contact us at joyfitz@mac.com ";
-                $email_body = $email_body . "<br><br>Thank you for your interest in New Mexico Raibow, <br> Joy Scott and Keilyn Wright, Webmasters NM IORG";
+
+                $email_body = $email_body . "If you have any questions, feel free to contact us at joyfitz@mac.com <b>";
+                $email_body = $email_body . "Or at any of the addresses at: http://www.nmiorg/Contact <b>";
+                $email_body = $email_body . "<br><br>Thank you for your interest in New Mexico Rainbow, <br> Joy Scott and Keilyn Wright, Webmasters NM IORG";
 
                 $mail->From  = "joyfitz@mac.com";
                 $mail->FromName  = "New Mexico Rainbow";
@@ -223,6 +228,25 @@
                 } else {
                   $alert_message = "There was a problem sending the email: " . $mail->ErrorInfo;
                 }
+ 
+                $email_body = "";
+                $email_body = $email_body . "<br> A new login was registered for: " . $_POST['fullname'] . "<br><br>";
+
+                $mail->From  = "joyfitz@mac.com";
+                $mail->FromName  = "New Mexico Rainbow";
+                $address = "joyfitz@mac.com" ;
+                $name = "Joy Scott";
+                $mail->AddAddress($address, $name);
+                $mail->Subject    = "New login was registered!!!";
+                $mail->MsgHTML($email_body);
+
+                if($mail->Send()) {
+
+                } else {
+                  $alert_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+                }
+
+
             } 
 
             // This redirects the user back to the login page after they register 

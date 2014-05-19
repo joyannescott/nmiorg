@@ -122,8 +122,8 @@
       <?php if($pageType == "import"){ ?>
          <p>&nbsp;</p>
               <li ><p><a id="sideBarItem_bs" href="/Import">Import Data</a></p></li>
-              <li ><p><a id="sideBarItem_bs" href="/Import/MA">Mother Advisors</a></p></li>
               <li ><p><a id="sideBarItem_bs"   href="/Import/Admin">Administrators</a></p></li>
+              <li ><p><a id="sideBarItem_bs" href="/Import/MA">Mother Advisors</a></p></li>
               <li><p><a id="sideBarItem_bs" href='/Import/GA'>Grand Assembly</a></p></li>
               <li ><p><a id="sideBarItem_bs"   href="/Login/Users">Users</a></p></li>
       <?php } ?>
