@@ -4,7 +4,7 @@
 <!DOCTYPE php PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN" "http://www.w3.org/TR/xphp1/DTD/xhtml1-transitional.dtd">
 <php xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
 
 <?php if($pageType == "Home"){?>
   <title>New Mexico: International Order of the Rainbow for Girls</title>

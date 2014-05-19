@@ -193,6 +193,38 @@
                 die("Failed to run query. "); 
             } 
              
+            if(UNAME == nmiorg){
+                //Send Email
+                require_once(ROOT_PATH . "inc/phpmailer/class.phpmailer.php");
+                $mail = new PHPMailer();
+
+                $email_body = "";
+                $email_body = $email_body . "Hello, " . $_POST['fullname'] . "!<br><br>";
+
+                $email_body = $email_body . "Access to parts of this site are limited based on ";
+                $email_body = $email_body . "approval from the Mother Advisors, and the Supreme Inspector.<br> ";
+                $email_body = $email_body . "To verify your access, go to: http://www.nmiorg.org/Login/Account  <br>";
+                $email_body = $email_body . "Your assembly or role will be listed under your username. <br>";
+                $email_body = $email_body . "We are still in the process of implementing this feature, so access lists are still being added.<br> <br>";
+                $email_body = $email_body . "Please be patient with us. <br><br>";
+                $email_body = $email_body . "If you have any questions, feel free to contact us at joyfitz@mac.com ";
+                $email_body = $email_body . "<br><br>Thank you for your interest in New Mexico Raibow, <br> Joy Scott and Keilyn Wright, Webmasters NM IORG";
+
+                $mail->From  = "joyfitz@mac.com";
+                $mail->FromName  = "New Mexico Rainbow";
+                $address = $_POST['email'] ;
+                $name = $_POST['fullname'];
+                $mail->AddAddress($address, $name);
+                $mail->Subject    = "Welcome to the Grand Assembly of New Mexico!!!";
+                $mail->MsgHTML($email_body); 
+
+                if($mail->Send()) {
+
+                } else {
+                  $alert_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+                }
+            } 
+
             // This redirects the user back to the login page after they register 
             header("Location: " . BASE_URL . "Login"); 
              
@@ -241,7 +273,7 @@
         <p>
             <label for="password">Password</label>
             <input id="password" name="password" type="password" value="">
-            <span>Enter a password longer than 6 characters</span>
+            <span>Enter a password at least 6 characters</span>
         </p>
         <p>
             <label for="confirm_password">Confirm Password</label>

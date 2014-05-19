@@ -1,7 +1,7 @@
 
   <div id="table" class="table-editable">
     <span class="table-add glyphicon glyphicon-plus"></span>
-    <table class="table">
+    <table class="table table-striped">
       <tr>
        <?php foreach($headers as $header) {  ?>
           <th><?php echo $header ?></th>

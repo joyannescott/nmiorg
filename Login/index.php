@@ -118,7 +118,7 @@
      
 ?> 
 <div id="mainContent">
-    <?php include("../login/login_header.php"); ?>
+    <?php include(LOGIN . "login_header.php"); ?>
 
     <?php if($login_failed) { ?>
         <div class="alert alert-danger">

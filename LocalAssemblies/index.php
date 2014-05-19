@@ -3,7 +3,7 @@
    require_once( INC . "database.php");
 
    $pageType = "Assemblies";
-
+   $bootstrap_inc = "true";
    include( INC . 'header.php');
    include( INC . 'sidebar.php');
   ?>

@@ -52,8 +52,8 @@ $BTN.click(function () {
   });
   
   // Output the result
-  $EXPORT.text(JSON.stringify(data));
+  //$EXPORT.text(JSON.stringify(data));
   //console.log("posting data");
-  $.post(table_url, {json: JSON.stringify(data)}, function(data){ alert(data); });
-  //$.post(table_url, {json: JSON.stringify(data)});
+  //$.post(table_url, {json: JSON.stringify(data)}, function(data){ alert(data); });
+  $.post(table_url, {json: JSON.stringify(data)});
 });

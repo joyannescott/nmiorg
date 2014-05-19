@@ -1,12 +1,12 @@
 <?php 
-    $headers = array("Name", "Email");
-
     require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
     require( INC . "database.php");
     require_once(TABLE . "entries.php");
+
     $pageType   = "import";
-    $table_url = BASE_URL . "tables/table_data_admin.php";
+    $table_url = BASE_URL . "tables/table_data_ga.php";
     $bootstrap_inc = "true";
+    $headers = array("Name", "Email");
  
     // Check to see whether the user is logged in or not 
    if(empty($_SESSION['user']) || !is_administrator( $_SESSION['user']['email']))
@@ -19,7 +19,7 @@
     } 
 
 
-    $entries = get_administrators_all();
+    $entries = get_ga_members_all();
     include(INC . 'header.php');
     include(INC . 'sidebar.php');   
 
@@ -27,7 +27,7 @@
 
 <div id="mainContent">
     <?php include(LOGIN . 'login_header.php'); ?>
-    <h1> Administrator Table </h1>
+    <h1> Grand Assembly Members Table </h1>
     <?php include(TABLE . 'table_partial.php'); ?>
     <p>&nbsp;</p>
 </div>

@@ -22,27 +22,16 @@
     $bootstrap_inc = "true";
     $no_sidebar    = true;  
 
-    $cells = array(
-            "assembly",
-            "name",
-            "age",
-            "initiated",
-            "office",
-            "go",
-            "master",
-            "supreme",
-            "grand",
-            "floor",
-            "bow",
-            "begining",
-            "day",
-            "time");
+    $entries = array();
+    $assemblies = is_mother_advisor($_SESSION['user']['email']);
 
-    $assembly = is_mother_advisor($_SESSION['user']['email']);
-
-    if($assembly) {
-        $entries = get_ritual_registration_assembly($assembly['num']);
-        $shift = array_shift($cells);
+    if($assemblies) {
+        foreach($assemblies as $assembly) {
+            $assembly_entries = get_ritual_registration_assembly($assembly['num']);
+            foreach($assembly_entries as $entry){
+                array_push($entries, $entry);
+            }
+        }
     } else {
          $entries = get_ritual_registration_all();
     }
@@ -56,8 +45,12 @@
 
     <?php include(LOGIN . 'login_header.php'); ?>
 
-    <h1> Ritual Registration -
-        <?php if($assembly) {echo $assembly['assembly'] . " Assembly #" . $assembly['num'];}?>
+    <h1> Ritual Registration 
+        <?php if($assemblies) {
+            foreach($assemblies as $assembly) {
+                echo "<br>" . $assembly['assembly'] . " Assembly #" . $assembly['num'];
+            }
+        }?>
     </h1>
     <?php include(TABLE . 'table_partial_ritual.php'); ?>
 </div>

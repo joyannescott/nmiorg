@@ -15,7 +15,6 @@
         // Make sure the user entered a valid E-Mail address 
         if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
         { 
-            echo "invalid email";
             $alert_message .= "Invalid E-Mail Address. "; 
         } 
          
@@ -28,7 +27,7 @@
                 // Define our SQL query 
                 $query = " 
                     SELECT 
-                    1 
+                    salt, username, fullname
                     FROM users 
                     WHERE 
                         email = :email 
@@ -55,25 +54,26 @@
                 // Retrieve results (if any) 
                 $row = $stmt->fetch(); 
                 if($row) 
-                { 
-                    $token = md5($_POST['email'].time);
-
+                {   
+                    $token = md5($_POST['email'].time());
+ 
                     if(UNAME == nmiorg){
                         //Send Email
                         require_once(ROOT_PATH . "inc/phpmailer/class.phpmailer.php");
                         $mail = new PHPMailer();
 
                         $email_body = "";
-                        $email_body = $email_body . "Hello, " . $row["fullname"] . "<br>";
+                        $email_body = $email_body . "Hello, " . $row["fullname"] . "!<br><br>";
 
-                        $email_body = $email_body . "To reset your password, follow the following link: ";
-                        $email_body = $email_body . "http://www.nmiorg.org/Login/Account?t=" . $token;
-                        $email_body = $email_body . "<br> Thanks, The Grand Assembly of New Mexico";
+                        $email_body = $email_body . "To change your password, please follow the following link: <br>";
+                        $email_body = $email_body . "http://www.nmiorg.org/Login/Account?u=" . $row['username'] . "&t=" . $token;
+                        $email_body = $email_body . "<br><br> Thanks, The Grand Assembly of New Mexico";
 
                         $mail->From  = "joyfitz@mac.com";
                         $mail->FromName  = "New Mexico Rainbow";
                         $address = $email;
-                        $mail->AddAddress($address, "Joy Scott");
+                        $name = $row["fullname"];
+                        $mail->AddAddress($address, $name);
                         $mail->Subject    = "Password Reset";
                         $mail->MsgHTML($email_body); 
 
@@ -82,7 +82,14 @@
                         } else {
                           $alert_message = "There was a problem sending the email: " . $mail->ErrorInfo;
                         }
-                    }
+                    } 
+             
+                    $token_hash = hash('sha256', $token . $row['salt']); 
+             
+                    for($round = 0; $round < 65536; $round++) 
+                    { 
+                        $token_hash = hash('sha256', $token_hash . $row['salt']); 
+                    } 
                     // Define our SQL query                      
                      $query = " 
                         UPDATE users 
@@ -94,7 +101,7 @@
                     
                     // Define our query parameter values 
                     $query_params = array( 
-                        ':token' => $token, 
+                        ':token' => $token_hash, 
                         ':email' => $_POST['email'] 
                     ); 
                      

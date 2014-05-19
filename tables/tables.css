@@ -4,8 +4,14 @@
 .ritual table th{
   background: #fff;
 }
+.ritual table td{
+   text-align: center !important;
+  vertical-align: middle !important;
+}
+
 .table-editable {
-  position: relative; }
+  position: relative;
+    background: #fff; }
   .table-editable .glyphicon {
     font-size: 20px; }
 
@@ -43,8 +49,8 @@
   padding: 8px 30px;
 }
 
-.table-centered th, td{
-  text-align: center !important;
+.table-centered th{
+   text-align: center !important;
   vertical-align: middle !important;
 }
 

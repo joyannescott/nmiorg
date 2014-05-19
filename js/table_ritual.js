@@ -31,7 +31,6 @@ $BTN.click(function () {
   var headers = [
             "assembly",
             "name",
-            "age",
             "initiated",
             "office",
             "go",
@@ -53,29 +52,20 @@ $BTN.click(function () {
   $rows.each(function () {
     var $td = $(this).find('td');
     var h = {};
-    var offset = 0;
 
     if($td.eq(0).text() != ""){
 
       // Use the headers from earlier to name our hash keys
       headers.forEach(function (header, i) {
         switch(header) {
-          case "assembly":
-              if(assembly != 0) {
-                h["assembly"] = assembly;
-                offset = 1;
-              }else{
-                h[header] = $td.eq(i + offset).text();   
-              }
-              break;
           case "master":
-              h[header] = $td.eq(i+offset).find('input:checked').is(':checked');
+              h[header] = $td.eq(i).find('input:checked').is(':checked');
               break;
           case "category":
-              h[header] = $td.eq(i+offset).find('option:selected').text();
+              h[header] = $td.eq(i).find('option:selected').text();
              break;
           default:
-              h[header] = $td.eq(i + offset).text(); 
+              h[header] = $td.eq(i).text(); 
               break;
         }  
       });     
@@ -84,8 +74,8 @@ $BTN.click(function () {
   });
   
   // Output the result
-  $EXPORT.text(JSON.stringify(data));
+  //$EXPORT.text(JSON.stringify(data));
   //console.log("posting data");
-  $.post(table_url, {json: JSON.stringify(data)}, function(data){ alert(data); });
-  //$.post(table_url, {json: JSON.stringify(data)});
+  //$.post(table_url, {json: JSON.stringify(data)}, function(data){ alert(data); });
+  $.post(table_url, {json: JSON.stringify(data)});
 });

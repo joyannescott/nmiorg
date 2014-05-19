@@ -1,7 +1,7 @@
- <?php 
+<?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
-   require( INC . "database.php");
-   require(TABLE . "entries.php");
+    require( INC . "database.php");
+    require_once(TABLE . "entries.php");
    
     // Check to see whether the user is logged in or not 
     if(empty($_SESSION['user']) || !is_administrator($_SESSION['user']['email'])) 
@@ -19,8 +19,6 @@
    include( INC . 'sidebar.php');   
 
  if($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    require( INC . "database.php");
 	
 	$type = $_POST["type"];
 

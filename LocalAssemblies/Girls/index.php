@@ -20,25 +20,36 @@
         // This die statement is absolutely critical.   
         die("Redirecting to Login"); 
     } 
-   include(INC . 'header.php');
-    include(INC . 'sidebar.php');   
 
 
-    $assembly = is_mother_advisor($_SESSION['user']['email']);
+    $entries = array();
+    $assemblies = is_mother_advisor($_SESSION['user']['email']);
 
-    if($assembly) {
-        $entries = get_girls_assembly($assembly['num']);
+    if($assemblies) {
+        foreach($assemblies as $assembly) {
+            $assembly_entries = get_girls_assembly($assembly['num']);
+            foreach($assembly_entries as $entry){
+                array_push($entries, $entry);
+            }
+        }
     } else {
          $entries = get_girls_all();
     }
+   include(INC . 'header.php');
+    include(INC . 'sidebar.php');   
 
 ?> 
 
 <div id="mainContent">
-    <?php include(LOGIN . 'login_header.php'); ?>
+    <?php include(LOGIN . 'login_header.php');?>
+ 
      <h1> 
-        <?php if($assembly) {echo $assembly['assembly'] . " Assembly #" . $assembly['num'];}?>
-        - Email Access
+         <?php if($assemblies) {
+            foreach($assemblies as $assembly) {
+                echo  $assembly['assembly'] . " Assembly #" . $assembly['num'] . "<br>" ;
+            }
+        }?>
+       Email Access
     </h1>
     <?php include(TABLE . 'table_partial.php'); ?>
     <p>&nbsp;</p>

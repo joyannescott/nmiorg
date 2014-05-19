@@ -25,7 +25,7 @@ function isPasswordValid() {
     if(edit && isPasswordEmpty()) {
       return true;
     }
-    return $password.val().length > 6;
+    return $password.val().length > 5;
 }
 
 function arePasswordsMatching() {

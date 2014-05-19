@@ -2,11 +2,8 @@
     <span class="ritual-add glyphicon glyphicon-plus"></span>
     <table class="table table-centered table-bordered table-hover"><center>
       <tr>
-          <?php if($assembly == 0) {?>
-            <th rowspan="2">A</th>
-          <?php } ?>  
+          <th rowspan="2">A</th>
           <th rowspan="2">Name</th>
-          <th rowspan="2">Age</th>
           <th rowspan="2">Date<br>Inititiated</th>
           <th rowspan="2">Office<br>In<br>January<br>2014</th>
           <th rowspan="2">Grand<br>Office<br>or<br>Page</th>
@@ -23,12 +20,10 @@
 
       <?php foreach($entries as $entry) { ?>
         <tr>
-          <?php if($assembly == 0) {?>
-            <td contenteditable="true"><?php echo $entry['assembly']; ?></td>
-          <?php } ?>
+
+          <td contenteditable="true"><?php echo $entry['assembly']; ?></td>
           <td contenteditable="true"><?php echo $entry['name']; ?></td>
-          <td contenteditable="true"><?php echo $entry['age']; ?></td>
-          <td contenteditable="true"><?php echo $entry['inititated']; ?></td>
+          <td contenteditable="true"><?php echo $entry['initiated']; ?></td>
           <td contenteditable="true"><?php echo $entry['office']; ?></td>
           <td contenteditable="true"><?php echo $entry['go']; ?></td>
           <td contenteditable="true">
@@ -40,6 +35,8 @@
           </td>
           <td contenteditable="true">   
             <select id="type" name="type" requried>
+                <option  value = "None" 
+                    <?php if($entry['category'] == "None") echo "None"; ?> >None</option>
                 <option  value = "Supreme" 
                     <?php if($entry['category'] == "Supreme") echo "selected"; ?> >Supreme</option>
                 <option  value = "Grand" 
@@ -53,8 +50,8 @@
             </select> 
           </td>
           <td contenteditable="true"><?php echo $entry['bow']; ?></td>
-          <td contenteditable="true">day</td>
-          <td contenteditable="true">time</td>
+          <td contenteditable="true"><?php echo $entry['day']; ?></td>
+          <td contenteditable="true"><?php echo $entry['time']; ?></td>
 
        <td>
           <span class="table-remove glyphicon glyphicon-remove"></span>
@@ -62,11 +59,8 @@
       </tr>
       <?php } ?>
       <!-- This is our clonable table line -->
-      <tr <?php if(count($entries) != 0) echo 'class="hide"' ?>>
-          <?php if($assembly == 0) {?>
+      <tr class="hide">
             <td contenteditable="true">100</td>
-          <?php } ?>
-          <td contenteditable="true"></td>
           <td contenteditable="true"></td>
           <td contenteditable="true"></td>
           <td contenteditable="true"></td>
@@ -80,7 +74,8 @@
           </td>
           <td contenteditable="true">   
             <select id="type" name="type" requried>
-                <option value = "Supreme" selected>Supreme</option>
+                <option value = "None" selected>None</option>
+                <option value = "Supreme" >Supreme</option>
                 <option value = "Grand">Grand</option>
                 <option value = "Floor">Floor</option>
                 <option value = "Bow">Bow</option>

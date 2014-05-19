@@ -111,11 +111,20 @@
               <li ><p><a id="multiline"   href="/Foundation/Scholarship">Scholarship Application</a></p></li>
               <li ><p><a id="sideBarItem" href="/Foundation/Board">Foundation Board</a></p></li>
       <?php } ?>
+      <?php if($pageType == "Assemblies"){ ?>
+        <?php  if(!empty($_SESSION['user']) && (is_administrator ($_SESSION['user']['email']) ||
+                                                is_mother_advisor($_SESSION['user']['email']))) { ?>
+         <p>&nbsp;</p>
+            <li><p><a id="sideBarItem_bs" href='/LocalAssemblies/Girls'>Assembly Reg</a></p></li>
+            <li><p><a id="sideBarItem_bs" href='/GrandAssembly/Ritual'>Ritual Reg</a></p></li>
+        <?php } ?>
+      <?php } ?>
       <?php if($pageType == "import"){ ?>
          <p>&nbsp;</p>
               <li ><p><a id="sideBarItem_bs" href="/Import">Import Data</a></p></li>
               <li ><p><a id="sideBarItem_bs" href="/Import/MA">Mother Advisors</a></p></li>
               <li ><p><a id="sideBarItem_bs"   href="/Import/Admin">Administrators</a></p></li>
+              <li><p><a id="sideBarItem_bs" href='/Import/GA'>Grand Assembly</a></p></li>
               <li ><p><a id="sideBarItem_bs"   href="/Login/Users">Users</a></p></li>
       <?php } ?>
       <?php } ?>
