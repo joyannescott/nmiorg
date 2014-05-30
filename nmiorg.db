@@ -1,0 +1,682 @@
+-- phpMyAdmin SQL Dump
+-- version 3.3.10.4
+-- http://www.phpmyadmin.net
+--
+-- Host: mysql.thescotts.co
+-- Generation Time: May 30, 2014 at 01:25 PM
+-- Server version: 5.1.56
+-- PHP Version: 5.3.27
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `nm_grandassembly_db`
+--
+CREATE DATABASE `nm_grandassembly_db` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `nm_grandassembly_db`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `administrators`
+--
+
+CREATE TABLE IF NOT EXISTS `administrators` (
+  `name` varchar(50) NOT NULL,
+  `email` varchar(60) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `administrators`
+--
+
+REPLACE INTO `administrators` (`name`, `email`) VALUES
+('Joy Scott', 'joyfitz@mac.com'),
+('Phoebe Wright', 'epwright@cableone.net'),
+('Keilyn Wright', 'keilynwriggit@yahoo.com'),
+('Bobby Myers', 'gbmyers2@comcast.net'),
+('Mary McClain', 'rmmcclain@swwmail.net');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `assembly_girls`
+--
+
+CREATE TABLE IF NOT EXISTS `assembly_girls` (
+  `name` varchar(50) NOT NULL,
+  `assembly` int(11) NOT NULL,
+  `email` varchar(60) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `assembly_girls`
+--
+
+REPLACE INTO `assembly_girls` (`name`, `assembly`, `email`) VALUES
+('Suzy Sunshine', 4, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 8, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 18, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 35, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 55, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 58, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 60, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 61, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 62, 'sunshine@yahoo.com'),
+('Suzy Sunshine', 100, 'sunshine@yahoo.com'),
+('Mary McClain', 4, 'rmmcclain@swwmail.net'),
+('Mary McClain', 8, 'rmmcclain@swwmail.net'),
+('Carol Epperson', 18, 'epperson313@gmail.com'),
+('Susan Boyles', 35, 'sboyles@fms.k12.nm.us'),
+('Nicky Phillips', 55, 'nicky.phillips@ymail.com'),
+('Patty Campbell', 58, 'AshlarRainbowABQ@hotmail.com'),
+('Jaci Crosswhite', 60, 'tjautosupply@qwestoffice.net'),
+('Christine Wurst', 61, 'rioranchorainbow@gmail.com'),
+('Sabrina Pack', 62, 'sabrina@silvercityradio.com'),
+('Joy Scott', 55, 'joyfitz@mac.com'),
+('Keilyn Wright', 58, 'keilynwriggit@yahoo.com'),
+('Phoebe Wright', 58, 'epwright@cableone.net'),
+('Keilyn Wright', 55, 'keilynwriggit@yahoo.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `floor`
+--
+
+CREATE TABLE IF NOT EXISTS `floor` (
+  `year` int(11) DEFAULT NULL,
+  `office` varchar(50) DEFAULT NULL,
+  `girl` int(11) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `floor`
+--
+
+REPLACE INTO `floor` (`year`, `office`, `girl`) VALUES
+(2014, 'Grand Worthy Advisor', 10032),
+(2014, 'Grand Worthy Associate Advisor', 10031),
+(2014, 'Grand Charity', 10030),
+(2014, 'Grand Hope', 10029),
+(2014, 'Grand Faith', 10028),
+(2014, 'Grand Lecturer', 10027),
+(2014, 'Grand Recorder', 10026),
+(2014, 'Grand Treasurer', 10025),
+(2014, 'Grand Chaplain', 10024),
+(2014, 'Grand Drill Leader', 10023),
+(2014, 'Grand Love', 10022),
+(2014, 'Grand Religion', 10021),
+(2014, 'Grand Nature', 10020),
+(2014, 'Grand Immortality', 10019),
+(2014, 'Grand Fidelity', 10018),
+(2014, 'Grand Patriotism', 10017),
+(2014, 'Grand Service', 10016),
+(2014, 'Grand Confidential Observer', 10015),
+(2014, 'Grand Outer Observer', 10014),
+(2014, 'Grand Choir Director', 0),
+(2014, 'Grand Musician', 10013);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ga_members`
+--
+
+CREATE TABLE IF NOT EXISTS `ga_members` (
+  `name` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ga_members`
+--
+
+REPLACE INTO `ga_members` (`name`, `email`) VALUES
+('Amber Deveraux', 'dancechickeebabe89@comcast.net'),
+('Ariana Collins', 'prettyinpnk0315@aol.com'),
+('Benee Ketchum', 'bdketchum1944@gmail.com'),
+('Bert Atkins', 's.b.a.al@zianet.com'),
+('Bethany Burke', 'bburke1109@gmail.com'),
+('Bobby Myers', 'gbmyers2@comcast.net'),
+('Camille Roy', 'royeco3270@gmail.com'),
+('Catherine Hatcher', 'catherine.hatcher@gmail.com'),
+('Chandra McCray', 'chandra.mccray@gmail.com'),
+('Coren Andrews', '\n\n\n\n\n\n\n\nctandrews@verizon.net'),
+('Corrine Wurst', 'reachforthestarsnm@yahoo.com'),
+('Danny Calloway', 'gndsec@nmmasons.org'),
+('Diane Rogers', 'rogers@mesilla.com'),
+('Erin Atkins', 'atkinser@gmail.com'),
+('Ernest Pompeo', 'ernestpompeo@comcast.net'),
+('Gayle Smith', 'glsmith117@msn.com'),
+('Georgia Morphis', 'ga.ldmorphis@hotmail.com'),
+('Janice Anderson', 'janicea8805@comcast.net'),
+('Joy Scott', 'joyfitz@mac.com'),
+('Judy Goldie', 'judygoldie1@gmail.com'),
+('Katy Boyles', 'kboyles9@gmail.com'),
+('Kay Miller', 'tmiller@zianet.com'),
+('Keilyn Wright', 'keilynwriggit@yahoo.com'),
+('Kim Moreno', 'moreno.kimberly@hotmail.com'),
+('Lauren Deveraux', 'lddancegirl92@comcast.net'),
+('Lisa Lents', 'ljw5891@gmail.com'),
+('Norm Mayne', '1marykay@msn.com'),
+('Pam Rioux', 'rrioux@aol.com'),
+('Phoebe Wright', 'epwright@cableone.net'),
+('Phyllis Miller', 'phyllislmiller@gmail.com'),
+('Serina Pack', 'serinapack@gmail.com'),
+('Susan Collins', 'collins809@aol.com'),
+('Susan Wallin', 'wallin5@q.com'),
+('Tsenre Deveraux', 'mtdeveraux@comcast.net'),
+('Wayne Morrison', 'morrison12376@hotmail.com'),
+('Shirley Thomas', 'js33thomas@swwn.net'),
+('Tom Payne', 'tomkay66@me.com');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gcct`
+--
+
+CREATE TABLE IF NOT EXISTS `gcct` (
+  `year` int(11) DEFAULT NULL,
+  `girl` int(11) DEFAULT NULL,
+  `title` varchar(50) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `gcct`
+--
+
+REPLACE INTO `gcct` (`year`, `girl`, `title`) VALUES
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `girls`
+--
+
+CREATE TABLE IF NOT EXISTS `girls` (
+  `number` int(11) DEFAULT NULL,
+  `first_name` varchar(30) DEFAULT NULL,
+  `last_name` varchar(30) DEFAULT NULL,
+  `nickname` varchar(30) DEFAULT NULL,
+  `assembly` int(11) DEFAULT NULL,
+  `title` varchar(30) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `girls`
+--
+
+REPLACE INTO `girls` (`number`, `first_name`, `last_name`, `nickname`, `assembly`, `title`) VALUES
+(10000, 'Serena', 'Bennett', '', 58, 'GO'),
+(10001, 'Katelyn', 'Goist', '', 18, 'GO'),
+(10002, 'Christina', 'Chaves', '', 62, 'GO'),
+(10003, 'Amber', 'Constant', '', 60, 'GO'),
+(10004, 'Brianna', 'Collins', '', 58, 'GO'),
+(10005, 'Tiffaney', 'Davis', '', 61, 'GO'),
+(10006, 'Alejandre', 'Ortega', '', 61, 'GO'),
+(10007, 'Melissa', 'Varney', '', 61, 'GO'),
+(10008, 'Annalee', 'Turner', '', 61, 'GO'),
+(10009, 'Morgan', 'Blair', '', 60, 'GO'),
+(10010, 'Faith', 'Schifani', '', 58, 'GO'),
+(10011, 'Cheyenna', 'Graves', '', 60, 'GO'),
+(10012, 'Sarah', 'Grindell', '', 58, 'GO'),
+(10013, 'Ariana', 'Collins', '', 58, 'PGWA'),
+(10014, 'Britney', 'Evans', '', 58, 'GO'),
+(10015, 'Krystie Rae', 'Arambula', '', 62, 'GO'),
+(10016, 'Erica', 'Jessen', '', 18, 'GO'),
+(10017, 'Harley', 'Rogers', '', 55, 'GO'),
+(10018, 'Carley', 'Casey', '', 62, 'GO'),
+(10019, 'Jessica', 'Grindell', '', 58, 'GO'),
+(10020, 'Christina', 'Chaves', '', 62, 'GO'),
+(10021, 'Autumn', 'Hunt', '', 62, 'GO'),
+(10022, 'Ashley', 'Balke', '', 58, 'GO'),
+(10023, 'Jessica', 'Campbell', '', 58, 'GO'),
+(10024, 'Dynesha', 'Drake', '', 35, 'GO'),
+(10025, 'Da''Shona', 'Lloyd', '', 35, 'GO'),
+(10026, 'Ivory', 'Webb', 'Missy', 55, 'GO'),
+(10027, 'Kimberly', 'Bellows', '', 55, 'GO'),
+(10028, 'Shannon', 'Wurst', '', 60, 'GO'),
+(10029, 'Sara', 'Klemundt', '', 58, 'GO'),
+(10030, 'Alexa', 'Templeton', '', 58, 'GO'),
+(10031, 'Norann', 'Calhoun', '', 18, 'GO'),
+(10032, 'Serina', 'Pack', '', 55, 'GWA'),
+(10033, 'Felicia', 'Braman', 'Cricket', 58, 'PGO'),
+(10034, 'Morgan', 'McClain', '', 8, 'PGO'),
+(10035, 'Lacey', 'Oldham', '', 0, 'PGO'),
+(10036, 'Corrine', 'Wurst', '', 62, 'PGWA'),
+(10037, 'Lauren ', 'Deveraux', '', 60, 'PGWA'),
+(10038, 'Emily', 'Blagrave', '', 61, 'GO'),
+(10039, 'Ashley', 'Leiby', '', 58, 'PGO'),
+(10040, 'Autumn', 'Boyd', '', 58, 'GO'),
+(10041, 'Aubre', 'Billingsley', '', 35, 'PGO'),
+(10042, 'Leila', 'Emery', '', 61, 'GO'),
+(10043, 'Kerestine', 'Hall', '', 35, 'GO');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gwa`
+--
+
+CREATE TABLE IF NOT EXISTS `gwa` (
+  `number` int(11) DEFAULT NULL,
+  `year` int(11) DEFAULT NULL,
+  `first_name` varchar(30) DEFAULT NULL,
+  `middle_name` varchar(30) DEFAULT NULL,
+  `last_name` varchar(30) DEFAULT NULL,
+  `married_name` varchar(30) DEFAULT NULL,
+  `install_year` int(11) DEFAULT NULL,
+  `assembly` int(11) DEFAULT NULL,
+  `swa` tinyint(1) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `gwa`
+--
+
+REPLACE INTO `gwa` (`number`, `year`, `first_name`, `middle_name`, `last_name`, `married_name`, `install_year`, `assembly`, `swa`) VALUES
+(81, 2014, 'Serina', '', 'Pack', '', 2013, 55, 0),
+(80, 2013, 'Ariana', '', 'Collins', '', 2012, 58, 0),
+(79, 2012, 'Corrine', '', 'Wurst', '', 2011, 61, 0),
+(78, 2011, 'Lauren', '', 'Deveraux', '', 2010, 60, 1),
+(77, 2010, 'Brianna', '', 'Schmittal', '', 2009, 0, 0),
+(76, 2009, 'Amber', '', 'Deveraux', '', 2008, 0, 0),
+(75, 2008, 'Keilyn', '', 'Wright', '', 2007, 0, 0),
+(74, 2007, 'Bianca', '', 'Smoker', '', 2006, 0, 0),
+(73, 2006, 'Katy', '', 'Boyles', '', 2005, 0, 0),
+(72, 2005, 'Lisa', '', 'Wallin', '', 2004, 0, 0),
+(71, 2004, 'Kimberly', '', 'Rioux', '', 2003, 0, 0),
+(70, 2003, 'Chandra', '', 'Galindo', '', 2002, 0, 0),
+(69, 2002, 'Erin', '', 'Atkins', '', 2001, 0, 0),
+(68, 2001, 'Erika', '', 'Waters', '', 2000, 0, 0),
+(67, 2000, 'Andrea', '', 'Harbison', '', 1999, 0, 0),
+(66, 1999, 'Kim', '', 'Smith', '', 1998, 0, 0),
+(65, 1998, 'Malea', '', 'Lightle', '', 1997, 0, 0),
+(64, 1997, 'Jessica', '', 'Van Winkle', '', 1996, 0, 0),
+(63, 1996, 'Christy', '', 'Christy', '', 1995, 0, 0),
+(62, 1995, 'Hope', '', 'McIntosh', '', 1994, 0, 0),
+(61, 1994, 'Nicky', '', 'Tombaugh', '', 1993, 0, 0),
+(60, 1993, 'Kristy', '', 'Balok', '', 1992, 0, 0),
+(59, 1992, 'Nikkie', '', 'Hughes', '', 1991, 0, 0),
+(58, 1991, 'Amy', '', 'Crook', '', 1990, 0, 0),
+(57, 1990, 'Sharon', '', 'Briggs', '', 1989, 0, 0),
+(56, 1989, 'Denise', '', 'Haeber', '', 1988, 0, 0),
+(55, 1988, 'Elizabeth', '', 'Gonzalez', '', 1987, 0, 0),
+(54, 1987, 'Rebecca', '', 'Warinner', '', 1986, 0, 0),
+(53, 1986, 'Barbara', '', 'Dorsey', '', 1985, 0, 0),
+(52, 1985, 'Jennifer', '', 'Pinkston', '', 1984, 0, 0),
+(51, 1984, 'Martha', '', 'Barnhill', '', 1983, 0, 0),
+(50, 1983, 'Roxanne', '', 'Gardner', '', 1982, 0, 0),
+(49, 1982, 'Teresa', '', 'Baugh', '', 1981, 0, 0),
+(48, 1981, 'Beverly', '', 'Knight', '', 1980, 0, 0),
+(47, 1980, 'Monica', '', 'Whatley', '', 1979, 0, 0),
+(46, 1979, 'Tsenre', '', 'Pompeo', '', 1978, 0, 0),
+(45, 1978, 'Susan', '', 'Abercrombie', '', 1977, 0, 0),
+(44, 1977, 'Shirley Jo', '', 'Crawford', '', 1976, 0, 0),
+(43, 1976, 'Tamara', '', 'Curtis', '', 1975, 0, 0),
+(42, 1975, 'Melodie', '', 'Owen', '', 1974, 0, 0),
+(41, 1974, 'Janice', 'Ann', 'Cox', '', 1973, 0, 0),
+(40, 1973, 'Martha', 'Jane', 'Wallace', '', 1972, 0, 0),
+(39, 1972, 'Nikki', '', 'Scarafiotti', '', 1971, 0, 0),
+(38, 1971, 'Karen', 'Sue', 'Guice', '', 1970, 0, 0),
+(37, 1970, 'Annelle', '', 'Gray', '', 1969, 0, 0),
+(36, 1969, 'Virginia', '', 'White', '', 1968, 0, 0),
+(35, 1968, 'Jacquelyn', 'Rae', 'Wilson', '', 1967, 0, 0),
+(34, 1967, 'Joyce', 'Ann', 'Johnston', '', 1966, 0, 0),
+(33, 1966, 'Billye', 'Louise', 'Huckabee', '', 1965, 0, 0),
+(32, 1965, 'Frances', '', 'Compton', '', 1964, 0, 0),
+(31, 1964, 'Johanna', 'Sue', 'Bryant', '', 1963, 0, 0),
+(30, 1963, 'Mary', 'Edith', 'Hart', '', 1962, 0, 0),
+(29, 1962, 'Jenann', '', 'Kennedy', '', 1961, 0, 0),
+(28, 1961, 'Madeleine', 'J', 'McDaniel', '', 1960, 0, 0),
+(27, 1960, 'Margaret', 'Lynnette', 'Roser', '', 1959, 0, 0),
+(26, 1959, 'Simmie', '', 'Gibson', '', 1958, 0, 0),
+(25, 1958, 'Helen', 'Alice', 'Meyers', '', 1957, 0, 0),
+(24, 1957, 'Roberta', 'Ann', 'Boney', '', 1956, 0, 0),
+(23, 1956, 'Ruthe', '', 'Owens', '', 1955, 0, 0),
+(22, 1955, 'Jeannie', '', 'Coleman', '', 1954, 0, 0),
+(21, 1954, 'Eulalie', '', 'Allen', '', 1953, 0, 0),
+(20, 1953, 'Della', 'Ruth', 'Frear', '', 1952, 0, 0),
+(19, 1952, 'Emma', 'Lou', 'Cahoon', '', 1951, 0, 0),
+(18, 1951, 'Betty', 'Jean', 'Bourbonia', '', 1950, 0, 0),
+(17, 1950, 'Carol', '', 'Hensley', '', 1949, 0, 0),
+(16, 1949, 'Marjorie', '', 'Lane', '', 1948, 0, 0),
+(15, 1948, 'Shirlee', '', 'Blakemore', '', 1947, 0, 0),
+(14, 1947, 'Ruth', 'Esther', 'Lindberg', '', 1946, 0, 0),
+(13, 1946, 'Aleen', '', 'Hinkle', '', 1945, 0, 0),
+(12, 1945, 'Peggy', 'Jane', 'Schneider', '', 1944, 0, 0),
+(11, 1944, 'Doris', '', 'Grissam', '', 1943, 0, 0),
+(10, 1943, 'Caroline', '', 'Brentari', '', 1942, 0, 0),
+(9, 1942, 'Drucilla', '', 'Longley', '', 1941, 0, 0),
+(8, 1941, 'Harriett', '', 'Haskell', '', 1940, 0, 0),
+(7, 1940, 'Frances', '', 'Schroeter', '', 1939, 0, 0),
+(6, 1939, 'Lois', '', 'Livingston', '', 1938, 0, 0),
+(5, 1938, 'Dixie', 'Ray', 'Boyd', '', 1937, 0, 0),
+(4, 1937, 'Marjorie', '', 'White', '', 1936, 0, 0),
+(3, 1936, 'Dorothy', 'Louise', 'France', '', 1935, 0, 0),
+(1, 1935, 'Chaney', 'Miller', 'Merritt', '', 1933, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mother_advisors`
+--
+
+CREATE TABLE IF NOT EXISTS `mother_advisors` (
+  `name` varchar(50) NOT NULL,
+  `num` int(11) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `assembly` varchar(60) NOT NULL,
+  `location` varchar(30) NOT NULL,
+  `active` int(11) NOT NULL DEFAULT '1'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `mother_advisors`
+--
+
+REPLACE INTO `mother_advisors` (`name`, `num`, `email`, `assembly`, `location`, `active`) VALUES
+('Mrs. Mary McClain', 4, 'rmmcclain@swwmail.net', 'Tucumcari', 'Fort Sumner', 1),
+('Mrs. Mary McClain', 8, 'rmmcclain@swwmail.net', 'Clovis', 'Fort Sumner', 1),
+('Mrs. Carol Epperson', 18, 'epperson313@gmail.com', 'Alamogordo', 'Alamogordo', 1),
+('Mrs. Susan Boyles', 35, 'sboyles@fms.k12.nm.us', 'Farmington', 'Farmington', 1),
+('Mrs. Nicky Phillips', 55, 'nicky.phillips@ymail.com', 'Ruth Laws', 'Las Cruces', 1),
+('Mrs. Patty Campbell', 58, 'AshlarRainbowABQ@hotmail.com', 'Ashlar', 'Albuquerque', 1),
+('Mrs. Jaci Crosswhite', 60, 'tjautosupply@qwestoffice.net', 'Dorothy Pitsford', 'Estancia', 1),
+('Mrs. Christine Wurst', 61, 'rioranchorainbow@gmail.com', 'Rio Rancho', 'Rio Rancho', 1),
+('Mrs. Sabrina Pack', 62, 'sabrina@silvercityradio.com', 'Copper Rose', 'Silver City', 1),
+('Mrs. Rainbow', 100, 'joyfitz@me.com', 'Example', 'Nowhere', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pages`
+--
+
+CREATE TABLE IF NOT EXISTS `pages` (
+  `year` int(11) DEFAULT NULL,
+  `girl` int(11) DEFAULT NULL,
+  `title` varchar(50) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pages`
+--
+
+REPLACE INTO `pages` (`year`, `girl`, `title`) VALUES
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2014, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, ''),
+(2013, 0, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reps`
+--
+
+CREATE TABLE IF NOT EXISTS `reps` (
+  `year` int(11) DEFAULT NULL,
+  `office` varchar(50) DEFAULT NULL,
+  `girl` int(11) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `reps`
+--
+
+REPLACE INTO `reps` (`year`, `office`, `girl`) VALUES
+(2014, 'Alabama', 10016),
+(2014, 'Alaska', 10012),
+(2014, 'Arizona', 10017),
+(2014, 'Arkansas', 10011),
+(2014, 'California', 10010),
+(2014, 'Colorado', 10009),
+(2014, 'Connecticut', 10010),
+(2014, 'Florida', 10011),
+(2014, 'Georgia', 10012),
+(2014, 'Hawaii', 10013),
+(2014, 'Iowa/Minnesota', 10014),
+(2014, 'Illinois', 10019),
+(2014, 'Indiana', 10024),
+(2014, 'Kansas', 10007),
+(2014, 'Kentucky', 10006),
+(2014, 'Louisiana', 10005),
+(2014, 'Maine', 10021),
+(2014, 'Maryland', 10004),
+(2014, 'Massachusetts', 10026),
+(2014, 'Michigan', 10003),
+(2014, 'Mississippi', 10025),
+(2014, 'Missouri', 10005),
+(2014, 'Montana', 10004),
+(2014, 'Nebraska', 10012),
+(2014, 'Nevada', 10015),
+(2014, 'New Hampshire', 10006),
+(2014, 'New Jersey', 10022),
+(2014, 'New York', 10028),
+(2014, 'North Carolina', 10011),
+(2014, 'North Dakota/South Dakota', 10029),
+(2014, 'Ohio', 10020),
+(2014, 'Oklahoma', 10014),
+(2014, 'Oregon', 10007),
+(2014, 'Pennsylvania', 10015),
+(2014, 'Tennessee', 10030),
+(2014, 'Texas', 10023),
+(2014, 'Vermont', 10001),
+(2014, 'Washington/Idaho', 10009),
+(2014, 'West Virginia', 10003),
+(2014, 'Wisconsin', 10000),
+(2014, 'Aruba', 10019),
+(2014, 'Australia New South Wales', 10032),
+(2014, 'Australia Queensland', 10027),
+(2014, 'Bolivia', 10026),
+(2014, 'Canada', 10018),
+(2014, 'Philippines', 10013),
+(2012, 'Alabama', 10019),
+(2012, 'Alaska', 10015),
+(2012, 'Arizona', 10036),
+(2012, 'Arkansas', 10001),
+(2012, 'California', 10027),
+(2012, 'Colorado', 10026),
+(2012, 'Connecticut', 10025),
+(2012, 'Florida', 10038),
+(2012, 'Georgia', 10030),
+(2012, 'Hawaii', 10001),
+(2012, 'Iowa/Minnesota', 0),
+(2012, 'Illinois', 0),
+(2012, 'Indiana', 10039),
+(2012, 'Kansas', 10024),
+(2012, 'Kentucky', 10021),
+(2012, 'Louisiana', 0),
+(2012, 'Maine', 10035),
+(2012, 'Maryland', 0),
+(2012, 'Massachusetts', 0),
+(2012, 'Michigan', 10032),
+(2012, 'Mississippi', 10040),
+(2012, 'Missouri', 10041),
+(2012, 'Montana', 0),
+(2012, 'Nebraska', 10011),
+(2012, 'Nevada', 0),
+(2012, 'New Hampshire', 10033),
+(2012, 'New Jersey', 10042),
+(2012, 'New York', 10029),
+(2012, 'North Carolina', 10043),
+(2012, 'North Dakota/South Dakota', 10024),
+(2012, 'Ohio', 0),
+(2012, 'Oklahoma', 10042),
+(2012, 'Oregon', 10011),
+(2012, 'Rhode Island', 10019),
+(2012, 'South Carolina', 10040),
+(2012, 'Pennsylvania', 0),
+(2012, 'Tennessee', 10023),
+(2012, 'Texas', 10028),
+(2012, 'Vermont', 0),
+(2012, 'Virginia', 10043),
+(2012, 'Washington/Idaho', 10030),
+(2012, 'West Virginia', 0),
+(2012, 'Wisconsin', 10039),
+(2012, 'Aruba', 10018),
+(2012, 'Australia New South Wales', 0),
+(2012, 'Australia Queensland', 0),
+(2012, 'Bolivia', 10013),
+(2012, 'Brazil', 10037),
+(2012, 'Canada', 10023),
+(2012, 'Philippines', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ritual`
+--
+
+CREATE TABLE IF NOT EXISTS `ritual` (
+  `name` varchar(50) NOT NULL,
+  `initiated` varchar(20) NOT NULL,
+  `office` varchar(50) NOT NULL,
+  `go` varchar(60) NOT NULL,
+  `master` int(11) NOT NULL,
+  `category` varchar(20) NOT NULL,
+  `bow` varchar(20) NOT NULL,
+  `day` varchar(20) NOT NULL,
+  `time` varchar(10) NOT NULL,
+  `assembly` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ritual`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `term`
+--
+
+CREATE TABLE IF NOT EXISTS `term` (
+  `year` int(11) DEFAULT NULL,
+  `description` varchar(75) DEFAULT NULL,
+  `details` text
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `term`
+--
+
+REPLACE INTO `term` (`year`, `description`, `details`) VALUES
+(2014, 'Theme', 'Paint your Rainbow &mdash; &ldquo;Be the Change&rdquo;'),
+(2014, 'Colors', 'Pastel Blue, Violet, Forest Green and Soft Yellow'),
+(2014, 'Symbols', 'Feather Quill/Paint Palette &ndash; <br><sp> Representing the power we have to write and point our own futures.<br> Candle/Lantern Light &ndash; Representing the light of God <br>\r Owls &ndash; Representing wider perspective, wisdon and courage <br> \rHorses &ndash; Representing free spirit. <br>\r Four Leaf Clovers &ndash; Representing L-U-C-K'),
+(2014, 'Fun Symbols', 'Pocahontas'),
+(2014, 'Motto', 'L-U-C-K ~ I wish you: <br> \rLove, Understanding, Compassion and Kindness<br> your whole life through.<br>\rMay you know love and be loved. <br> \rMay you always be understanding of others and be understood. <br>\rMay all of your deeds be filled with compassion\r and kindness<br> and  your heart feel compassion and kindness through your life''s journey.'),
+(2014, 'Flowers', 'Daffodils, Iris, White Cala Lilies, and Red Roses'),
+(2014, 'Scripture', 'John 4:7 Beloved, let us love one another, for love is of God; <br>\rand everyone who loves has been born of God, and knows God.'),
+(2014, 'Favorite Quotes', '&ldquo;Be the changes you want to see in the world&rdquo; &ndash;Gandhi <hr>\r&ldquo;I alone cannot change the world, but I can cast a stone across the waters<br>\rto create many ripples.&rdquo; &ndash;Mother Teresa<hr>\r&ldquo;If you judge people, you have notime to love them to love them.&rdquo; <br>\r&ndash;Mother Teresa<hr>\r&ldquo;If your actions inspire other to dream more, learn more, <br>\rdo more and become more, you are a leader.&rdquo;&ndash;John Qincy Adams<hr>\r&ldquo;Live, Laugh, and Love Everyday&rdquo;<hr>\r&ldquo;Home is where the heart is&rdquo;'),
+(2014, 'Special Music', '&ldquo;When You Pray&rdquo;, &ldquo;Amazing Grace&rdquo;, <br>\r&ldquo;The Rose&rdquo; by Bette Midler, <br>\r&ldquo;Nearer my God to Thee&rdquo;, &ldquo;You Raise Me Up&rdquo;, &ldquo;In the Garden&rdquo;,<br>\r&ldquo;God Bless the USA&rdquo; by Lee Greenwood, &amp;<br>\rPocahontas songs: <br>\r&ldquo;Listen to Your Heart-Mother Willow&rdquo; and &ldquo;Colors of the Wind&rdquo;.'),
+(2014, 'Special Service Projects', 'Drawing for an Orignial Painting by Sabra Humphrey, <br>\rPast Grand Matron and Serina Pack, Grand Worthy Advisor <br>\rto benfit the Rainbow Girls Foundation of New Mexico<hr>\rGiving Hands Mural<hr>\rEncourage membership growth, statewide awareness of Rainbow and<br> connect more with our sponsoring bodies.'),
+(2014, 'Special Projects', 'The Sunset Gazette<br>\rMcCarter-Romero Scholarship Fund<br>\rRainbow Girls Foundation of NM<br>\rGeneral Grand Assembly Fund<br>\rSusan G. Komen Foundation<br>'),
+(2013, 'Theme', 'Make a Difference'),
+(2013, 'Colors', 'Deep Coral, Golden Yellow, Aqua, and Kiwi Green'),
+(2013, 'Symbols', 'Butterflies, Crosses, Crystal World Globes, and Doves'),
+(2013, 'Fun Symbols', 'Ballet Shoes, Tiaras, and Belle'),
+(2013, 'Motto', 'Embrace yoour dreams, follow your heart, cherish your life'),
+(2013, 'Flowers', 'White daises, white tulips, pink peonies, and sunset orange roses'),
+(2013, 'Scripture', '"Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love never fails" ~1 Corrinthians 13:4-5, 8'),
+(2013, 'Special Music', '"The prayer", <br> " I Dream a World",<br> "Go Light Your World", <br> "We Are the World"'),
+(2013, 'Special Service Projects', 'Alzheimer''s Association <br> Peanut Butter and Jelly Family Services <br> Animal Humane Society of New Mexico'),
+(2013, 'Special Projects', 'The Sunset Gazette <br> McCarter-Romero Scholarship Fund <br> Rainbow Girls Foundation of NM<br>General Grand Assembly Fund <br> Susan G. Komen Foundation<br>'),
+(2012, 'Theme', 'Reach for the Stars'),
+(2012, 'Colors', 'Royal Purple, Lilac, and Silver'),
+(2012, 'Symbols', 'Stars, Shooting stars, Castles, Swans, Celtic Crosses, and Shamrocks'),
+(2012, 'Fun Symbols', 'Ducks'),
+(2012, 'Motto', '"A dream you dream alone is only a dream, but a dream we dream together is reality". John Lennon <br> "Some men see things as they are and say why - I dream things that never were and wonder why not". George Bernard Shaw'),
+(2012, 'Flowers', 'Red Roses, White Lilies, Lilaces and Purple Forget-Me-Nots'),
+(2012, 'Scripture', '"So we focus our eyes not on what is seen, but what is unseen is eternal". 2 Corinthians 4:18'),
+(2012, 'Special Music', '"When You Wish Upon a Star" <br> "I Hope You Dance" <br> "You Raise Me Up"'),
+(2012, 'Special Service Projects', 'American Heart Association <br> Backpacks for Joy Junction <br> Rainbow Membership'),
+(2012, 'Special Projects', 'The Sunset Gazette <br> McCarter-Romero Scholarship Fund <br> Rainbow Girls Foundation of NM<br>General Grand Assembly Fund <br> Susan G. Komen Foundation<br>');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `fullname` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
+  `password` char(64) COLLATE utf8_unicode_ci NOT NULL,
+  `salt` char(16) COLLATE utf8_unicode_ci NOT NULL,
+  `token` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+REPLACE INTO `users` (`id`, `username`, `fullname`, `password`, `salt`, `token`, `email`) VALUES
+(1, 'joyncassie', 'Joy Scott', '8034ad4e4b98b74e626a3fc38e88d99b1bbafc5f185b459e8e14da8ef7b477c6', '17630a6c612b887e', '0', 'joyfitz@mac.com'),
+(2, 'keilynwriggit', 'Keilyn Wright', 'e25b284ea3ac85427f35cb441fc5535ac80f87ad0ac7fa25afac9893f16a9ba4', '7a53c139333f210', '0', 'keilynwriggit@yahoo.com'),
+(3, 'RainbowMA', 'Mrs. MA Rainbow', '5f65380cc03412bb87f4374eaa5d686b3b402a07225212d3a3dbdd5d09bc30c8', '4b590fb81b5d3e69', '0', 'joyscott@cisco.com'),
+(4, 'Phoebe', 'Phoebe Wright', 'e37ab9329e1d841ba99027071b3805247564235de156572837da692582b09d80', '58321e70b5beeae', '0', 'epwright@cableone.net'),
+(6, 'Sabrina Pack', 'Sabrina Pack', '7d7d4ec6875a518ce7929c6fd31bf93cdb73f78c28ef953e4904041ad2c9fb5f', 'e01f9a575ab8d6', '0', 'sabrina@silvercityradio.com'),
+(8, 'MA JACI', 'JACALEE CROSSWHITE', '58aacd69f9085ad995367d3f9c22bce4989a55ed440f38ebefcc6d29dac82d04', '41805d6b1e57bfd4', '0', 'TJAUTOSUPPLY@QWESTOFFICE.NET');
+

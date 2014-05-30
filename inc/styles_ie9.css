@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#header {
+  	margin-bottom: 40px; 
+}
+.wrapper{
+  display: block;
+}
+#sidebar, #sidebarGWA{
+	display: inline-block;
+	position: relative;
+	top:0px;
+	margin: 0;
+	height: 100%;
+}
+
+#mainContent, #mainContent-nosidebar {
+		display: inline-block;
+	margin: 0;
+	position: relative;
+	left: -5px;
+	top: 7px;
+	width: 750px;
+	}

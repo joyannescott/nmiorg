@@ -57,6 +57,7 @@
                 // or not the user is logged in.  We can also use it to retrieve 
                 // the user's details. 
                 $_SESSION['user'] = $row; 
+                $_SESSION['reset'] = true;
             } 
         } 
     }
@@ -154,7 +155,7 @@
              
             // Initial query parameter values 
             $query_params = array( 
-                ':email' => $_SESSION['user']['email'], 
+                ':email' => $_POST['email'], 
                 ':fullname' => $_POST['fullname'], 
                 ':token' => 0, //clean the token
                 ':user_id' => $_SESSION['user']['id'], 
@@ -210,14 +211,18 @@
 
             // Now that the user's E-Mail address has changed, the data stored in the $_SESSION 
             // array is stale; we need to update it so that it is accurate. 
-            $_SESSION['user']['email'] = $_POST['email']; 
-            $_SESSION['user']['fullname'] = $_POST['fullname']; 
+            if($_SESSION['reset']){
+                /* If this is a password reset log out */
+                unset($_SESSION['user']); 
+                $_SESSION['reset'] = false;
+                header("location: " . BASE_URL . "Login");
+            } else {
+                $_SESSION['user']['email'] = $_POST['email']; 
+                $_SESSION['user']['fullname'] = $_POST['fullname']; 
+                 // This redirects the user back to the members-only page after they register
+                header("location: " . BASE_URL . "Login/Account");
+            }
              
-            // This redirects the user back to the members-only page after they register
-             if($_SESSION['last_url'])
-                header("location: " . $_SESSION['last_url']);
-            else
-                header("location: " . BASE_URL);
              
             // Calling die or exit after performing a redirect using the header function
             // is critical.  The rest of your PHP script will continue to execute and 
@@ -232,7 +237,9 @@
      
 ?> 
 <div id="mainContent">
-   <?php include(LOGIN . "login_header.php"); ?>
+    <?php if(!$token) { ?>
+        <?php include(LOGIN . "login_header.php"); ?>
+    <?php } ?>
 
        <?php if($alert_message) { ?>
 
@@ -256,8 +263,14 @@
        </h4>        
        <i> <center>
         <?php if(!$token) { ?>
-           <?php if(is_administrator( $_SESSION['user']['email'])) echo "Administor <br>";
-                  if(is_mother_advisor($_SESSION['user']['email'])) echo "Mother Advisor <br>";
+           <?php if(is_administrator( $_SESSION['user']['email'])) echo "Administrator <br>";
+                  $assemblies = is_mother_advisor($_SESSION['user']['email']);
+                  if($assemblies){
+                        echo "Mother Advisor of ";
+                        foreach($assemblies as $assembly){
+                            echo $assembly['assembly'] . " #" . $assembly['num'] . "<br>";
+                        }
+                  }
                   if(is_ga_member($_SESSION['user']['email'])) echo "Member of the Grand Assembly of New Mexico <br>";
                   $assemblies = is_assembly_member($_SESSION['user']['email']);
                   if($assemblies) {
@@ -271,30 +284,30 @@
         </center>
        </i>
        <?php if(!$token) { ?>
-       <p>
-            <label for="fullname">Full Name</label>
-            <input id="fullname" name="fullname" type="text" 
-                   value="<?php echo htmlentities($_SESSION['user']['fullname'], ENT_QUOTES, 'UTF-8'); ?>">
-       </p>
+           <p>
+                <label for="fullname">Full Name</label>
+                <input id="fullname" name="fullname" type="text" 
+                       value="<?php echo htmlentities($_SESSION['user']['fullname'], ENT_QUOTES, 'UTF-8'); ?>">
+           </p>
 
-        <p>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="text" 
-                   value="<?php echo htmlentities($_SESSION['user']['email'], ENT_QUOTES, 'UTF-8'); ?>">
-        </p>
-            <?php } else {?>
-        <h4>
-            Full Name: <b><?php echo htmlentities($_SESSION['user']['fullname'], ENT_QUOTES, 'UTF-8'); ?></b>
-           <input id="fullname" name="fullname" type="text" class="hidden"
-                   value="<?php echo htmlentities($_SESSION['user']['fullname'], ENT_QUOTES, 'UTF-8'); ?>">
-       </h4>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" 
+                       value="<?php echo htmlentities($_SESSION['user']['email'], ENT_QUOTES, 'UTF-8'); ?>">
+            </p>
+        <?php } else {?>
+            <h4>
+                Full Name: <b><?php echo htmlentities($_SESSION['user']['fullname'], ENT_QUOTES, 'UTF-8'); ?></b>
+               <input id="fullname" name="fullname" type="text" class="hidden"
+                       value="<?php echo htmlentities($_SESSION['user']['fullname'], ENT_QUOTES, 'UTF-8'); ?>">
+           </h4>
 
-        <h4>
-            Email: <b><?php echo htmlentities($_SESSION['user']['email'], ENT_QUOTES, 'UTF-8'); ?></b>
-            <input id="email" name="email" type="text" class="hidden"
-                   value="<?php echo htmlentities($_SESSION['user']['email'], ENT_QUOTES, 'UTF-8'); ?>">
-        </h4>
-           <?php } ?>
+            <h4>
+                Email: <b><?php echo htmlentities($_SESSION['user']['email'], ENT_QUOTES, 'UTF-8'); ?></b>
+                <input id="email" name="email" type="text" class="hidden"
+                       value="<?php echo htmlentities($_SESSION['user']['email'], ENT_QUOTES, 'UTF-8'); ?>">
+            </h4>
+        <?php } ?>
  
          <p>
             <label for="password">Password</label>

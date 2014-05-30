@@ -11,7 +11,7 @@
 }
 
 .wrap {
-   position: relative;
+   position: absolute;
    	display:block;
 	width: 250px;
 	height: 100px;
@@ -72,16 +72,6 @@
 
 }
 
-.homeButton {
-	display: block;
-	width: 109px;
-	height: 43px;
-	position: relative;
-	top: -20px;
-	background-image:url("/images/index_03_hover.jpg");
-	z-index: 200;
-	
-}
 .GWAButton {
 	display: block;
 	width: 109px;
@@ -146,7 +136,7 @@
 	z-index: 200;
 }
 
-.contactButton {
+.ContactButton {
 	display: block;
 	width: 108px;
 	height: 43px;
@@ -298,7 +288,7 @@
 
 }
 
-.contactButton {
+.ContactButton {
 
 	-webkit-transition: .2s;
 	-moz-transition: .2s;
@@ -307,7 +297,7 @@
 	transition: .2s;
 
 }
-.contactButton:hover {
+.ContactButton:hover {
 	-webkit-transform: translateY(20px);
 	-moz-transform: translateY(20px);
 	-ms-transform: translateY(20px);

@@ -201,8 +201,8 @@
                 $email_body = "";
                 $email_body = $email_body . "Hello, " . $_POST['fullname'] . "!<br><br>";
 
-                $email_body = $email_body . "Thank you for your interest in New Mexico Rainbow. <br><br>"
-                $email_body = $email_body . "The majority of our site is available to the public."
+                $email_body = $email_body . "Thank you for your interest in New Mexico Rainbow. <br><br>";
+                $email_body = $email_body . "The majority of our site is available to the public.";
                 $email_body = $email_body . "Access to certain parts are limited based on ";
                 $email_body = $email_body . "approval from the Mother Advisors, and the Supreme Inspector.<br> ";
                 $email_body = $email_body . "To verify your access, go to: http://www.nmiorg.org/Login/Account  <br>";

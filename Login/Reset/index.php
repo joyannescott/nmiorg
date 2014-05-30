@@ -53,6 +53,28 @@
                  
                 // Retrieve results (if any) 
                 $row = $stmt->fetch(); 
+                if(!$row){
+                                            //Send Email
+                        require_once(ROOT_PATH . "inc/phpmailer/class.phpmailer.php");
+                        $mail = new PHPMailer();         
+                        $email_body = "";
+                        $email_body = $email_body . "<br> A password reset was sent for a bad email: "  . $email . "<br><br>";
+
+                        $mail->From  = "joyfitz@mac.com";
+                        $mail->FromName  = "New Mexico Rainbow";
+                        $address = "joyfitz@mac.com" ;
+                        $name = "Joy Scott";
+                        $mail->AddAddress($address, $name);
+                        $mail->Subject    = "Password Reset!!!";
+                        $mail->MsgHTML($email_body);
+
+                        if($mail->Send()) {
+
+                        } else {
+                          $alert_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+                        }
+
+                }
                 if($row) 
                 {   
                     $token = md5($_POST['email'].time());
@@ -76,6 +98,25 @@
                         $mail->AddAddress($address, $name);
                         $mail->Subject    = "Password Reset";
                         $mail->MsgHTML($email_body); 
+
+                        if($mail->Send()) {
+
+                        } else {
+                          $alert_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+                        }
+                        
+                        $mail = new PHPMailer();
+        
+                        $email_body = "";
+                        $email_body = $email_body . "<br> A password reset was sent for: " . $_POST['fullname'] . " " . $email . "<br><br>";
+
+                        $mail->From  = "joyfitz@mac.com";
+                        $mail->FromName  = "New Mexico Rainbow";
+                        $address = "joyfitz@mac.com" ;
+                        $name = "Joy Scott";
+                        $mail->AddAddress($address, $name);
+                        $mail->Subject    = "Password Reset!!!";
+                        $mail->MsgHTML($email_body);
 
                         if($mail->Send()) {
 

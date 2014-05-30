@@ -45,12 +45,14 @@
 <link href="<?php echo BASE_URL;?>inc/styles.css"; rel="stylesheet" type="text/css" />
 <link href="<?php echo BASE_URL;?>inc/form.css"; rel="stylesheet" type="text/css" />
 <link href="<?php echo BASE_URL;?>inc/animate.css"; rel="stylesheet" type="text/css" />
-
+<!--[if lte IE 9]>
+  <link href="<?php echo BASE_URL;?>inc/styles_ie9.css"; rel="stylesheet" type="text/css" />
+<![endif]-->
 
 <meta name="viewport" content="width=device-width">
 
 	<!-- jQuery (required) -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script>
 <!-- Anything Slider -->
   <link rel="stylesheet" href="<?php echo BASE_URL;?>css/anythingslider.css">
@@ -91,6 +93,10 @@
 <div id="container">
 
   <div id="header">
+    <!--[if lte IE 9 ]>
+      Support for Internet Explorer 9 or below is limited.
+    <![endif]-->
+
   
     <div id="HeaderImage"><img src= "<?php echo BASE_URL;?>images/index_01.jpg" 
                            alt="Rainbow Girls Header Image" width="960" height="137" /></div>

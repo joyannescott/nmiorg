@@ -13,7 +13,9 @@
       <?php foreach($entries as $entry) {  ?>
       <tr>
         <?php foreach($headers as $header) {  ?>
-          <td contenteditable="true"><?php echo $entry[strtolower($header)]; ?></td>
+          <td>
+            <span  contenteditable="true"><?php echo $entry[strtolower($header)]; ?></span>
+          </td>
         <?php } ?>
        <td>
           <span class="table-remove glyphicon glyphicon-remove"></span>
@@ -27,7 +29,9 @@
       <!-- This is our clonable table line -->
       <tr class="hide">
        <?php for($i = 0; $i < count($headers); $i++) {  ?>        
-          <td contenteditable="true">Edit</td>
+          <td>
+            <span  contenteditable="true">Edit</span>
+          </td>
        <?php } ?>
         <td>
           <span class="table-remove glyphicon glyphicon-remove"></span>
@@ -41,7 +45,9 @@
        <?php if(count($entries) == 0) {?>
         <tr>
          <?php for($i = 0; $i < count($headers); $i++) {  ?>        
-            <td contenteditable="true">Edit</td>
+            <td>
+            <span  contenteditable="true">Edit</span>
+            </td>
          <?php } ?>
            <td>
             <span class="table-remove glyphicon glyphicon-remove"></span>

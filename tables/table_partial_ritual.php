@@ -1,6 +1,6 @@
-  <div id="table" class="table-editable ritual">
+  <div id="table" class="table-editable ritual" >
     <span class="ritual-add glyphicon glyphicon-plus"></span>
-    <table class="table table-centered table-bordered table-hover"><center>
+    <table class="table table-centered table-bordered table-striped table-hover"><center>
       <tr>
           <th rowspan="2">A</th>
           <th rowspan="2">Name</th>
@@ -21,19 +21,19 @@
       <?php foreach($entries as $entry) { ?>
         <tr>
 
-          <td contenteditable="true"><?php echo $entry['assembly']; ?></td>
-          <td contenteditable="true"><?php echo $entry['name']; ?></td>
-          <td contenteditable="true"><?php echo $entry['initiated']; ?></td>
-          <td contenteditable="true"><?php echo $entry['office']; ?></td>
-          <td contenteditable="true"><?php echo $entry['go']; ?></td>
-          <td contenteditable="true">
+          <td ><span contenteditable="true"><?php echo $entry['assembly']; ?></span></td>
+          <td><span  contenteditable="true"><?php echo $entry['name']; ?></span></td>
+          <td><span  contenteditable="true"><?php echo $entry['initiated']; ?></span></td>
+          <td><span  contenteditable="true"><?php echo $entry['office']; ?></span></td>
+          <td><span  contenteditable="true"><?php echo $entry['go']; ?></span></td>
+          <td>
             <div class="checkbox">
             <label>
               <input type="checkbox" value="" <?php if($entry['master']) echo "checked"; ?> >
             </label>
           </div>
           </td>
-          <td contenteditable="true">   
+          <td>   
             <select id="type" name="type" requried>
                 <option  value = "None" 
                     <?php if($entry['category'] == "None") echo "None"; ?> >None</option>
@@ -49,30 +49,30 @@
                     <?php if($entry['category'] == "Beginning") echo "selected"; ?> >Beginning</option>
             </select> 
           </td>
-          <td contenteditable="true"><?php echo $entry['bow']; ?></td>
-          <td contenteditable="true"><?php echo $entry['day']; ?></td>
-          <td contenteditable="true"><?php echo $entry['time']; ?></td>
+          <td><span  contenteditable="true"><?php echo $entry['bow']; ?></span></td>
+          <td><span  contenteditable="true"><?php echo $entry['day']; ?></span></td>
+          <td><span  contenteditable="true"><?php echo $entry['time']; ?></span></td>
 
        <td>
-          <span class="table-remove glyphicon glyphicon-remove"></span>
+          <span contenteditable="false" class="table-remove glyphicon glyphicon-remove"></span>
         </td>
       </tr>
       <?php } ?>
       <!-- This is our clonable table line -->
       <tr class="hide">
-            <td contenteditable="true">100</td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true">
+            <td><span contenteditable="true">Edit</span></td>
+          <td><span contenteditable="true">Edit</span></td>
+          <td><span contenteditable="true">Edit</span></td>
+          <td><span contenteditable="true">Edit</span></td>
+          <td><span contenteditable="true">Edit</span></td>
+          <td>
             <div class="checkbox">
             <label>
               <input type="checkbox" value="">
             </label>
           </div>
           </td>
-          <td contenteditable="true">   
+          <td>
             <select id="type" name="type" requried>
                 <option value = "None" selected>None</option>
                 <option value = "Supreme" >Supreme</option>
@@ -82,9 +82,9 @@
                 <option value = "Beginning">Beginning</option>
             </select> 
           </td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
-          <td contenteditable="true"></td>
+          <td><span contenteditable="true">Edit</span></td>
+          <td><span contenteditable="true">Edit</span></td>
+          <td><span contenteditable="true">Edit</span></td>
         <td>
           <span class="table-remove glyphicon glyphicon-remove"></span>
         </td>

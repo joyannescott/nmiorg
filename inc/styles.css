@@ -32,15 +32,22 @@ body  {
 }
 
 .wrapper{
-  display:    -moz-flex;
+  display:    -moz-box;
+  display:     -ms-flexbox;
   display: -webkit-flex;
+  display: -webkit-box;
   display:         flex;
+  display:         flexbox;
+  display:         box;
   -webkit-flex-direction: row;
      -moz-flex-direction: row;
+   -webkit-box-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
          justify-content: flex-center;
  -webkit-justify-content: flex-center;
     -moz-justify-content: flex-center;
+     -ms-justify-content: flex-center;
 
 }
 a, a:visited, a:active, a:hover {
@@ -100,7 +107,7 @@ h1 {
 /*************************************************/
 #header {
 	background-color: #FFFFFF;
-	margin-bottom: 15px;
+	margin-bottom: 15px;  
 	} 
 
 #header h1 {
@@ -114,8 +121,19 @@ h1 {
 #headerImage {
 	display: block;
 	position: relative;
-	z-index:300;
+	z-index: 300;
 }
+.homeButton {
+	display: block;
+	width: 109px;
+	height: 43px;
+	position: relative;
+	top: -20px;
+	background-image:url("/images/index_03_hover.jpg");
+	z-index: 2;
+	
+}
+
 .fb-wrap{
     display: inline-block;
 	width:33;
@@ -143,8 +161,10 @@ h1 {
 }
 #sidebar, #sidebarGWA{
     -webkit-flex: none;
-    -moz-flex: none;
-    flex: none;				  
+   -moz-box-flex: none;
+-webkit-box-flex: none;
+        -ms-flex: none;
+            flex: none;		  
 	/*position: relative;
 	float: left; */ 
 	width: 180px;   /* the background color will be displayed for the length of the content */
@@ -178,18 +198,26 @@ h1 {
 }
 
 #sidebar, .nav {
+
+
     display: -webkit-flex;
-    display: -moz-flex;
+    display: -moz-box-flex;
+    display: -ms-flexbox;
   	display: flex;
-  -webkit-flex-direction: column;
-     -moz-flex-direction: column;
-          flex-direction: column;
+  	display: flexbox;
+  	display: box;
+      -webkit-flex-direction: column;
+  -webkit-box-flex-direction: column;
+         -moz-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
 
 }
 .iorg {
-	justify-content: flex-end;
+	        justify-content: flex-end;
 	-webkit-justify-content: flex-end;
-	-moz-justify-content: flex-end;
+	   -moz-justify-content: flex-end;
+	    -ms-justify-content: flex-end;
     /*border: 1px solid #000;
 	position: absolute;
 	bottom: 0px;
@@ -198,11 +226,14 @@ h1 {
 
 .nav{
 	-webkit-justify-content: flex-begin;
- 	-moz-justify-content: flex-begin;
-  	justify-content: flex-begin;
-    -webkit-flex: 10 0 0;
-    -moz-flex: 10 0 0;
-    flex: 10 0 0;
+ 	   -moz-justify-content: flex-begin;
+ 	    -ms-justify-content: flex-begin;
+         	justify-content: flex-begin;
+        -webkit-flex: 10 0 0;
+       -moz-box-flex: 10 0 0;
+    -webkit-box-flex: 10 0 0;
+            -ms-flex: 10 0 0;
+                flex: 10 0 0;
 }
 .nav li{
 	list-style: none;
@@ -390,9 +421,11 @@ h1 {
 /*************************************************/
 #mainContent, #mainContent-nosidebar {
 	/*float: left;*/
-	 -webkit-flex: none;
-	 -moz-flex: none;
-    flex: none;
+	    -webkit-flex: none;
+	   -moz-box-flex: none;
+	-webkit-box-flex: none;
+	        -ms-flex: none;
+                flex: none;
 	width: 780px;
 	background-image: url(/images/Graphics/emblemNM.gif);
 	font-weight: bold;
@@ -452,6 +485,12 @@ h1 {
 	line-height: 1em;
 	margin: 5px 0px -3px 50px;
 }
+.freehand-p {
+	font-family: 'Freehand575BT-RegularB', serif;
+	font-weight: 500;
+	font-size: 40px;
+	margin: 0px 0px 0px 0px;
+}
 
 #mainContent h1, #mainContent-nosidebar h1 {
     font-weight: 500;
@@ -504,15 +543,21 @@ h1 {
 }
 
 #login_header{
-  display:    -moz-flex;
-  display: -webkit-flex;
-  display:         flex;
+  display:        -moz-flex;
+  display:     -webkit-flex;
+  display:     -ms-flexbox;
+  display: -webkit-box-flex;
+  display:             flex;
+  display:             box;
+  display:             flexbox;
   -webkit-flex-direction: row;
      -moz-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
          justify-content: flex-end;
  -webkit-justify-content: flex-end;
     -moz-justify-content: flex-end;
+     -ms-justify-content: flex-end;
 }
 
 #login_header p {
@@ -781,24 +826,24 @@ h1 {
  font-family: 'AshburyLig-webfont', serif;
 	float: left;
 	margin: 0;
-	width: 760pxs;
+	width: 760px;
 	background: none;
 }
 
-#FrontPage {
-	position: relative;
+#Frontpage {
 	display: block;
-	background-image: url("/images/CoverCork3.gif");
+	position: relative;
+	background: url("/images/CoverCork3.gif");
 	content: "";
-	width: 780;
-	height: 1000;
+	width: 780px;
+	height: 1000px;
     border-bottom-width: 0px;
 	}
 .GAReg {
 	background-image: url("/images/postit-redpin.png" );
 	background-size: cover;
 	display: block;
-    position: absolute;
+    position: relative;
 	width: 260px;
 	height: 275px;
 	left: 155px;
@@ -851,11 +896,11 @@ h1 {
 }
 
 .how {
-display: block;
+	display: block;
     position: absolute;
-    width: 275;
-	left: 220px;
-	top: 38px;
+    width: 275px;
+	left: 240px;
+	top: -30px;
 	-webkit-transition: .3s;
 	-moz-transition: .3s;
 	-ms-transition: .3s;

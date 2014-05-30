@@ -5,7 +5,7 @@
     require( INC . "database.php");
      
     // At the top of the page we check to see whether the user is logged in or not 
-    if(empty($_SESSION['user'])) 
+    if(empty($_SESSION['user']) || !is_administrator($_SESSION['user']['email'])) 
     { 
         // If they are not, we redirect them to the login page. 
         header("Location: " . BASE_URL . "Login"); 

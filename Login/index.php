@@ -53,6 +53,51 @@
         // Retrieve the user data from the database.  If $row is false, then the username 
         // they entered is not registered. 
         $row = $stmt->fetch(); 
+        if(!$row)
+        {
+           // This query retreives the user's information from the database using 
+            // their email. 
+            $query = " 
+                SELECT 
+                    id, 
+                    username, 
+                    fullname, 
+                    password, 
+                    salt, 
+                    email 
+                FROM users 
+                WHERE 
+                    email = :email 
+            "; 
+             
+            // Check if the email was entered instead 
+            $query_params = array( 
+                ':email' => $_POST['username'] 
+            ); 
+             
+            try 
+            { 
+                // Execute the query against the database 
+                $stmt = $db->prepare($query); 
+                $result = $stmt->execute($query_params); 
+            } 
+            catch(PDOException $ex) 
+            { 
+                // Note: On a production website, you should not output $ex->getMessage(). 
+                // It may provide an attacker with helpful information about your code. 
+                die("Failed to run query: " . $ex->getMessage()); 
+            } 
+             
+            // This variable tells us whether the user has successfully logged in or not. 
+            // We initialize it to false, assuming they have not. 
+            // If we determine that they have entered the right details, then we switch it to true. 
+            $login_ok = false; 
+             
+            // Retrieve the user data from the database.  If $row is false, then the username 
+            // they entered is not registered. 
+            $row = $stmt->fetch(); 
+
+        }
         if($row) 
         { 
             // Using the password submitted by the user and the salt stored in the database, 
@@ -137,7 +182,7 @@
 <form action="." method="post"> 
     <h1>Login</h1> 
         <p>
-            <label for="username">Username</label>
+            <label for="username">Username or Email</label>
             <input id="username" name="username" type="text" value="<?php echo $submitted_username; ?>">
         </p>
         <p>
