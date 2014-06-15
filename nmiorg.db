@@ -599,6 +599,37 @@ CREATE TABLE IF NOT EXISTS `ritual` (
 -- Dumping data for table `ritual`
 --
 
+REPLACE INTO `ritual` (`name`, `initiated`, `office`, `go`, `master`, `category`, `bow`, `day`, `time`, `assembly`) VALUES
+('Alyssa Epperson', '3/2013', 'Nature', 'Page', 0, 'Bow', 'Nature', '6-17-2014', '1:30', 18),
+('Shar Weehunt', '10/2013', '', '', 0, 'Beginning', '', '6-17-2014', '1:30', 18),
+('Erica Jessen', '', 'WAA', 'Grand Service', 0, 'Grand', '', '6-17-2014', '1:30', 18),
+('Janna Morrision', '6-21-2012', 'Immortality', 'Page', 0, 'Bow', 'Immortality', '6-17-2014', '1:00', 58),
+('Cassidy Helgeson', '3-8-2014', '', '', 0, 'Beginning', '', '6-17-2014', '1:00', 58),
+('Faith Schifani', '6-18-2009', 'WA', 'Grand Rep', 1, 'Grand', '', '6-17-2014', '1:00', 58),
+('Ariana Collins', '6-23-2005', 'Musician', 'PGWA', 0, 'Supreme', '', '6-17-2014', '1:00', 58),
+('Alexa Templeton', '12-3-2005', 'Service', 'Grand Charity', 0, 'Supreme', '', '6-17-2014', '1:00', 58),
+('Serena Bennett', '6-18-2011', 'Hope', 'Grand Rep', 0, 'Floor', '', '6-17-2014', '1:00', 58),
+('Emily Grindell', '5-18-2011', 'Patriotism', 'Page', 0, 'Bow', 'Patriotism', '6-17-2014', '1:00', 58),
+('Ashley Balke', '4-23-2014', 'Affiliated', 'Grand Love', 1, 'Grand', '', '6-17-2014', '1:00', 58),
+('Jessica Campbell', '6-18-2009', 'DL', 'Grand Drill Leader', 1, 'Grand', '', '6-17-2014', '1:00', 58),
+('Britney Evans', '9-16-2009', 'Love', 'Grand OO', 0, 'Bow', 'Love', '6-17-2014', '1:00', 58),
+('Jessica Grindell', '11-7-2007', 'Chaplain', 'Grand Immortality', 0, 'Grand', '', '6-17-2014', '1:00', 58),
+('Briana Collins', '2-7-2010', 'Charity', 'Grand Rep', 0, 'Grand', '', '6-17-2014', '1:00', 58),
+('Sarah Grindell', '6-18-2009', 'WAA', 'Grand Rep', 0, 'Grand', '', '6-17-2014', '1:00', 58),
+('Serena Bennett', '6-18-2011', 'Hope', 'Grand Rep', 1, 'Grand', '', '6-17-2014', '1:00', 58),
+('Katie Budde', '2-3-2013', 'Nature', 'Escort', 0, 'Bow', 'Fidelity', '6-17-2014', '10:00', 60),
+('Karianna Brisco', '2-23-2013', 'Love', '', 0, 'Bow', 'Love', '6-17-2014', '10:00', 60),
+('Adrianna Constant', '4-28-2013', 'Patriotism', 'Page', 0, 'Bow', 'Patriotism', '6-17-2014', '10:00', 60),
+('Adrianna Constant', '4-28-2013', 'Patriotism', 'Page', 0, 'Bow', 'Fidelity', '6-17-2014', '10:00', 60),
+('Amber Constant', '11-21-10', 'Faith', 'Grand Rep', 0, 'Grand', '', '6-17-2014', '10:00', 60),
+('Morgan Blair', '3-10-2012', 'WAA', 'Grand Rep', 0, 'Floor', '', '6-17-2014', '10:00', 60),
+('Karianna Brisco', '2-23-2013', 'Love', '', 0, 'Bow', 'Religion', '6-17-2014', '10:00', 60),
+('Cheyeanna Graves', '', '', '', 0, 'Grand', '', '6-17-2014', '10:00', 60),
+('Charlotte Fritz', '2-15-2014', '', 'Escort', 0, 'Beginning', '', '6-17-2014', '1:00', 62),
+('Krystie Arambula', '3-26-2011', '', '', 0, 'Grand', '', '6-17-2014', '1:00', 62),
+('Carley Casey', '3-26-2011', '', '', 1, 'Supreme', '', '6-17-2014', '1:00', 62),
+('Autumn Hunte', '10-14-2006', '', '', 0, 'Grand', '', '6-17-2014', '1:00', 62);
+
 
 -- --------------------------------------------------------
 
