@@ -3,6 +3,7 @@
     // First we execute our common code to connection to the database and start the session 
     require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
     require( INC . "database.php");
+    require_once(TABLE . "entries.php");
      
     // At the top of the page we check to see whether the user is logged in or not 
     if(empty($_SESSION['user']) || !is_administrator($_SESSION['user']['email'])) 

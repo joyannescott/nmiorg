@@ -600,7 +600,7 @@ h1 {
 	 padding: 0px 20px 0px 50px;
 	 	 }
 .red{
-	color: #cc0000;
+	color: #990000;
 }
 .orange{
 	color: #F60;
@@ -833,7 +833,7 @@ h1 {
 #Frontpage {
 	display: block;
 	position: relative;
-	background: url("/images/CoverCork3.gif");
+	background: url("/images/CoverCork4.gif");
 	content: "";
 	width: 780px;
 	height: 1000px;
@@ -847,7 +847,7 @@ h1 {
 	width: 260px;
 	height: 275px;
 	left: 155px;
-	top: 450px;
+	top: 425px;
 
 }
 .postit, .postit a {
@@ -874,6 +874,14 @@ h1 {
 .congrats {
 		line-height: .85em;
 			font-size: 40px;
+}
+.farewell {
+		line-height: .85em;
+			font-size: 36px;
+}
+.name {
+		line-height: .75em;
+			font-size: 46px;
 }
 .what {
 	display: block;

@@ -6,20 +6,20 @@
         <tr>
           <td>7:00 PM </td>
           <td>Rainbow Foundation Meeting</td>
-          <td>Rio Grande – 2nd floor</td>
+          <td>Rio Grande &ndash; 2nd floor</td>
         </tr>
        <tr>
         	<th colspan="3"> <center><b>Tuesday, June 17 2014</b></center></th>
         </tr>        
         <tr>
-          <td>9:30 – 2:15</td>
+          <td>9:30 &ndash; 2:15</td>
           <td> Grand Executive Meeting</td>
-          <td> Rio Grande – 2nd floor</td>
+          <td> Rio Grande &ndash; 2nd floor</td>
         </tr>
          <tr>
           <td>12:00 </td>
           <td>Executive &amp; Deputy Luncheon </td>
-          <td> Rio Grande – 2nd floor</td>
+          <td> Rio Grande &ndash; 2nd floor</td>
         </tr>
         <tr>
           <td>12:00 </td>
@@ -27,14 +27,14 @@
           <td> Valle Grande 1 </td>
         </tr>
         <tr>
-          <td>1:00 – 4:30 </td>
+          <td>1:00 &ndash; 4:30 </td>
           <td> Registration</td>
-          <td> Valle Grande 1  - Lobby</td>
+          <td> Valle Grande 1  &ndash  Lobby</td>
         </tr>
         <tr>
-          <td>1:00 – 5:30 </td>
+          <td>1:00 &ndash; 5:30 </td>
           <td> Ritual Competition (times assigned) </td>
-          <td> Bernalillo – 2nd floor </td>
+          <td> Bernalillo &ndash; 2nd floor </td>
         </tr>
         <tr>
           <td>1:30 </td>
@@ -58,7 +58,7 @@
         </tr>
         <tr>
           <td>After Show</td>
-          <td> Practice –Bible & Flag Bearers and Escorts</td>
+          <td> Practice &ndash;Bible & Flag Bearers and Escorts</td>
           <td> Anasazi Ballroom</td>
         </tr>
         <tr>

@@ -4,7 +4,7 @@
        	  <th colspan="3"> <center><b>Friday, June 20 2014</b></center></th>
         </tr>
         <tr>
-          <td>8:00 – 8:30 </td>
+          <td>8:00 &ndash; 8:30 </td>
           <td> Registration</td>
           <td> Valle Grande Lobby</td>
         </tr>
@@ -17,7 +17,7 @@
         <tr>
           <td>11:30 </td>
           <td> Past Grand Worthy Advisor Luncheon </td>
-          <td> Bernalillo – 2nd floor </td>
+          <td> Bernalillo &ndash; 2nd floor </td>
         </tr>
         <tr>
           <td>1:45 </td>
@@ -32,7 +32,7 @@
         <tr>
          <td>11:30 </td>
           <td> Past Grand Worthy Advisor Luncheon</td>
-          <td> Bernalillo – 2nd floor</td>
+          <td> Bernalillo &ndash; 2nd floor</td>
         </tr>
          <td>6:00 </td>
           <td> Awards Dinner</td>
@@ -44,7 +44,7 @@
           <td> Valle Grande Lobby</td>
         </tr>
         <tr>
-          <td>8:00 – 10:00 </td>
+          <td>8:00 &ndash; 10:00 </td>
           <td> Grand Ball </td>
           <td> Anasazi Ballroom</td>
         </tr>

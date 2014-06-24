@@ -19,9 +19,9 @@
              alt="Grand Officers" width="400" height="110" /></h1>
     <h2>Co-Chairman</h2>
 
-    <div id="go">Harley Rogers 
+    <div id="go">Briana Collins
                  <i>&amp;</i>
-                 Krystie Rae Arambula
+                 Serena Bennett
     </div>
     <h4><a href="http://www.gorainbow.org/findus/jurisdictions.taf" target="_blank"> 
                  Other Grand Jurisdiction Websites</a></h4>
@@ -52,7 +52,7 @@
     </br>    
   </div>
   <h4>Director of Grand Representative Activities </h4>
-  <h3><center>Katy Boyles, PGWA, Grand Deputy</center></h3>
+  <h3><center>Katy Boyles, PGWA, Grand Executive</center></h3>
 </div>
 
  <?php 

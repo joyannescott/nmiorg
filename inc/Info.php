@@ -36,10 +36,13 @@ function get_gwa_info($year){
 	return $gwa;
  
 }
+
+function get_latest_year(){
+	return 2015;
+}
+
 function get_gwa_info_range($start, $end){
-	$offset = $end - 1;
-	$rows = $start - $offset;
-    require("database.php");
+   require("database.php");
   	try{
 		$results = $db->prepare("SELECT * FROM gwa WHERE year >= ? AND year <= ?");
 		$results->bindParam(1, $start, PDO::PARAM_INT);
@@ -83,9 +86,9 @@ function does_term_info_exist($year){
 function get_floor_officers($year){
  require("database.php");
   	try{
-		$results = $db->prepare("SELECT first_name, last_name, nickname, assembly, office 
-		                         FROM floor JOIN girls ON floor.girl = girls.number 
-								 WHERE year=?");
+		$results = $db->prepare("SELECT first_name, last_name, nickname, assembly, office, rank
+		                         FROM floor JOIN girls ON  girls.number = floor.girl
+								 WHERE year=? ORDER BY rank DESC");
 		$results->bindParam(1, $year, PDO::PARAM_INT);
 		$results->execute();
 
@@ -105,9 +108,9 @@ function get_floor_officers($year){
 function get_reps($year){
  require("database.php");
   	try{
-		$results = $db->prepare("SELECT first_name, last_name, nickname, assembly, office 
+		$results = $db->prepare("SELECT first_name, last_name, nickname, assembly, office
 		                         FROM reps JOIN girls ON reps.girl = girls.number 
-								 WHERE year=?");
+								 WHERE year=? ");
 		$results->bindParam(1, $year, PDO::PARAM_INT);
 		$results->execute();
 

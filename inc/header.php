@@ -1,5 +1,6 @@
 <?php
     require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
+    require_once( INC . 'Info.php');
 ?>
 <!DOCTYPE php PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN" "http://www.w3.org/TR/xphp1/DTD/xhtml1-transitional.dtd">
 <php xmlns="http://www.w3.org/1999/xhtml">
@@ -81,6 +82,15 @@
                   'Competitions 1','Competitions 2'][index - 1];
        }
       });
+     $('#sliderSSG').anythingSlider({
+        theme           : 'minimalist-round',
+        easing          : 'easeInOutBack',
+        navigationFormatter : function(index, panel){
+                            return ['Cover', 'Page 2', 'Page 3', 'Page 4','Page 5',
+                      'Page 6','Page 7','Page 8', 'Page 9','Page 10','Page 11','Page 12',
+                      'Page 13','Page 14'][index - 1];
+       }
+      });
     });
 
   </script>
@@ -104,7 +114,7 @@
                           alt="Spacer" border="0" /></div>
 
    <div class="fltlft"><a href="<?php echo BASE_URL;?>" class="homeButton"></a></div>  
-   <div class="fltlft"><a href="<?php echo BASE_URL;?>GWA?y=<?php echo date('Y');?>" 
+   <div class="fltlft"><a href="<?php echo BASE_URL;?>GWA?y=<?php echo get_latest_year(); ?>" 
                                                                         class="GWAButton"></a></div>
    <div class="fltlft"><a href="<?php echo BASE_URL;?>GrandOfficers"    class="GOButton"></a></div>
    <div class="fltlft"><a href="<?php echo BASE_URL;?>SupremeInspector" class="SIButton"></a></div>

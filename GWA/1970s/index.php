@@ -1,5 +1,6 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
+   require( INC . "database.php");
    $pageHeight = "GWAPicHeight";
    $pageType   = "GWA";
    $pageSubType = "1970";

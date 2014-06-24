@@ -6,9 +6,9 @@
     $start = $pageSubType;
     $end = floor($start/10)*10 + 9;
 
-	if($end > intval(date('Y'))) {
-      $end = intval(date('Y'));
-	}
+	  if($end > get_latest_year()) {
+        $end = get_latest_year();
+	  }
     $gwaRange = get_gwa_info_range($start, $end);
   }
 ?>

@@ -19,7 +19,7 @@
             <?php foreach($grandOfficers as $grandOfficer){ ?>
   
                 <span id="office">
-		        <?php echo $grandOfficer["office"] . " ~ "?>
+		        <?php echo $grandOfficer["office"] . " ~ "; ?>
                 </span>
              	<span id="go">
 		        <?php echo $grandOfficer["first_name"] . " "?>

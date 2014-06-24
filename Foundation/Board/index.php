@@ -18,6 +18,7 @@
     <div> <span id="go">Mr. Wayne Morrison ~</span> <span id="office">Past Grand Master, Chairman</span></div>
     <div> <span id="go">Mr. Michael Deveraux ~</span> <span id="office"> Vice Chairman</span></div>
     <div> <span id="go">Miss Erin Atkins ~ </span> <span id="office">Grand Executive, PGWA</span></div>
+    <div> <span id="go">Mrs. Kim Moreno ~ </span> <span id="office">Grand Executive, PGWA</span></div>
     <div> <span id="go">Mr. Ernest Pompeo ~</span> <span id="office"> Grand Executive</span></div>
     <div> <span id="go">Mrs. Georgia Morphis ~</span> <span id="office"> Past Grand Matron</span></div>
     <div> <span id="go">Mrs. Diane Rogers ~</span> <span id="office"> Grand Executive</span></div>

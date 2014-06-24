@@ -1,5 +1,6 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
+   require( INC . "database.php");
    $pageHeight = "GWAPicHeight";
    $pageType   = "GWA";
    $pageSubType = "2010";
@@ -20,7 +21,41 @@
     <div id="ClearFiveColumnTable">
     <table width="760" >
     <tr>  <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" height="30" alt="" /></tr>
-       <tr>
+         <tr>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
+             </div>
+         </td>
+         <td >        
+           <div id="GWAHeadPic" align="center">
+             <a href="<?php echo BASE_URL;?>GWA?y=2015"><img src="<?php echo BASE_URL;?>images/GWA Photos/82 Alexa Templeton.jpg" alt="GWA"/>
+             <div id="GWATitles">Alexa Templeton<br>2014-2015</div></a>
+           </div>
+         </td>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="100" alt="" />
+             </div>
+         </td>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
+             </div>
+         </td>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
+             </div>
+         </td>
+
+      </tr>
+   
+
+     </table>
+
+    <table width="760" >
+      <tr>
          <td>
              <div id="GWABlankPic">
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="20" alt="" />

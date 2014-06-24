@@ -16,11 +16,9 @@
    </div>
     <div class="GAReg">
       <div class="postit">
-        <a href="<?php //echo BASE_URL;?>GrandAssembly/Registration"> 
-            <div class="blue">Grand Assembly <br>Registration</div></a>
-
-        <div class="green"><div class="congrats">
-          Congratulations!</div> Grand Worthy Advisor-Elect <br> Alexa Templeton
+        <div class="blue"><div class="farewell"> On July 30th, 2014<br>
+          We will bid farewell to<div class="red"><div class="name"> Aunt Bobby</div></div> as our<br> <a href="<?php echo BASE_URL;?>SupremeInspector">
+          Supreme Inspector</a><br></div>1993-2014
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@
    include( INC . 'sidebar.php');   
 
  if($_SERVER["REQUEST_METHOD"] == "POST") {
-	
+	echo "Hello";
 	$type = $_POST["type"];
 
 	if ($_FILES[csv][size] > 0) { 
@@ -29,6 +29,7 @@
         $header = fgetcsv($handle,1000,",","'");
 		
 	    if($type == "GWA"){
+	    	echo "GWA";
 		  $db->query("CREATE TABLE IF NOT EXISTS gwa(
 		              number INTEGER,
 					  year INTEGER,
@@ -43,6 +44,7 @@
 
 		  do { 
 			if ($data[0]) { 
+				echo "found data " . $data[0] . "last_name " . $data[4] . "\n";
 				$db->query("INSERT INTO gwa 
 				 (number, year, first_name, middle_name, last_name, married_name, 
 				  install_year, assembly, swa) VALUES 
@@ -70,6 +72,7 @@
 
 		  do { 
 			if ($data[0]) { 
+				echo "term year " . $data[0];
 				$db->query("INSERT INTO term 
 			 (year, description, details) VALUES 
 					( 
@@ -110,18 +113,22 @@
 	    if($type == "GrandOfficers"){
 		  $db->query("CREATE TABLE IF NOT EXISTS floor(
 					  year INTEGER,
+					  rank INTEGER,
 					  office VARCHAR(50),
-					  girl INTEGER);");
+					  girl INTEGER,
+					  protem INTEGER);");
           $db->query("TRUNCATE TABLE floor");
 
 		  do { 
 			if ($data[0]) { 
 				$db->query("INSERT INTO floor 
-			        (year, office, girl) VALUES 
+			        (year, rank, office, girl,protem) VALUES 
 					( 
 						'".addslashes($data[0])."', 
-				   		'".addslashes($data[1])."', 
-						'".addslashes($data[2])."' 
+						'".addslashes($data[1])."', 
+				   		'".addslashes($data[2])."', 
+						'".addslashes($data[3])."', 
+						'".addslashes($data[4])."' 
 					) 
 				"); 
 			} 
@@ -193,6 +200,7 @@
 		$success=TRUE; 	
 	} 
 }
+echo "Hello";
 ?> 
   <div id="mainContent">
     <?php include(LOGIN . "login_header.php"); ?>

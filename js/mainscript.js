@@ -55,7 +55,7 @@ $(function() {
 
 
 //change your event date event here.      
-var eventdate = new Date("June 17, 2014 02:00:00 GMT");
+var eventdate = new Date("June 16, 2015 02:00:00 MST");
 function toSt(n)
 {s=""
 if(n<10) s+="0"; 

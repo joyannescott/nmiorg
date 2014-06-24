@@ -10,7 +10,7 @@
           <td> Anasazi Ballroom</td>
         </tr>
         <tr>
-          <td>8:00 – 9:30</td>
+          <td>8:00 &ndash; 9:30</td>
           <td> Registration</td>
           <td> Valle Grande Lobby</td>
         </tr>
@@ -21,7 +21,7 @@
         </tr>
         <tr>
           <td>8:30 </td>
-          <td> Grand Assembly Session – Opening, Initiation </td>
+          <td> Grand Assembly Session &ndash; Opening, Initiation </td>
           <td>Anasazi Ballroom </td>
         </tr>
         <tr>
@@ -30,12 +30,12 @@
           <td> Gran Quivera Room</td>
         </tr>
         <tr>
-          <td>12:30 – 2:00</td>
+          <td>12:30 &ndash; 2:00</td>
           <td> Registration</td>
           <td>Valle Grande Lobby </td>
         </tr>
         <tr>
-          <td>1:30 – 3:30</td>
+          <td>1:30 &ndash; 3:30</td>
           <td> Grand Assembly Session</td>
           <td> Anasazi Ballroom</td>
         </tr>
