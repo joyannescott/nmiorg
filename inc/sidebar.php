@@ -70,6 +70,7 @@
               <li><p><a id="sideBarItem" href="/GrandOfficers">Grand Officers</a></p></li>
               <li><p><a id="sideBarItem" href="/JuniorExecs">Junior Executives</a></p></li>
               <li><p><a id="multiline" href="/GrandRepresentatives">Grand Representatives</a></p></li>
+              <li><p><a id="multiline" href="/PastGrandOfficers">Past Grand Officers</a></p></li>
       <?php } ?>
       <?php if($pageType == "GA"){ ?>
               <li>
@@ -118,6 +119,10 @@
             <li><p><a id="sideBarItem_bs" href='/LocalAssemblies/Girls'>Assembly Reg</a></p></li>
             <li><p><a id="sideBarItem_bs" href='/GrandAssembly/Ritual'>Ritual Reg</a></p></li>
         <?php } ?>
+         <p>&nbsp;</p>
+         <li><p><a id="sideBarItem_bs" href='/LocalAssemblies'>Current</a></p></li>
+         <p>&nbsp;</p>
+         <li><p><a id="sideBarItem_bs" href='/LocalAssemblies/Historical'>Historical</a></p></li>
       <?php } ?>
       <?php if($pageType == "import"){ ?>
          <p>&nbsp;</p>

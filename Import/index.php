@@ -196,6 +196,32 @@
 			} 
 		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
+	    if($type == "Assemblies"){
+		  $db->query("CREATE TABLE IF NOT EXISTS assemblies(
+					  num INTEGER,
+					  name VARCHAR(50),
+					  location VARCHAR(50),
+					  ma VARCHAR(50),
+					  email VARCHAR(50),
+					  active INTEGER);");
+          $db->query("TRUNCATE TABLE assemblies");
+
+		  do { 
+			if ($data[0]) { 
+				$db->query("INSERT INTO assemblies 
+			        (num, name, location, ma, email, active) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+						'".addslashes($data[1])."', 
+				   		'".addslashes($data[2])."', 
+						'".addslashes($data[3])."', 
+						'".addslashes($data[4])."', 
+						'".addslashes($data[5])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
+		}
 
 		$success=TRUE; 	
 	} 
@@ -217,6 +243,7 @@ echo "Hello";
 	    <option value = "GrandReps"> Grand Representatives</option>
 	    <option value = "GCCT"> Grand Cross Of Color Team</option>
 	    <option value = "Pages"> Pages</option>
+	    <option value = "Assemblies"> Assemblies</option>
 	  </select> 
   </center>
 

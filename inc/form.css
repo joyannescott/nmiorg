@@ -56,22 +56,21 @@ form td textarea {
 	margin-bottom: 50px;
 	}*/
 form label {
-    font-variant:normal;
+  font-variant:normal;
 	font-size: 16px;
 }
 form select {
     font-family: 'Gilda Display', serif;
     font-variant:small-caps;
-    font-size: 22px;
-	color: #FFF;
+	  color: #FFF;
     font-size: 16px;
     -webkit-border-radius: 2px;
     border-radius: 2px;    
     border: 1px solid #990000;
     padding: 14px;
-	height: 30px;
-	background: #990000;
-	margin: 0px auto 50px auto;
+	  height: 30px;
+	  background: #990000;
+	  margin: 0px auto 50px auto;
 	}
 
 form input[type="submit"], .button {
@@ -89,34 +88,67 @@ form input[type="submit"], .button {
     display: block;
     font-size: 1.5em;
     line-height: 1.6em;
-    margin: 3em 0 0;
+    margin: 3em 0 2.5em;
     outline: none;
     padding: .4em 0;
     text-shadow: 0 1px #68B25B;
   
 }
+.pagination {
+  display: inline-block;
+  float: left;
+  margin-top: -30px;
+}
+.pagination input[type="submit"] {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: none;
+    background: #990000;
+    box-shadow: 0 3px 0 0 #770000;
+    color: #FFF;
+    font-size: 14px;
+    width: 1em;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;    
+    font-family: 'Gilda Display', serif;
+    font-variant:small-caps;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 5px;
+    outline: none;
+    padding: 0;
+    text-shadow: 0 1px #68B25B;
+ 
+}
+#current{
+     background: #999;
+    box-shadow: 0 3px 0 0 #777;
+
+}
 .button {
     font-weight: 500;
-        font-size: 1.2em;
+    font-size: 1.2em;
     margin: 0 auto;
-  width: 50%;
- 
+    width: 50%;
 }
 .search form {
     width: auto;
     text-align: center;
 }
 .search form input[type="text"] {
-    font-size: 24px;
-    width: 70%;
     line-height: 1.5;
+    font-size: 24px;
+    margin: 0px auto 60px auto;
     vertical-align: top;
     padding: 3px;
+    width: 80%;
 }
 .search form input[type="submit"] {
-    width: auto;
-    vertical-align: top;    
-}
+    margin-top: 0px;
+ }
 
 form {
   background: #fff;
@@ -126,7 +158,9 @@ form {
   box-shadow: 0 0 1em #222;
   border-radius: 5px;
 }
-
+.search form{
+  padding: 1em 4em 2em;
+}
 #clock{
   background: none;
   padding: 0;
@@ -203,4 +237,21 @@ form span:after {
   form {
     max-width: 660px;
   }
+  form select {
+    font-size: 22px;
+    border: 1px solid #999;
+    height: 40px;
+    background: #fff;
+    color: #990000;
+    margin: 0px auto 50px auto;
+  }
+form input[type="submit"], .button {
+    /*width: 375px;*/
+    background: #fff;
+    color: #990000;
+    font-size: 1.5em;
+    line-height: 1.6em;
+  
+}
+
 }

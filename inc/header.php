@@ -168,12 +168,17 @@
                   <td><a href="<?php echo BASE_URL;?>GrandOfficers">Grand Officers</a></td>
                   <td><a href="<?php echo BASE_URL;?>GrandRepresentatives">Grand Representatives</a></td>
                   <td> <a href="<?php echo BASE_URL;?>JuniorExecs">Junior Executives</a></td>
+                  <td> <a href="<?php echo BASE_URL;?>PastGrandOfficers">Past Grand Officers</a></td>
           <?php }?>
           <?php if($pageType == "GA"){?>
                   <td><a href="<?php echo BASE_URL;?>GrandAssembly">Grand Assembly</a></td>
                   <td><a href="<?php echo BASE_URL;?>GrandAssembly/Executives">Grand Executives</a></td>
                   <td><a href="<?php echo BASE_URL;?>GrandAssembly/Deputies">Grand Deputies</a></td>
                   <td><a href="<?php echo BASE_URL;?>GrandAssembly/Registration">Registration</a></td>
+          <?php }?>
+         <?php if($pageType == "Assemblies"){?>
+                  <td><a href="<?php echo BASE_URL;?>LocalAssemblies">Current Assemblies</a></td>
+                  <td><a href="<?php echo BASE_URL;?>LocalAssemblies/Historical">Historical Assemblies</a></td>
           <?php }?>
           <?php if($pageType == "Foundation"){?>
                   <td><a href="<?php echo BASE_URL;?>Foundation">Foundation</a></td>

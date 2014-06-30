@@ -106,8 +106,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/78 Lauren Deveraux.jpg" alt="GWA"/>
-             <div id="GWATitles">Lauren Deveraux<br>2010-2011</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2011"><img src="<?php echo BASE_URL;?>images/GWA Photos/78 Lauren Deveraux.jpg" alt="GWA"/>
+             <div id="GWATitles">Lauren Deveraux<br>2010-2011</div></a>
            </div>
          </td>
          <td>
@@ -117,8 +117,8 @@
          </td>
         <td>
              <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/77 Brianna Schmittal.jpg" alt="GWA"/>
-             <div id="GWATitles">Brianna Schmittal <br>2009-2010</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2010"><img src="<?php echo BASE_URL;?>images/GWA Photos/77 Brianna Schmittal.jpg" alt="GWA"/>
+             <div id="GWATitles">Brianna Schmittal <br>2009-2010</div></a>
            </div>
  
          </td>

@@ -1,283 +1,779 @@
-year,rank,office,girl,Protem,,,,,,,
-2015,1,Grand Worthy Advisor,10030,0,,,,,,,
-2015,2,Grand Worthy Associate Advisor,10018,0,,,,,,,
-2015,3,Grand Charity,10023,0,,,,,,,
-2015,4,Grand Hope,10028,0,,,,,,,
-2015,5,Grand Faith,10024,0,,,,,,,
-2015,6,Grand Lecturer,10022,0,,,,,,,
-2015,7,Grand Recorder,10021,0,,,,,,,
-2015,8,Grand Treasurer,10014,0,,,,,,,
-2015,9,Grand Chaplain,10016,0,,,,,,,
-2015,10,Grand Drill Leader,10012,0,,,,,,,
-2015,11,Grand Love,10017,0,,,,,,,
-2015,12,Grand Religion,10011,0,,,,,,,
-2015,13,Grand Nature,10012,0,,,,,,,
-2015,14,Grand Immortality,10015,0,,,,,,,
-2015,15,Grand Fidelity,10009,0,,,,,,,
-2015,16,Grand Patriotism,10010,0,,,,,,,
-2015,17,Grand Service,9999,0,,,,,,,
-2015,18,Grand Confidential Observer,9998,0,,,,,,,
-2015,19,Grand Outer Observer,0,0,,,,,,,
-2015,20,Grand Musician,10013,0,,,,,,,
-2014,1,Grand Worthy Advisor,10032,0,,,,,,,
-2014,2,Grand Worthy Associate Advisor,10031,0,,,,,,,
-2014,3,Grand Charity,10030,0,,,,,,,
-2014,4,Grand Hope,10029,0,,,,,,,
-2014,5,Grand Faith,10028,0,,,,,,,
-2014,6,Grand Lecturer,10027,0,,,,,,,
-2014,7,Grand Recorder,10026,0,,,,,,,
-2014,8,Grand Treasurer,10025,0,,,,,,,
-2014,9,Grand Chaplain,10024,0,,,,,,,
-2014,10,Grand Drill Leader,10023,0,,,,,,,
-2014,11,Grand Love,10022,0,,,,,,,
-2014,12,Grand Religion,10021,0,,,,,,,
-2014,13,Grand Nature,10020,0,,,,,,,
-2014,14,Grand Immortality,10019,0,,,,,,,
-2014,15,Grand Fidelity,10018,0,,,,,,,
-2014,16,Grand Patriotism,10017,0,,,,,,,
-2014,17,Grand Service,10016,0,,,,,,,
-2014,18,Grand Confidential Observer,10015,0,,,,,,,
-2014,19,Grand Outer Observer,10014,0,,,,,,,
-2014,20,Grand Musician,10013,0,,,,,,,
-2013,1,Grand Worthy Advisor,10013,0,,,,,,,
-2013,2,Grand Worthy Associate Advisor,10032,0,,,,,,,
-2013,3,Grand Charity,10035,0,,,,,,,
-2013,4,Grand Hope,10027,0,,,,,,,
-2013,5,Grand Faith,10026,0,,,,,,,
-2013,6,Grand Lecturer,10031,0,,,,,,,
-2013,7,Grand Recorder,10028,0,,,,,,,
-2013,8,Grand Treasurer,10044,0,,,,,,,
-2013,9,Grand Chaplain,10030,0,,,,,,,
-2013,10,Grand Drill Leader,10025,0,,,,,,,
-2013,11,Grand Love,10029,0,,,,,,,
-2013,12,Grand Religion,10043,0,,,,,,,
-2013,13,Grand Nature,10011,0,,,,,,,
-2013,14,Grand Immortality,10001,0,,,,,,,
-2013,15,Grand Fidelity,10021,0,,,,,,,
-2013,16,Grand Patriotism,10023,0,,,,,,,
-2013,17,Grand Service,10024,0,,,,,,,
-2013,18,Grand Confidential Observer,10039,0,,,,,,,
-2013,19,Grand Outer Observer,10022,0,,,,,,,
-2012,1,Grand Worthy Advisor,10036,0,,,,,,,
-2012,2,Grand Worthy Associate Advisor,10041,0,,,,,,,
-2012,3,Grand Charity,10032,0,,,,,,,
-2012,4,Grand Hope,10035,0,,,,,,,
-2012,5,Grand Faith,10013,0,,,,,,,
-2012,6,Grand Lecturer,10033,0,,,,,,,
-2012,7,Grand Recorder,10011,1,,,,,,,
-2012,8,Grand Treasurer,10031,0,,,,,,,
-2012,9,Grand Chaplain,10026,0,,,,,,,
-2012,10,Grand Drill Leader,10027,0,,,,,,,
-2012,11,Grand Love,10025,0,,,,,,,
-2012,12,Grand Religion,10029,0,,,,,,,
-2012,13,Grand Nature,10030,0,,,,,,,
-2012,14,Grand Immortality,10028,0,,,,,,,
-2012,15,Grand Fidelity,10024,1,,,,,,,
-2012,16,Grand Patriotism,10044,0,,,,,,,
-2012,17,Grand Service,10016,1,,,,,,,
-2012,18,Grand Confidential Observer,10001,0,,,,,,,
-2012,19,Grand Outer Observer,10043,1,,,,,,,
-2011,1,Grand Worthy Advisor,10037,0,,,,,,,
-2011,2,Grand Worthy Associate Advisor,10116,1,,,,,,,
-2011,3,Grand Charity,10036,0,,,,,,,
-2011,4,Grand Hope,10033,0,,,,,,,
-2011,5,Grand Faith,10041,0,,,,,,,
-2011,6,Grand Recorder,10031,0,,,,,,,
-2011,7,Grand Treasurer,10034,1,,,,,,,
-2011,8,Grand Chaplain,10013,0,,,,,,,
-2011,9,Grand Drill Leader,10032,0,,,,,,,
-2011,10,Grand Love,10030,0,,,,,,,
-2011,11,Grand Religion,10026,0,,,,,,,
-2011,12,Grand Nature,10045,0,,,,,,,
-2011,13,Grand Immortality,10025,0,,,,,,,
-2011,14,Grand Fidelity,10035,0,,,,,,,
-2011,15,Grand Patriotism,10027,0,,,,,,,
-2011,16,Grand Service,10046,0,,,,,,,
-2011,17,Grand Confidential Observer,10040,0,,,,,,,
-2011,18,Grand Outer Observer,10047,0,,,,,,,
-2010,1,Grand Worthy Advisor,10112,0,,,,,,,
-2010,2,Grand Worthy Associate Advisor,10114,0,,,,,,,
-2010,3,Grand Charity,10108,0,,,,,,,
-2010,4,Grand Hope,10111,0,,,,,,,
-2010,5,Grand Faith,10109,0,,,,,,,
-2010,6,Grand Lecturer,10113,0,,,,,,,
-2010,7,Grand Recorder,10106,0,,,,,,,
-2010,8,Grand Treasurer,10033,0,,,,,,,
-2010,9,Grand Chaplain,10107,0,,,,,,,
-2010,10,Grand Drill Leader,10037,0,,,,,,,
-2010,11,Grand Love,10031,0,,,,,,,
-2010,12,Grand Religion,10032,0,,,,,,,
-2010,13,Grand Nature,10105,0,,,,,,,
-2010,14,Grand Immortality,10104,0,,,,,,,
-2010,15,Grand Fidelity,10103,0,,,,,,,
-2010,16,Grand Patriotism,10102,0,,,,,,,
-2010,17,Grand Service,10026,0,,,,,,,
-2010,18,Grand Confidential Observer,10101,0,,,,,,,
-2010,19,Grand Outer Observer,10100,0,,,,,,,
-2009,1,Grand Worthy Advisor,10116,0,,,,,,,
-2009,2,Grand Worthy Associate Advisor,10115,0,,,,,,,
-2009,3,Grand Charity,10114,0,,,,,,,
-2009,4,Grand Hope,10113,0,,,,,,,
-2009,5,Grand Faith,10112,0,,,,,,,
-2009,6,Grand Recorder,10111,0,,,,,,,
-2009,7,Grand Treasurer,10110,0,,,,,,,
-2009,8,Grand Chaplain,10109,0,,,,,,,
-2009,9,Grand Drill Leader,10108,0,,,,,,,
-2009,10,Grand Love,10037,0,,,,,,,
-2009,11,Grand Religion,10107,0,,,,,,,
-2009,12,Grand Nature,10106,0,,,,,,,
-2009,13,Grand Immortality,10031,0,,,,,,,
-2009,14,Grand Fidelity,10033,0,,,,,,,
-2009,15,Grand Patriotism,10032,0,,,,,,,
-2008,1,Grand Worthy Advisor,10121,0,,,,,,,
-2008,2,Grand Worthy Associate Advisor,10120,1,,,,,,,
-2008,3,Grand Charity,10116,0,,,,,,,
-2008,4,Grand Hope,10119,1,,,,,,,
-2008,5,Grand Faith,10114,0,,,,,,,
-2008,6,Grand Recorder,10034,1,,,,,,,
-2008,7,Grand Treasurer,10107,1,,,,,,,
-2008,8,Grand Chaplain,10115,0,,,,,,,
-2008,9,Grand Drill Leader,10113,0,,,,,,,
-2008,10,Grand Love,10118,0,,,,,,,
-2008,11,Grand Religion,10112,0,,,,,,,
-2008,12,Grand Nature,10111,0,,,,,,,
-2008,13,Grand Immortality,10108,0,,,,,,,
-2008,14,Grand Fidelity,10110,0,,,,,,,
-2008,15,Grand Patriotism,10109,0,,,,,,,
-2008,16,Grand Service,10037,0,,,,,,,
-2008,17,Grand Confidential Observer,10117,0,,,,,,,
-2008,18,Grand Outer Observer,10106,0,,,,,,,
-2007,1,Grand Worthy Advisor,10119,0,,,,,,,
-2007,2,Grand Worthy Associate Advisor,10121,0,,,,,,,
-2007,3,Grand Charity,10122,0,,,,,,,
-2007,4,Grand Hope,10123,0,,,,,,,
-2007,5,Grand Faith,10116,0,,,,,,,
-2007,5,Grand Lecturer,10124,0,,,,,,,
-2007,6,Grand Recorder,10124,0,,,,,,,
-2007,7,Grand Treasurer,10112,1,,,,,,,
-2007,8,Grand Chaplain,10125,0,,,,,,,
-2007,9,Grand Drill Leader,10126,0,,,,,,,
-2007,10,Grand Love,10114,0,,,,,,,
-2007,11,Grand Religion,10121,1,,,,,,,
-2007,12,Grand Nature,10127,0,,,,,,,
-2007,13,Grand Immortality,10128,0,,,,,,,
-2007,14,Grand Fidelity,10118,0,,,,,,,
-2007,15,Grand Patriotism,10113,0,,,,,,,
-2007,16,Grand Service,10115,0,,,,,,,
-2007,17,Grand Confidential Observer,10108,0,,,,,,,
-2007,18,Grand Outer Observer,10111,0,,,,,,,
-2006,1,Grand Worthy Advisor,10120,0,,,,,,,
-2006,2,Grand Worthy Associate Advisor,10123,0,,,,,,,
-2006,3,Grand Charity,10124,0,,,,,,,
-2006,4,Grand Hope,10034,1,,,,,,,
-2006,5,Grand Faith,10200,1,,,,,,,
-2006,6,Grand Recorder,10125,0,,,,,,,
-2006,7,Grand Treasurer,10203,0,,,,,,,
-2006,8,Grand Chaplain,10121,0,,,,,,,
-2006,9,Grand Drill Leader,10119,0,,,,,,,
-2006,10,Grand Love,10202,0,,,,,,,
-2006,11,Grand Religion,10121,0,,,,,,,
-2006,12,Grand Nature,10114,1,,,,,,,
-2006,13,Grand Immortality,10201,0,,,,,,,
-2006,14,Grand Fidelity,10126,0,,,,,,,
-2006,15,Grand Patriotism,10116,0,,,,,,,
-2006,16,Grand Service,10035,0,,,,,,,
-2006,17,Grand Confidential Observer,10115,0,,,,,,,
-2006,18,Grand Outer Observer,10128,0,,,,,,,
-2005,1,Grand Worthy Advisor,10200,0,,,,,,,
-2005,2,Grand Worthy Associate Advisor,10212,0,,,,,,,
-2005,3,Grand Charity,10211,0,,,,,,,
-2005,4,Grand Hope,10124,0,,,,,,,
-2005,5,Grand Faith,10120,0,,,,,,,
-2005,5,Grand Lecturer,10210,0,,,,,,,
-2005,6,Grand Recorder,10209,0,,,,,,,
-2005,7,Grand Treasurer,10208,0,,,,,,,
-2005,8,Grand Chaplain,10207,0,,,,,,,
-2005,9,Grand Drill Leader,10206,0,,,,,,,
-2005,10,Grand Love,10119,0,,,,,,,
-2005,11,Grand Religion,10122,0,,,,,,,
-2005,12,Grand Nature,10034,0,,,,,,,
-2005,13,Grand Immortality,10125,0,,,,,,,
-2005,14,Grand Fidelity,10123,0,,,,,,,
-2005,15,Grand Patriotism,10201,0,,,,,,,
-2005,16,Grand Service,10205,0,,,,,,,
-2005,17,Grand Confidential Observer,10204,0,,,,,,,
-2005,18,Grand Outer Observer,10126,0,,,,,,,
-2004,1,Grand Worthy Advisor,10219,0,,,,,,,
-2004,2,Grand Worthy Associate Advisor,10210,0,,,,,,,
-2004,3,Grand Charity,10200,0,,,,,,,
-2004,4,Grand Hope,10034,0,,,,,,,
-2004,5,Grand Faith,10218,0,,,,,,,
-2004,6,Grand Recorder,10217,0,,,,,,,
-2004,7,Grand Treasurer,10207,0,,,,,,,
-2004,8,Grand Chaplain,10120,0,,,,,,,
-2004,9,Grand Drill Leader,10216,0,,,,,,,
-2004,10,Grand Love,10212,0,,,,,,,
-2004,11,Grand Religion,10220,0,,,,,,,
-2004,12,Grand Nature,10208,0,,,,,,,
-2004,13,Grand Immortality,10215,0,,,,,,,
-2004,14,Grand Fidelity,10211,0,,,,,,,
-2004,15,Grand Patriotism,10124,0,,,,,,,
-2004,16,Grand Service,10214,0,,,,,,,
-2004,17,Grand Confidential Observer,10213,1,,,,,,,
-2004,18,Grand Outer Observer,10123,1,,,,,,,
-2003,1,Grand Worthy Advisor,10231,0,,,,,,,
-2003,2,Grand Worthy Associate Advisor,10219,0,,,,,,,
-2003,3,Grand Charity,10230,0,,,,,,,
-2003,4,Grand Hope,10229,0,,,,,,,
-2003,5,Grand Faith,10216,0,,,,,,,
-2003,6,Grand Lecturer,10228,0,,,,,,,
-2003,7,Grand Recorder,10034,0,,,,,,,
-2003,8,Grand Treasurer,10227,1,,,,,,,
-2003,9,Grand Chaplain,10210,0,,,,,,,
-2003,10,Grand Drill Leader,10200,0,,,,,,,
-2003,11,Grand Love,10218,0,,,,,,,
-2003,12,Grand Religion,10226,0,,,,,,,
-2003,13,Grand Nature,10207,0,,,,,,,
-2003,13,Grand Immortality,10124,1,,,,,,,
-2003,14,Grand Immortality,10206,0,,,,,,,
-2003,15,Grand Fidelity,10225,0,,,,,,,
-2003,16,Grand Patriotism,10224,0,,,,,,,
-2003,17,Grand Service,10223,0,,,,,,,
-2003,18,Grand Confidential Observer,10210,0,,,,,,,
-2003,19,Grand Outer Observer,10222,0,,,,,,,
-2003,20,Grand Choir Director,10221,0,,,,,,,
-2002,1,Grand Worthy Advisor,10241,0,,,,,,,
-2002,2,Grand Worthy Associate Advisor,10231,0,,,,,,,
-2002,3,Grand Charity,10240,0,,,,,,,
-2002,4,Grand Hope,10239,0,,,,,,,
-2002,5,Grand Faith,10238,0,,,,,,,
-2002,6,Grand Lecturer,10237,0,,,,,,,
-2002,7,Grand Recorder,10236,0,,,,,,,
-2002,8,Grand Treasurer,10210,0,,,,,,,
-2002,9,Grand Chaplain,10235,0,,,,,,,
-2002,10,Grand Drill Leader,10219,0,,,,,,,
-2002,11,Grand Love,10200,0,,,,,,,
-2002,12,Grand Religion,10234,0,,,,,,,
-2002,13,Grand Nature,10216,0,,,,,,,
-2002,14,Grand Immortality,10233,0,,,,,,,
-2002,15,Grand Fidelity,10207,0,,,,,,,
-2002,16,Grand Patriotism,10232,0,,,,,,,
-2002,17,Grand Service,10217,0,,,,,,,
-2002,18,Grand Confidential Observer,10224,0,,,,,,,
-2002,19,Grand Choir Director,10226,0,,,,,,,
-2001,1,Grand Worthy Advisor,10250,0,,,,,,,
-2001,2,Grand Worthy Associate Advisor,10241,0,,,,,,,
-2001,3,Grand Charity,10231,0,,,,,,,
-2001,4,Grand Hope,10251,0,,,,,,,
-2001,5,Grand Faith,10237,0,,,,,,,
-2001,6,Grand Lecturer,10249,0,,,,,,,
-2001,7,Grand Recorder,10248,0,,,,,,,
-2001,8,Grand Treasurer,10034,0,,,,,,,
-2001,9,Grand Chaplain,10240,0,,,,,,,
-2001,10,Grand Drill Leader,10229,0,,,,,,,
-2001,11,Grand Love,10228,0,,,,,,,
-2001,12,Grand Religion,10247,0,,,,,,,
-2001,13,Grand Nature,10239,0,,,,,,,
-2001,14,Grand Immortality,10246,0,,,,,,,
-2001,15,Grand Fidelity,10245,0,,,,,,,
-2001,16,Grand Patriotism,10230,0,,,,,,,
-2001,17,Grand Service,10244,0,,,,,,,
-2001,18,Grand Confidential Observer,10243,0,,,,,,,
-2001,19,Grand Choir Director,10242,0,,,,,,,
-2001,20,Grand Musician,10235,0,,,,,,,
+year,rank,office,girl,Protem
+2015,1,Grand Worthy Advisor,10030,0
+2015,2,Grand Worthy Associate Advisor,10018,0
+2015,3,Grand Charity,10023,0
+2015,4,Grand Hope,10028,0
+2015,5,Grand Faith,10024,0
+2015,6,Grand Lecturer,10022,0
+2015,7,Grand Recorder,10021,0
+2015,8,Grand Treasurer,10014,0
+2015,9,Grand Chaplain,10016,0
+2015,10,Grand Drill Leader,10012,0
+2015,11,Grand Love,10017,0
+2015,12,Grand Religion,10011,0
+2015,13,Grand Nature,10012,0
+2015,14,Grand Immortality,10015,0
+2015,15,Grand Fidelity,10009,0
+2015,16,Grand Patriotism,10010,0
+2015,17,Grand Service,9999,0
+2015,18,Grand Confidential Observer,9998,0
+2015,19,Grand Outer Observer,0,0
+2015,20,Grand Musician,10013,0
+2014,1,Grand Worthy Advisor,10032,0
+2014,2,Grand Worthy Associate Advisor,10031,0
+2014,3,Grand Charity,10030,0
+2014,4,Grand Hope,10029,0
+2014,5,Grand Faith,10028,0
+2014,6,Grand Lecturer,10027,0
+2014,7,Grand Recorder,10026,0
+2014,8,Grand Treasurer,10025,0
+2014,9,Grand Chaplain,10024,0
+2014,10,Grand Drill Leader,10023,0
+2014,11,Grand Love,10022,0
+2014,12,Grand Religion,10021,0
+2014,13,Grand Nature,10020,0
+2014,14,Grand Immortality,10019,0
+2014,15,Grand Fidelity,10018,0
+2014,16,Grand Patriotism,10017,0
+2014,17,Grand Service,10016,0
+2014,18,Grand Confidential Observer,10015,0
+2014,19,Grand Outer Observer,10014,0
+2014,20,Grand Musician,10013,0
+2013,1,Grand Worthy Advisor,10013,0
+2013,2,Grand Worthy Associate Advisor,10032,0
+2013,3,Grand Charity,10035,0
+2013,4,Grand Hope,10027,0
+2013,5,Grand Faith,10026,0
+2013,6,Grand Lecturer,10031,0
+2013,7,Grand Recorder,10028,0
+2013,8,Grand Treasurer,10044,0
+2013,9,Grand Chaplain,10030,0
+2013,10,Grand Drill Leader,10025,0
+2013,11,Grand Love,10029,0
+2013,12,Grand Religion,10043,0
+2013,13,Grand Nature,10011,0
+2013,14,Grand Immortality,10001,0
+2013,15,Grand Fidelity,10021,0
+2013,16,Grand Patriotism,10023,0
+2013,17,Grand Service,10024,0
+2013,18,Grand Confidential Observer,10039,0
+2013,19,Grand Outer Observer,10022,0
+2012,1,Grand Worthy Advisor,10036,0
+2012,2,Grand Worthy Associate Advisor,10041,0
+2012,3,Grand Charity,10032,0
+2012,4,Grand Hope,10035,0
+2012,5,Grand Faith,10013,0
+2012,6,Grand Lecturer,10033,0
+2012,7,Grand Recorder,10011,1
+2012,8,Grand Treasurer,10031,0
+2012,9,Grand Chaplain,10026,0
+2012,10,Grand Drill Leader,10027,0
+2012,11,Grand Love,10025,0
+2012,12,Grand Religion,10029,0
+2012,13,Grand Nature,10030,0
+2012,14,Grand Immortality,10028,0
+2012,15,Grand Fidelity,10024,1
+2012,16,Grand Patriotism,10044,0
+2012,17,Grand Service,10016,1
+2012,18,Grand Confidential Observer,10001,0
+2012,19,Grand Outer Observer,10043,1
+2011,1,Grand Worthy Advisor,10037,0
+2011,2,Grand Worthy Associate Advisor,10116,1
+2011,3,Grand Charity,10036,0
+2011,4,Grand Hope,10033,0
+2011,5,Grand Faith,10041,0
+2011,6,Grand Recorder,10031,0
+2011,7,Grand Treasurer,10034,1
+2011,8,Grand Chaplain,10013,0
+2011,9,Grand Drill Leader,10032,0
+2011,10,Grand Love,10030,0
+2011,11,Grand Religion,10026,0
+2011,12,Grand Nature,10045,0
+2011,13,Grand Immortality,10025,0
+2011,14,Grand Fidelity,10035,0
+2011,15,Grand Patriotism,10027,0
+2011,16,Grand Service,10046,0
+2011,17,Grand Confidential Observer,10040,0
+2011,18,Grand Outer Observer,10047,0
+2010,1,Grand Worthy Advisor,10112,0
+2010,2,Grand Worthy Associate Advisor,10114,0
+2010,3,Grand Charity,10108,0
+2010,4,Grand Hope,10111,0
+2010,5,Grand Faith,10109,0
+2010,6,Grand Lecturer,10113,0
+2010,7,Grand Recorder,10106,0
+2010,8,Grand Treasurer,10033,0
+2010,9,Grand Chaplain,10107,0
+2010,10,Grand Drill Leader,10037,0
+2010,11,Grand Love,10031,0
+2010,12,Grand Religion,10032,0
+2010,13,Grand Nature,10105,0
+2010,14,Grand Immortality,10104,0
+2010,15,Grand Fidelity,10103,0
+2010,16,Grand Patriotism,10102,0
+2010,17,Grand Service,10026,0
+2010,18,Grand Confidential Observer,10101,0
+2010,19,Grand Outer Observer,10100,0
+2009,1,Grand Worthy Advisor,10116,0
+2009,2,Grand Worthy Associate Advisor,10115,0
+2009,3,Grand Charity,10114,0
+2009,4,Grand Hope,10113,0
+2009,5,Grand Faith,10112,0
+2009,6,Grand Recorder,10111,0
+2009,7,Grand Treasurer,10110,0
+2009,8,Grand Chaplain,10109,0
+2009,9,Grand Drill Leader,10108,0
+2009,10,Grand Love,10037,0
+2009,11,Grand Religion,10107,0
+2009,12,Grand Nature,10106,0
+2009,13,Grand Immortality,10031,0
+2009,14,Grand Fidelity,10033,0
+2009,15,Grand Patriotism,10032,0
+2008,1,Grand Worthy Advisor,10121,0
+2008,2,Grand Worthy Associate Advisor,10120,1
+2008,3,Grand Charity,10116,0
+2008,4,Grand Hope,10119,1
+2008,5,Grand Faith,10114,0
+2008,6,Grand Recorder,10034,1
+2008,7,Grand Treasurer,10107,1
+2008,8,Grand Chaplain,10115,0
+2008,9,Grand Drill Leader,10113,0
+2008,10,Grand Love,10118,0
+2008,11,Grand Religion,10112,0
+2008,12,Grand Nature,10111,0
+2008,13,Grand Immortality,10108,0
+2008,14,Grand Fidelity,10110,0
+2008,15,Grand Patriotism,10109,0
+2008,16,Grand Service,10037,0
+2008,17,Grand Confidential Observer,10117,0
+2008,18,Grand Outer Observer,10106,0
+2007,1,Grand Worthy Advisor,10119,0
+2007,2,Grand Worthy Associate Advisor,10121,0
+2007,3,Grand Charity,10122,0
+2007,4,Grand Hope,10123,0
+2007,5,Grand Faith,10116,0
+2007,5,Grand Lecturer,10124,0
+2007,6,Grand Recorder,10124,0
+2007,7,Grand Treasurer,10112,1
+2007,8,Grand Chaplain,10125,0
+2007,9,Grand Drill Leader,10126,0
+2007,10,Grand Love,10114,0
+2007,11,Grand Religion,10121,1
+2007,12,Grand Nature,10127,0
+2007,13,Grand Immortality,10128,0
+2007,14,Grand Fidelity,10118,0
+2007,15,Grand Patriotism,10113,0
+2007,16,Grand Service,10115,0
+2007,17,Grand Confidential Observer,10108,0
+2007,18,Grand Outer Observer,10111,0
+2006,1,Grand Worthy Advisor,10120,0
+2006,2,Grand Worthy Associate Advisor,10123,0
+2006,3,Grand Charity,10124,0
+2006,4,Grand Hope,10034,1
+2006,5,Grand Faith,10200,1
+2006,6,Grand Recorder,10125,0
+2006,7,Grand Treasurer,10203,0
+2006,8,Grand Chaplain,10121,0
+2006,9,Grand Drill Leader,10119,0
+2006,10,Grand Love,10202,0
+2006,11,Grand Religion,10121,0
+2006,12,Grand Nature,10114,1
+2006,13,Grand Immortality,10201,0
+2006,14,Grand Fidelity,10126,0
+2006,15,Grand Patriotism,10116,0
+2006,16,Grand Service,10035,0
+2006,17,Grand Confidential Observer,10115,0
+2006,18,Grand Outer Observer,10128,0
+2005,1,Grand Worthy Advisor,10200,0
+2005,2,Grand Worthy Associate Advisor,10212,0
+2005,3,Grand Charity,10211,0
+2005,4,Grand Hope,10124,0
+2005,5,Grand Faith,10120,0
+2005,5,Grand Lecturer,10210,0
+2005,6,Grand Recorder,10209,0
+2005,7,Grand Treasurer,10208,0
+2005,8,Grand Chaplain,10207,0
+2005,9,Grand Drill Leader,10206,0
+2005,10,Grand Love,10119,0
+2005,11,Grand Religion,10122,0
+2005,12,Grand Nature,10034,0
+2005,13,Grand Immortality,10125,0
+2005,14,Grand Fidelity,10123,0
+2005,15,Grand Patriotism,10201,0
+2005,16,Grand Service,10205,0
+2005,17,Grand Confidential Observer,10204,0
+2005,18,Grand Outer Observer,10126,0
+2004,1,Grand Worthy Advisor,10219,0
+2004,2,Grand Worthy Associate Advisor,10210,0
+2004,3,Grand Charity,10200,0
+2004,4,Grand Hope,10034,0
+2004,5,Grand Faith,10218,0
+2004,6,Grand Recorder,10217,0
+2004,7,Grand Treasurer,10207,0
+2004,8,Grand Chaplain,10120,0
+2004,9,Grand Drill Leader,10216,0
+2004,10,Grand Love,10212,0
+2004,11,Grand Religion,10220,0
+2004,12,Grand Nature,10208,0
+2004,13,Grand Immortality,10215,0
+2004,14,Grand Fidelity,10211,0
+2004,15,Grand Patriotism,10124,0
+2004,16,Grand Service,10214,0
+2004,17,Grand Confidential Observer,10213,1
+2004,18,Grand Outer Observer,10123,1
+2003,1,Grand Worthy Advisor,10231,0
+2003,2,Grand Worthy Associate Advisor,10219,0
+2003,3,Grand Charity,10230,0
+2003,4,Grand Hope,10229,0
+2003,5,Grand Faith,10216,0
+2003,6,Grand Lecturer,10228,0
+2003,7,Grand Recorder,10034,0
+2003,8,Grand Treasurer,10227,1
+2003,9,Grand Chaplain,10210,0
+2003,10,Grand Drill Leader,10200,0
+2003,11,Grand Love,10218,0
+2003,12,Grand Religion,10226,0
+2003,13,Grand Nature,10207,0
+2003,13,Grand Immortality,10124,1
+2003,14,Grand Immortality,10206,0
+2003,15,Grand Fidelity,10225,0
+2003,16,Grand Patriotism,10224,0
+2003,17,Grand Service,10223,0
+2003,18,Grand Confidential Observer,10210,0
+2003,19,Grand Outer Observer,10222,0
+2003,20,Grand Choir Director,10221,0
+2002,1,Grand Worthy Advisor,10241,0
+2002,2,Grand Worthy Associate Advisor,10231,0
+2002,3,Grand Charity,10240,0
+2002,4,Grand Hope,10239,0
+2002,5,Grand Faith,10238,0
+2002,6,Grand Lecturer,10237,0
+2002,7,Grand Recorder,10236,0
+2002,8,Grand Treasurer,10210,0
+2002,9,Grand Chaplain,10235,0
+2002,10,Grand Drill Leader,10219,0
+2002,11,Grand Love,10200,0
+2002,12,Grand Religion,10234,0
+2002,13,Grand Nature,10216,0
+2002,14,Grand Immortality,10233,0
+2002,15,Grand Fidelity,10207,0
+2002,16,Grand Patriotism,10232,0
+2002,17,Grand Service,10217,0
+2002,18,Grand Confidential Observer,10224,0
+2002,19,Grand Choir Director,10226,0
+2001,1,Grand Worthy Advisor,10250,0
+2001,2,Grand Worthy Associate Advisor,10241,0
+2001,3,Grand Charity,10231,0
+2001,4,Grand Hope,10251,0
+2001,5,Grand Faith,10237,0
+2001,6,Grand Lecturer,10249,0
+2001,7,Grand Recorder,10248,0
+2001,8,Grand Treasurer,10034,0
+2001,9,Grand Chaplain,10240,0
+2001,10,Grand Drill Leader,10229,0
+2001,11,Grand Love,10228,0
+2001,12,Grand Religion,10247,0
+2001,13,Grand Nature,10239,0
+2001,14,Grand Immortality,10246,0
+2001,15,Grand Fidelity,10245,0
+2001,16,Grand Patriotism,10230,0
+2001,17,Grand Service,10244,0
+2001,18,Grand Confidential Observer,10243,0
+2001,19,Grand Choir Director,10242,0
+2001,20,Grand Musician,10235,0
+1998,1,Grand Worthy Advisor,10418,0
+1998,2,Grand Worthy Associate Advisor,10417,0
+1998,3,Grand Charity,10416,0
+1998,4,Grand Hope,10415,0
+1998,5,Grand Faith,10414,0
+1998,7,Grand Recorder,10413,0
+1998,8,Grand Treasurer,10412,1
+1998,9,Grand Chaplain,10411,0
+1998,10,Grand Drill Leader,10410,0
+1998,11,Grand Love,10409,0
+1998,12,Grand Religion,10408,0
+1998,13,Grand Nature,10407,0
+1998,14,Grand Immortality,10249,0
+1998,15,Grand Fidelity,10406,0
+1998,16,Grand Patriotism,10405,0
+1998,17,Grand Service,10404,0
+1998,18,Grand Confidential Observer,10403,0
+1998,19,Grand Outer Observer,10402,0
+1998,19,Grand Choir Director,10400,1
+1998,20,Grand Musician,10401,0
+1997,1,Grand Worthy Advisor,10434,0
+1997,2,Grand Worthy Associate Advisor,10418,0
+1997,3,Grand Charity,10433,0
+1997,4,Grand Hope,10432,0
+1997,5,Grand Faith,10401,0
+1997,7,Grand Recorder,10431,0
+1997,8,Grand Treasurer,10430,1
+1997,9,Grand Chaplain,10411,0
+1997,10,Grand Drill Leader,10429,0
+1997,11,Grand Love,10400,0
+1997,12,Grand Religion,10428,0
+1997,13,Grand Nature,10427,1
+1997,14,Grand Immortality,10426,0
+1997,15,Grand Fidelity,10425,0
+1997,16,Grand Patriotism,10424,0
+1997,17,Grand Service,10423,0
+1997,18,Grand Confidential Observer,10422,1
+1997,19,Grand Outer Observer,10421,0
+1997,19,Grand Choir Director,10419,0
+1997,20,Grand Musician,10420,0
+1996,1,Grand Worthy Advisor,10449,0
+1996,2,Grand Worthy Associate Advisor,10434,0
+1996,3,Grand Charity,10448,0
+1996,4,Grand Hope,10447,0
+1996,5,Grand Faith,10446,0
+1996,7,Grand Recorder,10445,0
+1996,8,Grand Treasurer,10444,1
+1996,9,Grand Chaplain,10443,0
+1996,10,Grand Drill Leader,10442,0
+1996,11,Grand Love,10441,0
+1996,12,Grand Religion,10440,0
+1996,13,Grand Nature,10439,0
+1996,14,Grand Immortality,10438,0
+1996,15,Grand Fidelity,10437,0
+1996,16,Grand Patriotism,10436,0
+1996,17,Grand Service,10435,1
+1996,18,Grand Confidential Observer,10410,0
+1996,19,Grand Outer Observer,10249,1
+1996,19,Grand Choir Director,10423,0
+1996,20,Grand Musician,10401,0
+1995,1,Grand Worthy Advisor,10465,0
+1995,2,Grand Worthy Associate Advisor,10449,0
+1995,3,Grand Charity,10464,0
+1995,4,Grand Hope,10463,0
+1995,5,Grand Faith,10462,0
+1995,7,Grand Recorder,10446,0
+1995,8,Grand Treasurer,10461,0
+1995,9,Grand Chaplain,10460,0
+1995,10,Grand Drill Leader,10459,0
+1995,11,Grand Love,10458,0
+1995,12,Grand Religion,10457,0
+1995,13,Grand Nature,10456,0
+1995,14,Grand Immortality,10432,0
+1995,15,Grand Fidelity,10455,0
+1995,16,Grand Patriotism,10454,0
+1995,17,Grand Service,10453,0
+1995,18,Grand Confidential Observer,10452,0
+1995,19,Grand Outer Observer,10451,0
+1995,19,Grand Choir Director,10434,0
+1995,20,Grand Musician,10450,0
+1994,1,Grand Worthy Advisor,10512,0
+1994,2,Grand Worthy Associate Advisor,10465,0
+1994,3,Grand Charity,10511,0
+1994,4,Grand Hope,10510,0
+1994,5,Grand Faith,10509,0
+1994,7,Grand Recorder,10508,0
+1994,8,Grand Treasurer,10507,0
+1994,9,Grand Chaplain,10506,0
+1994,10,Grand Drill Leader,10505,0
+1994,11,Grand Love,10504,0
+1994,12,Grand Religion,10503,0
+1994,13,Grand Nature,10420,0
+1994,14,Grand Immortality,10502,0
+1994,15,Grand Fidelity,10448,0
+1994,16,Grand Patriotism,10462,0
+1994,17,Grand Service,10460,0
+1994,18,Grand Confidential Observer,10501,0
+1994,19,Grand Outer Observer,10500,0
+1993,1,Grand Worthy Advisor,10523,0
+1993,2,Grand Worthy Associate Advisor,10512,0
+1993,3,Grand Charity,10522,0
+1993,4,Grand Hope,10521,0
+1993,5,Grand Faith,10524,0
+1993,7,Grand Recorder,10525,0
+1993,8,Grand Treasurer,10506,0
+1993,9,Grand Chaplain,10520,0
+1993,10,Grand Drill Leader,10464,0
+1993,11,Grand Love,10519,0
+1993,12,Grand Religion,10518,0
+1993,13,Grand Nature,10517,0
+1993,14,Grand Immortality,10516,0
+1993,15,Grand Fidelity,10526,0
+1993,16,Grand Patriotism,10441,0
+1993,17,Grand Service,10515,0
+1993,18,Grand Confidential Observer,10514,0
+1993,19,Grand Outer Observer,10507,0
+1993,21,Grand Choir Director,10503,0
+1993,20,Grand Musician,10513,0
+1992,1,Grand Worthy Advisor,10541,0
+1992,2,Grand Worthy Associate Advisor,10523,0
+1992,3,Grand Charity,10540,0
+1992,4,Grand Hope,10539,0
+1992,5,Grand Faith,10538,0
+1992,7,Grand Recorder,10537,0
+1992,8,Grand Treasurer,10536,0
+1992,9,Grand Chaplain,10512,1
+1992,10,Grand Drill Leader,10465,0
+1992,11,Grand Love,10535,0
+1992,12,Grand Religion,10534,0
+1992,13,Grand Nature,10533,0
+1992,14,Grand Immortality,10532,0
+1992,15,Grand Fidelity,10531,0
+1992,16,Grand Patriotism,10510,0
+1992,17,Grand Service,10530,0
+1992,18,Grand Confidential Observer,10529,0
+1992,19,Grand Outer Observer,10528,0
+1992,21,Grand Choir Director,10517,0
+1992,20,Grand Musician,10527,0
+1991,1,Grand Worthy Advisor,10618,0
+1991,2,Grand Worthy Associate Advisor,10541,0
+1991,3,Grand Charity,10617,0
+1991,4,Grand Hope,10616,0
+1991,5,Grand Faith,10615,0
+1991,7,Grand Recorder,10614,0
+1991,8,Grand Treasurer,10613,0
+1991,9,Grand Chaplain,10612,0
+1991,10,Grand Drill Leader,10611,0
+1991,11,Grand Love,10610,0
+1991,12,Grand Religion,10609,0
+1991,13,Grand Nature,10608,0
+1991,14,Grand Immortality,10607,0
+1991,15,Grand Fidelity,10606,0
+1991,16,Grand Patriotism,10605,0
+1991,17,Grand Service,10604,0
+1991,18,Grand Confidential Observer,10603,0
+1991,19,Grand Outer Observer,10602,0
+1991,21,Grand Choir Director,10600,0
+1991,20,Grand Musician,10601,0
+1990,1,Grand Worthy Advisor,10636,0
+1990,2,Grand Worthy Associate Advisor,10618,0
+1990,3,Grand Charity,10601,0
+1990,4,Grand Hope,10635,0
+1990,5,Grand Faith,10634,0
+1990,7,Grand Recorder,10633,0
+1990,8,Grand Treasurer,10632,0
+1990,9,Grand Chaplain,10631,0
+1990,10,Grand Drill Leader,10630,0
+1990,11,Grand Love,10629,0
+1990,12,Grand Religion,10628,0
+1990,13,Grand Nature,10627,0
+1990,14,Grand Immortality,10626,0
+1990,15,Grand Fidelity,10523,0
+1990,16,Grand Patriotism,10624,0
+1990,17,Grand Service,10623,0
+1990,18,Grand Confidential Observer,10622,0
+1990,19,Grand Outer Observer,10621,0
+1990,21,Grand Choir Director,10619,0
+1990,20,Grand Musician,10620,0
+1989,1,Grand Worthy Advisor,10651,0
+1989,2,Grand Worthy Associate Advisor,10636,0
+1989,3,Grand Charity,10650,0
+1989,4,Grand Hope,10649,0
+1989,5,Grand Faith,10648,0
+1989,7,Grand Recorder,10647,0
+1989,8,Grand Treasurer,10646,0
+1989,9,Grand Chaplain,10645,0
+1989,10,Grand Drill Leader,10644,0
+1989,11,Grand Love,10643,0
+1989,12,Grand Religion,10642,0
+1989,13,Grand Nature,10617,0
+1989,14,Grand Immortality,10635,0
+1989,15,Grand Fidelity,10601,0
+1989,16,Grand Patriotism,10618,0
+1989,17,Grand Service,10641,0
+1989,18,Grand Confidential Observer,10640,0
+1989,19,Grand Outer Observer,10639,0
+1989,21,Grand Choir Director,10637,0
+1989,20,Grand Musician,10638,0
+1988,1,Grand Worthy Advisor,10716,0
+1988,2,Grand Worthy Associate Advisor,10651,0
+1988,3,Grand Charity,10715,0
+1988,4,Grand Hope,10714,0
+1988,5,Grand Faith,10713,0
+1988,7,Grand Recorder,10712,0
+1988,8,Grand Treasurer,10711,0
+1988,9,Grand Chaplain,10710,0
+1988,10,Grand Drill Leader,10709,0
+1988,11,Grand Love,10708,0
+1988,12,Grand Religion,10707,0
+1988,13,Grand Nature,10706,0
+1988,14,Grand Immortality,10705,0
+1988,15,Grand Fidelity,10704,0
+1988,16,Grand Patriotism,10611,0
+1988,17,Grand Service,10703,0
+1988,18,Grand Confidential Observer,10702,0
+1988,19,Grand Outer Observer,10701,0
+1988,21,Grand Choir Director,10700,0
+1988,20,Grand Musician,10601,0
+1987,1,Grand Worthy Advisor,10799,0
+1987,2,Grand Worthy Associate Advisor,10716,0
+1987,3,Grand Charity,10730,0
+1987,4,Grand Hope,10638,0
+1987,5,Grand Faith,10729,0
+1987,7,Grand Recorder,10635,1
+1987,8,Grand Treasurer,10802,0
+1987,9,Grand Chaplain,10728,0
+1987,10,Grand Drill Leader,10727,0
+1987,11,Grand Love,10651,0
+1987,12,Grand Religion,10726,0
+1987,13,Grand Nature,10725,0
+1987,14,Grand Immortality,10724,0
+1987,15,Grand Fidelity,10723,0
+1987,16,Grand Patriotism,10722,0
+1987,17,Grand Service,10721,0
+1987,18,Grand Confidential Observer,10720,0
+1987,19,Grand Outer Observer,10719,0
+1987,21,Grand Choir Director,10717,0
+1987,20,Grand Musician,10718,0
+1986,1,Grand Worthy Advisor,10816,0
+1986,2,Grand Worthy Associate Advisor,10799,0
+1986,3,Grand Charity,10815,0
+1986,4,Grand Hope,10814,0
+1986,5,Grand Faith,10813,0
+1986,7,Grand Recorder,10812,0
+1986,8,Grand Treasurer,10811,0
+1986,9,Grand Chaplain,10715,0
+1986,10,Grand Drill Leader,10716,0
+1986,11,Grand Love,10810,0
+1986,12,Grand Religion,10809,0
+1986,13,Grand Nature,10808,0
+1986,14,Grand Immortality,10807,0
+1986,15,Grand Fidelity,10806,0
+1986,16,Grand Patriotism,10805,0
+1986,17,Grand Service,10804,0
+1986,18,Grand Confidential Observer,10803,0
+1986,19,Grand Outer Observer,10802,0
+1986,21,Grand Choir Director,10800,0
+1986,20,Grand Musician,10801,0
+1985,1,Grand Worthy Advisor,10832,0
+1985,2,Grand Worthy Associate Advisor,10816,0
+1985,3,Grand Charity,10831,0
+1985,4,Grand Hope,10830,0
+1985,5,Grand Faith,10829,0
+1985,7,Grand Recorder,10828,0
+1985,8,Grand Treasurer,10827,0
+1985,9,Grand Chaplain,10826,0
+1985,10,Grand Drill Leader,10799,0
+1985,11,Grand Love,10825,0
+1985,12,Grand Religion,10815,0
+1985,13,Grand Nature,10730,0
+1985,14,Grand Immortality,10823,0
+1985,15,Grand Fidelity,10822,0
+1985,16,Grand Patriotism,10821,0
+1985,17,Grand Service,10820,0
+1985,18,Grand Confidential Observer,10819,0
+1985,19,Grand Outer Observer,10818,0
+1985,20,Grand Musician,10817,0
+1984,1,Grand Worthy Advisor,10914,0
+1984,2,Grand Worthy Associate Advisor,10832,0
+1984,3,Grand Charity,10913,0
+1984,4,Grand Hope,10912,0
+1984,5,Grand Faith,10911,0
+1984,7,Grand Recorder,10910,0
+1984,8,Grand Treasurer,10816,0
+1984,9,Grand Chaplain,10909,0
+1984,10,Grand Drill Leader,10829,0
+1984,11,Grand Love,10908,0
+1984,12,Grand Religion,10907,0
+1984,13,Grand Nature,10906,0
+1984,14,Grand Immortality,10905,0
+1984,15,Grand Fidelity,10904,0
+1984,16,Grand Patriotism,10903,0
+1984,17,Grand Service,10902,0
+1984,18,Grand Confidential Observer,10827,0
+1984,19,Grand Outer Observer,10901,0
+1984,20,Grand Musician,10900,0
+1982,1,Grand Worthy Advisor,11016,0
+1982,2,Grand Worthy Associate Advisor,10999,0
+1982,3,Grand Charity,11015,0
+1982,4,Grand Hope,11014,0
+1982,5,Grand Faith,11013,0
+1982,7,Grand Recorder,11012,0
+1982,8,Grand Treasurer,11011,0
+1982,9,Grand Chaplain,11010,0
+1982,10,Grand Drill Leader,11009,0
+1982,11,Grand Love,11008,0
+1982,12,Grand Religion,11007,0
+1982,13,Grand Nature,11006,0
+1982,14,Grand Immortality,11005,0
+1982,15,Grand Fidelity,11004,0
+1982,16,Grand Patriotism,10914,0
+1982,17,Grand Service,10832,0
+1982,18,Grand Confidential Observer,11003,0
+1982,19,Grand Outer Observer,11002,0
+1982,20,Grand Musician,11001,0
+1982,21,Grand Choir Director,11000,0
+1981,1,Grand Worthy Advisor,11216,0
+1981,2,Grand Worthy Associate Advisor,11016,0
+1981,3,Grand Charity,11215,0
+1981,4,Grand Hope,11214,0
+1981,5,Grand Faith,11213,0
+1981,7,Grand Recorder,11212,0
+1981,8,Grand Treasurer,11211,0
+1981,9,Grand Chaplain,11014,0
+1981,10,Grand Drill Leader,11210,0
+1981,11,Grand Love,11209,0
+1981,12,Grand Religion,11208,0
+1981,13,Grand Nature,10999,0
+1981,14,Grand Immortality,11207,0
+1981,15,Grand Fidelity,11206,0
+1981,16,Grand Patriotism,11205,0
+1981,17,Grand Service,11204,0
+1981,18,Grand Confidential Observer,11203,0
+1981,19,Grand Outer Observer,11202,0
+1981,20,Grand Musician,11201,0
+1981,21,Grand Choir Director,11200,0
+1980,1,Grand Worthy Advisor,11317,0
+1980,2,Grand Worthy Associate Advisor,11216,0
+1980,3,Grand Charity,11316,0
+1980,4,Grand Hope,11315,0
+1980,5,Grand Faith,11314,0
+1980,7,Grand Recorder,11313,0
+1980,8,Grand Treasurer,11312,0
+1980,9,Grand Chaplain,11311,0
+1980,10,Grand Drill Leader,11310,0
+1980,11,Grand Love,11309,0
+1980,12,Grand Religion,11214,0
+1980,13,Grand Nature,11308,0
+1980,14,Grand Immortality,11307,0
+1980,15,Grand Fidelity,11306,0
+1980,16,Grand Patriotism,11305,0
+1980,17,Grand Service,11304,0
+1980,18,Grand Confidential Observer,11303,0
+1980,19,Grand Outer Observer,11302,0
+1980,20,Grand Musician,11301,0
+1980,21,Grand Choir Director,11300,0
+1979,1,Grand Worthy Advisor,11418,0
+1979,2,Grand Worthy Associate Advisor,11317,0
+1979,3,Grand Charity,11417,0
+1979,4,Grand Hope,11416,0
+1979,5,Grand Faith,11415,0
+1979,7,Grand Recorder,11414,0
+1979,8,Grand Treasurer,11413,0
+1979,9,Grand Chaplain,11412,0
+1979,10,Grand Drill Leader,11411,0
+1979,11,Grand Love,11410,0
+1979,12,Grand Religion,11409,0
+1979,13,Grand Nature,11408,0
+1979,14,Grand Immortality,11407,0
+1979,15,Grand Fidelity,11406,0
+1979,16,Grand Patriotism,11405,0
+1979,17,Grand Service,11404,0
+1979,18,Grand Confidential Observer,11403,0
+1979,19,Grand Outer Observer,11402,0
+1979,20,Grand Musician,11401,0
+1979,21,Grand Choir Director,11400,0
+1978,1,Grand Worthy Advisor,11517,0
+1978,2,Grand Worthy Associate Advisor,11418,0
+1978,3,Grand Charity,11516,0
+1978,4,Grand Hope,11515,0
+1978,5,Grand Faith,11514,0
+1978,7,Grand Recorder,11513,0
+1978,8,Grand Treasurer,11512,0
+1978,9,Grand Chaplain,11511,0
+1978,10,Grand Drill Leader,11510,0
+1978,11,Grand Love,11509,0
+1978,12,Grand Religion,11508,0
+1978,13,Grand Nature,11507,0
+1978,14,Grand Immortality,11506,0
+1978,15,Grand Fidelity,11505,0
+1978,16,Grand Patriotism,11504,0
+1978,17,Grand Service,11503,0
+1978,18,Grand Confidential Observer,11502,0
+1978,19,Grand Outer Observer,11501,0
+1978,20,Grand Musician,11415,0
+1978,21,Grand Choir Director,11500,0
+1977,1,Grand Worthy Advisor,11617,0
+1977,2,Grand Worthy Associate Advisor,11517,0
+1977,3,Grand Charity,11616,0
+1977,4,Grand Hope,11615,0
+1977,5,Grand Faith,11614,0
+1977,7,Grand Recorder,11613,0
+1977,8,Grand Treasurer,11612,0
+1977,9,Grand Chaplain,11611,0
+1977,10,Grand Drill Leader,11610,0
+1977,11,Grand Love,11609,0
+1977,12,Grand Religion,11608,0
+1977,13,Grand Nature,11607,0
+1977,14,Grand Immortality,11606,0
+1977,15,Grand Fidelity,11605,0
+1977,16,Grand Patriotism,11604,0
+1977,17,Grand Service,11515,0
+1977,18,Grand Confidential Observer,11603,0
+1977,19,Grand Outer Observer,11602,0
+1977,20,Grand Musician,11601,0
+1977,21,Grand Choir Director,11600,0
+1976,1,Grand Worthy Advisor,11717,0
+1976,2,Grand Worthy Associate Advisor,11617,0
+1976,3,Grand Charity,11716,0
+1976,4,Grand Hope,11715,0
+1976,5,Grand Faith,11714,0
+1976,7,Grand Recorder,11713,0
+1976,8,Grand Treasurer,11712,0
+1976,9,Grand Chaplain,11711,0
+1976,10,Grand Drill Leader,11710,0
+1976,11,Grand Love,11709,0
+1976,12,Grand Religion,11708,0
+1976,13,Grand Nature,11707,0
+1976,14,Grand Immortality,11706,0
+1976,15,Grand Fidelity,11705,0
+1976,16,Grand Patriotism,11616,0
+1976,17,Grand Service,11704,0
+1976,18,Grand Confidential Observer,11703,0
+1976,19,Grand Outer Observer,11702,0
+1976,20,Grand Musician,11701,0
+1976,21,Grand Choir Director,11700,0
+1975,1,Grand Worthy Advisor,11817,0
+1975,2,Grand Worthy Associate Advisor,11717,0
+1975,3,Grand Charity,11816,0
+1975,4,Grand Hope,11815,0
+1975,5,Grand Faith,11814,0
+1975,7,Grand Recorder,11813,0
+1975,8,Grand Treasurer,11812,0
+1975,9,Grand Chaplain,11811,0
+1975,10,Grand Drill Leader,11810,0
+1975,11,Grand Love,11809,0
+1975,12,Grand Religion,11808,0
+1975,13,Grand Nature,11807,0
+1975,14,Grand Immortality,11714,0
+1975,15,Grand Fidelity,11806,0
+1975,16,Grand Patriotism,11805,0
+1975,17,Grand Service,11804,0
+1975,18,Grand Confidential Observer,11803,0
+1975,19,Grand Outer Observer,11802,0
+1975,20,Grand Musician,11801,0
+1975,21,Grand Choir Director,11800,0
+1974,1,Grand Worthy Advisor,11918,0
+1974,2,Grand Worthy Associate Advisor,11817,0
+1974,3,Grand Charity,11917,0
+1974,4,Grand Hope,11916,0
+1974,5,Grand Faith,11915,0
+1974,7,Grand Recorder,11914,0
+1974,8,Grand Treasurer,11913,0
+1974,9,Grand Chaplain,11912,0
+1974,10,Grand Drill Leader,11911,0
+1974,11,Grand Love,11910,0
+1974,12,Grand Religion,11909,0
+1974,13,Grand Nature,11908,0
+1974,14,Grand Immortality,11907,0
+1974,15,Grand Fidelity,11906,0
+1974,16,Grand Patriotism,11905,0
+1974,17,Grand Service,11904,0
+1974,18,Grand Confidential Observer,11903,0
+1974,19,Grand Outer Observer,11902,0
+1974,20,Grand Musician,11901,0
+1974,21,Grand Choir Director,11900,0
+1973,1,Grand Worthy Advisor,12017,0
+1973,2,Grand Worthy Associate Advisor,11918,0
+1973,3,Grand Charity,12016,0
+1973,4,Grand Hope,12015,0
+1973,5,Grand Faith,12014,0
+1973,7,Grand Recorder,12013,0
+1973,8,Grand Treasurer,12012,0
+1973,9,Grand Chaplain,12011,0
+1973,10,Grand Drill Leader,12010,0
+1973,11,Grand Love,11717,0
+1973,12,Grand Religion,12009,0
+1973,13,Grand Nature,12008,0
+1973,14,Grand Immortality,12007,0
+1973,15,Grand Fidelity,12006,0
+1973,16,Grand Patriotism,12005,0
+1973,17,Grand Service,12004,0
+1973,18,Grand Confidential Observer,12003,0
+1973,19,Grand Outer Observer,12002,0
+1973,20,Grand Musician,12001,0
+1973,21,Grand Choir Director,12000,0
