@@ -1,5 +1,6 @@
 <?php
   require_once( INC . 'Info.php');
+
   require_once(TABLE . "entries.php");
 
   if($pageType == "GWA") {
@@ -66,6 +67,13 @@
             <li><p><a id="sideBarItem" href='/Import'>Administrator</a></p></li>
         <?php } ?>
       <?php } ?>
+     <?php if($pageType == "Join"){?>
+
+        <li><p><a id="sideBarItem_bs" href='/JoinRainbow'>What is Rainbow?</a></p></li>
+        <li><p><a id="sideBarItem_bs" href='/JoinRainbow/Why'>What can Rainbow do for me?</a></p></li>
+        <li><p><a id="sideBarItem_bs" href='/JoinRainbow/Fun'>What type of Activities?</a></p></li>
+        <li><p><a id="sideBarItem_bs" href='/JoinRainbow/How'>How do I Join?</a></p></li>
+     <?php } ?>
       <?php if($pageType == "GO"){ ?>
               <li><p><a id="sideBarItem" href="/GrandOfficers">Grand Officers</a></p></li>
               <li><p><a id="sideBarItem" href="/JuniorExecs">Junior Executives</a></p></li>
@@ -85,15 +93,18 @@
               <?php if($pageSubType != "GDep" && $pageSubType != "GExec"){ ?>
               <ul id="GAItems">
                 <li>
-                  <a class="GASchedule" href="http://www.nmiorg.org/GrandAssembly/#&panel1-2">Schedule</a>
+                  <a class="GASchedule" href="/GrandAssembly/Gallery">2014 Gallery</a>
                 </li>
-                <li> 
-                  <a class="GASSS"href="<?php echo BASE_URL;?>GrandAssembly/#&panel1-6">Sunshine Service</a>
+                <li>
+                  <a class="GASchedule" href="/GrandAssembly/Schedule">2014 Schedule</a>
+                </li>
+                <!-- <li> 
+                  <a class="GASSS"href="<?php //echo BASE_URL;?>GrandAssembly/#&panel1-6">Sunshine Service</a>
                 </li> 
                 <li>
-                <a class="GACompetitions"href="<?php echo BASE_URL;?>GrandAssembly/#&panel1-7"> 
+                <a class="GACompetitions"href="<?php //echo BASE_URL;?>GrandAssembly/#&panel1-7"> 
                                     Competitions</a> 
-                </li>
+                </li> -->
                </ul>
                 <?php } ?>
              <li>

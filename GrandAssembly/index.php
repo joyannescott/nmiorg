@@ -45,19 +45,19 @@
         <h1>Grand Assembly of New Mexico</h1>
         <h4>June 17 - 20, 2014<br>
             Sheraton Albuquerque Airport Hotel, Albuquerque, NM</h4>      
-
-        <h2><a href="Registration"> <img src="<?php echo BASE_URL;?>images/GAReg.gif" 
-               alt="Grand Assembly Registration" /></a></h2>
+        <h2><a href="Gallery"> Grand Assembly 2014 Photo Gallery</a></h2>
+        <!--<h2><a href="Registration"> <img src="<?php //echo BASE_URL;?>images/GAReg.gif" 
+               alt="Grand Assembly Registration" /></a></h2> -->
               <p>&nbsp;</p>
         <div id="blueBg"><h1>
           <img src="<?php echo BASE_URL;?>images/GACollage.gif"  class="collagePicsCard" alt="Grand Assembly Collage"  />
         </h1></div>
       </center>
     </li>
-    <li> <?php include('Mon_Tues.php'); ?></li>
-    <li> <?php include('Wed.php'); ?></li>
-    <li> <?php include('Thurs.php'); ?></li>
-    <li> <?php include('Fri_Sat.php'); ?></li>
+    <!--<li> <?php //include('Mon_Tues.php'); ?></li>
+    <li> <?php //include('Wed.php'); ?></li>
+    <li> <?php //include('Thurs.php'); ?></li>
+    <li> <?php //include('Fri_Sat.php'); ?></li>
    <li>
       <h1> Sunshine Service &amp; Youth Protection Session 
       <h4>Wednesday, June 18, 2014 <br>
@@ -137,7 +137,7 @@
         <p> <br> See the <a href="Registration">Grand Assembly Registration</a> packet for more information <br>
           and entry forms</div>
 
-   </li>
+   </li> -->
  </ul>
 
 <div id="space"> </div>

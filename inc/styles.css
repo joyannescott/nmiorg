@@ -972,6 +972,64 @@ h1 {
  }
 }
 
+#Gallery{
+	height: 100%;
+	background:  url("/images/cork.gif");
+}
+#Gallery ul {
+	display: inline-block;
+	position: relative;
+	list-style:none;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	max-width: 1080px;
+	text-align: center;
+}
+#Gallery ul li {
+	display: inline-block;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	padding: 8px;
+	background:white;
+	margin:10px;
+}
+#Gallery ul li img {
+	display: block;
+}
+#Gallery a {
+	text-decoration: none;
+}
+#Gallery h1, h2 {
+	color: #fff;
+}
+#Gallery h2 {
+	color: #fff;
+}
+/** Start Coding Here **/
+#overlay {
+  background:rgba(0,0,0,0.6);
+  width:100%;
+  height:10000px;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  text-align:center;
+  z-index: 2000;
+}
+
+#overlay img {
+ border: 20px solid #fff;
+ margin-top: 75%; 
+ /*margin-left: 200px;*/ 
+}
+
+#overlay p {
+ color:white; 
+}
+
 /*************************************************/
 /*  Footer                                       */
 /*************************************************/
@@ -1287,6 +1345,11 @@ display: none;
 	width:880px;
 	height:300px;
 }
+
+#overlay {
+  width:960px;
+  height:10000px;
+ }
 
 #footer {
   display: block;

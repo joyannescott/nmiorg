@@ -4,8 +4,31 @@
 
    $pageType = "Home";
    $mainPage  = true;
+    //echo . "\n\n";
+   //$browser = get_browser(null, true);
+
+    //Send Email
+    require_once(ROOT_PATH . "inc/phpmailer/class.phpmailer.php");
+    $mail = new PHPMailer();         
+    $email_body = "";
+    $email_body = $email_body .  "<br><br>" . $_SERVER['HTTP_USER_AGENT']  . "<br><br>";
+
+    $mail->From  = "joyfitz@mac.com";
+    $mail->FromName  = "New Mexico Rainbow";
+    $address = "joyfitz@mac.com" ;
+    $name = "Joy Scott";
+    $mail->AddAddress($address, $name);
+    $mail->Subject    = "Home Page Hit";
+    $mail->MsgHTML($email_body);
+
+    if($mail->Send()) {
+
+    } else {
+      $alert_message = "There was a problem sending the email: " . $mail->ErrorInfo;
+    }
 
    include(INC . 'header.php');
+
    include(INC . 'sidebar.php');
   ?>
 
