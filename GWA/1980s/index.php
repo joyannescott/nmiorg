@@ -26,8 +26,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/56 Denise Haeber.jpg" alt="GWA"/>
-             <div id="GWATitles"> Denise Haeber<br>1988-1989</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1989"><img src="<?php echo BASE_URL;?>images/GWA Photos/56 Denise Haeber.jpg" alt="GWA"/>
+             <div id="GWATitles"> Denise Haeber<br>1988-1989</div></a>
            </div>
          </td>
          <td>
@@ -37,8 +37,8 @@
          </td>
         <td>
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/55 Elizabeth Gonzalez.jpg"  alt="GWA"/>
-             <div id="GWATitles">Elizabeth Gonzalez <br>1987-1988</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1988"><img src="<?php echo BASE_URL;?>images/GWA Photos/55 Elizabeth Gonzalez.jpg"  alt="GWA"/>
+             <div id="GWATitles">Elizabeth Gonzalez <br>1987-1988</div></a>
              
            </div>
  
@@ -50,8 +50,8 @@
          </td>
         <td>
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/54 Rebecca Warinner.jpg" alt="GWA"/>
-             <div id="GWATitles">Rebecca Warinner <br>1986-1987</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1987"><img src="<?php echo BASE_URL;?>images/GWA Photos/54 Rebecca Warinner.jpg" alt="GWA"/>
+             <div id="GWATitles">Rebecca Warinner <br>1986-1987</div></a>
            </div>
  
          </td>
@@ -69,8 +69,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/53 Barbara Dorsey.jpg" alt="GWA"/>
-             <div id="GWATitles">Barbara Dorsey<br>1985-1986</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1986"><img src="<?php echo BASE_URL;?>images/GWA Photos/53 Barbara Dorsey.jpg" alt="GWA"/>
+             <div id="GWATitles">Barbara Dorsey<br>1985-1986</div></a>
            </div>
          </td>
          <td>
@@ -80,8 +80,8 @@
          </td>
         <td>
              <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/52 Jennifer Pinkston.jpg" alt="GWA"/>
-             <div id="GWATitles">Jennifer Pinkston <br>1984-1985</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1985"><img src="<?php echo BASE_URL;?>images/GWA Photos/52 Jennifer Pinkston.jpg" alt="GWA"/>
+             <div id="GWATitles">Jennifer Pinkston <br>1984-1985</div></a>
            </div>
  
          </td>
@@ -102,7 +102,7 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/51 Martha Barnhill.jpg" alt="GWA"/>
+             <a href="<?php echo BASE_URL;?>GWA?y=1984"><img src="<?php echo BASE_URL;?>images/GWA Photos/51 Martha Barnhill.jpg" alt="GWA"/>
              <div id="GWATitles"> Martha Barnhill<br>1983-1984</div></a>
            </div>
          </td>
@@ -124,8 +124,8 @@
          </td>
         <td>
             <div id="GWAHeadPic" align="center">
-              <img src="<?php echo BASE_URL;?>images/GWA Photos/49 Teresa Baugh.jpg" alt="GWA"/>
-             <div id="GWATitles">Teresa Baugh<br>1981-1982</div>
+              <a href="<?php echo BASE_URL;?>GWA?y=1982"><img src="<?php echo BASE_URL;?>images/GWA Photos/49 Teresa Baugh.jpg" alt="GWA"/>
+             <div id="GWATitles">Teresa Baugh<br>1981-1982</div></a>
             
            </div>
  
@@ -144,8 +144,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/48 Beverly Knight.jpg" alt="GWA"/>
-             <div id="GWATitles">Beverly Knight <br>1980-1981</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1981"><img src="<?php echo BASE_URL;?>images/GWA Photos/48 Beverly Knight.jpg" alt="GWA"/>
+             <div id="GWATitles">Beverly Knight <br>1980-1981</div></a>
            </div>
          </td>
          <td>
@@ -155,8 +155,8 @@
          </td>
         <td>
              <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/47 Monica Whatley.jpg" alt="GWA"/>
-             <div id="GWATitles">Monica Whatley <br>1979-1980</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1980"><img src="<?php echo BASE_URL;?>images/GWA Photos/47 Monica Whatley.jpg" alt="GWA"/>
+             <div id="GWATitles">Monica Whatley <br>1979-1980</div></a>
            </div>
  
          </td>

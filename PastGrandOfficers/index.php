@@ -70,6 +70,7 @@
   
   <div id="mainContent">
     <?php include(LOGIN . "login_header.php"); ?>
+    <div class="freehand-h1"><div class="Yellow">Past Grand Officers</div></div>
     <div class="search">
     <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1" > 
     <h4> Select Year: 

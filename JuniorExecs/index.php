@@ -11,8 +11,7 @@
   <div id="mainContent" >
   <?php include(LOGIN . "login_header.php"); ?>
   <center>
-  <h1><img src="<?php echo BASE_URL;?>images/GJunior.gif" 
-      alt="Grand Officers" width="330" height="104" /></h1>
+      <div class="freehand-h1"><div class="Yellow">Junior Executives</div></div>
   <div id="go">Alexa T, GWA </div>
   <div id="go">Serina P, JPGWA</div>
   <div id="go">Ariana C, PGWA</div>

@@ -35,9 +35,10 @@
    }
    $gwa_pic = BASE_URL . "images/GWA Photos/" . 
 		            $gwa["number"]     . " " . 
-					$gwa["first_name"] . " " . 
-					$gwa["last_name"] ;
-									
+					      $gwa["first_name"] . " ";
+    if($gwa["middle_name"]) $gwa_pic .= $gwa["middle_name"] . " ";
+					      $gwa_pic .= $gwa["last_name"];
+ 									
    if(file_exists(ROOT . $gwa_pic . " Color.jpg")) {
 	   $gwa_pic = $gwa_pic . " Color.jpg";
    } else {

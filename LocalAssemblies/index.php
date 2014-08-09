@@ -10,8 +10,7 @@
 
   <div id="mainContent">
   <?php include(LOGIN . "login_header.php"); ?>
-  	<h1 align=left style="margin-right:150px"><img src="<?php echo BASE_URL;?>images/Assemblies.gif"  
-        alt="local assemblies" /></h1>
+      <div class="freehand-h1"><div class="Indigo">Local Assemblies</div></div>
     <div id="FullBorderTable">
     <table >
       <tr>

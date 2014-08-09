@@ -50,8 +50,8 @@
          </td>
         <td>
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/24 Roberta Ann Boney.jpg" alt="GWA"/>
-             <div id="GWATitles">Roberta Ann Boney <br>1956-1957</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1957"><img src="<?php echo BASE_URL;?>images/GWA Photos/24 Roberta Ann Boney.jpg" alt="GWA"/>
+             <div id="GWATitles">Roberta Ann Boney <br>1956-1957</div></a>
            </div>
  
          </td>

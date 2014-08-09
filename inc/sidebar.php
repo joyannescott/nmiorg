@@ -80,6 +80,10 @@
               <li><p><a id="multiline" href="/GrandRepresentatives">Grand Representatives</a></p></li>
               <li><p><a id="multiline" href="/PastGrandOfficers">Past Grand Officers</a></p></li>
       <?php } ?>
+      <?php if($pageType == "SI"){ ?>
+              <li><p><a id="sideBarItem" href="/SupremeDeputy">Supreme Deputy</a></p></li>
+              <li><p><a id="multiline" href="/PastSupremeInspector">Past Supreme Inspector</a></p></li>
+       <?php } ?>
       <?php if($pageType == "GA"){ ?>
               <li>
                 <p><a id="sideBarItem" href="/GrandAssembly/Executives">Grand Executives</a></p>

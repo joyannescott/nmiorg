@@ -13,8 +13,7 @@
   
   <div id="mainContent">
   <?php include(LOGIN . "login_header.php"); ?>
-  	<h1><img src="<?php echo BASE_URL;?>images/GrandOfficers.gif" 
-      alt="Grand Officers" width="302" height="104" /></h1>
+      <div class="freehand-h1"><div class="Yellow">Grand Officers</div></div>
       <center>
             <?php foreach($grandOfficers as $grandOfficer){ ?>
   

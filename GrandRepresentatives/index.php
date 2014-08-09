@@ -15,8 +15,7 @@
   <?php include(LOGIN . "login_header.php"); ?>
 
   <center>
-    <h1><img src="<?php echo BASE_URL;?>images/GRep.gif" 
-             alt="Grand Officers" width="400" height="110" /></h1>
+      <div class="freehand-h1"><div class="Yellow">Grand Representatives</div></div>
     <h2>Co-Chairman</h2>
 
     <div id="go">Briana Collins

@@ -13,7 +13,7 @@
 
     <center>
       <span id="foundLogo"><img src="<?php echo BASE_URL;?>images/Foundation logo.jpg" alt=""  /></span>
-      <div id="titleOffset"><span id="title"><h1><img src="<?php echo BASE_URL;?>images/Foundation.gif" /></h1></span></div>
+      <div class="freehand-h1"><div class="Violet">Rainbow Foundation</div></div>
     </center>
 
     <h1>Rainbow Girl's Foundation of New Mexico</h1>

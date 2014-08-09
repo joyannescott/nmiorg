@@ -39,9 +39,13 @@
    </div>
     <div class="GAReg">
       <div class="postit">
-        <div class="blue"><div class="farewell"> On July 30th, 2014<br>
-          We will bid farewell to<div class="red"><div class="name"> Aunt Bobby</div></div> as our<br> <a href="<?php echo BASE_URL;?>SupremeInspector">
-          Supreme Inspector</a><br></div>1993-2014
+        <div class="blue">
+          <div class="farewell"> 
+            Welcome<br>
+            <a href="<?php echo BASE_URL;?>SupremeDeputy">Mom Mary</a><br>
+            as our new<br> 
+            <a href="<?php echo BASE_URL;?>SupremeDeputy">Supreme Deputy!!</a><br>
+          </div>
         </div>
       </div>
     </div>

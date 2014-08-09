@@ -463,6 +463,13 @@ h1 {
 	font-size: 48px;
 	margin: 25px 0px 0px 50px;
 }
+.freehand-h1 {
+	font-family: 'Freehand575BT-RegularB', serif;
+	font-weight: 500;
+	font-size: 84px;
+	text-align: center;
+	margin: 30px auto -10px auto;
+}
 .freehand-h2 {
 	font-family: 'Freehand575BT-RegularB', serif;
 	font-weight: 500;
@@ -888,9 +895,13 @@ h1 {
 			font-size: 40px;
 }
 .farewell {
-		line-height: .85em;
+		line-height: 1.2em;
 			font-size: 36px;
 }
+.farewell a{
+	color: #093;
+}
+
 .name {
 		line-height: .75em;
 			font-size: 46px;

@@ -17,7 +17,7 @@
   <title>New Mexico: IORG Grand Officers</title>
 <?php } ?>
 <?php if($pageType == "SI"){?>
-  <title>New Mexico: IORG Supreme Inspector</title>
+  <title>New Mexico: IORG Supreme</title>
 <?php } ?>
 <?php if($pageType == "GA"){?>
   <title>New Mexico: IORG Grand Assembly</title>
@@ -117,7 +117,7 @@
    <div class="fltlft"><a href="<?php echo BASE_URL;?>GWA?y=<?php echo get_latest_year(); ?>" 
                                                                         class="GWAButton"></a></div>
    <div class="fltlft"><a href="<?php echo BASE_URL;?>GrandOfficers"    class="GOButton"></a></div>
-   <div class="fltlft"><a href="<?php echo BASE_URL;?>SupremeInspector" class="SIButton"></a></div>
+   <div class="fltlft"><a href="<?php echo BASE_URL;?>SupremeDeputy" class="SIButton"></a></div>
    <div class="fltlft"><a href="<?php echo BASE_URL;?>GrandAssembly/"   class="GAButton"></a></div>
    <div class="fltlft"><a href="<?php echo BASE_URL;?>LocalAssemblies" 
                                                                   class="AssemButton"></a></div>
@@ -170,6 +170,10 @@
                   <td> <a href="<?php echo BASE_URL;?>JuniorExecs">Junior Executives</a></td>
                   <td> <a href="<?php echo BASE_URL;?>PastGrandOfficers">Past Grand Officers</a></td>
           <?php }?>
+          <?php if($pageType == "SI"){?>
+                  <td><a href="<?php echo BASE_URL;?>SupremeDeputy">Supreme Deputy</a></td>
+                  <td><a href="<?php echo BASE_URL;?>PastSupremeInspector">Past Supreme Inspector</a></td>
+           <?php }?>
           <?php if($pageType == "GA"){?>
                   <td><a href="<?php echo BASE_URL;?>GrandAssembly">Grand Assembly</a></td>
                   <td><a href="<?php echo BASE_URL;?>GrandAssembly/Executives">Grand Executives</a></td>

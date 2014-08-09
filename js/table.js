@@ -56,4 +56,5 @@ $BTN.click(function () {
   //console.log("posting data");
   //$.post(table_url, {json: JSON.stringify(data)}, function(data){ alert(data); });
   $.post(table_url, {json: JSON.stringify(data)});
+  location.reload();
 });

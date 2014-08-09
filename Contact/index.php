@@ -16,9 +16,9 @@
     <div  id="FullBorderTable">
     <table>
       <tr>
-        <td ><span id="officeRep" >Supreme Inspector</span><br />  
-        <span id="goRep">Mrs. Roberta Myers</span><br />        </td>
-        <td ><a href="mailto:gbmyers2@comcast.net">gbmyers2@comcast.net</a></td>
+        <td ><span id="officeRep" >Supreme Deputy</span><br />  
+        <span id="goRep">Mrs. Mary McClain</span><br />        </td>
+        <td ><a href="mailto:rmmcclain@swwmail.net">rmmcclain@swwmail.net</a></td>
       </tr>
       <tr>
         <td ><span id="officeRep" >Grand Assembly </span><br/>

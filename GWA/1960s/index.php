@@ -26,8 +26,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/36 Virginia White.jpg" alt="GWA"/>
-             <div id="GWATitles"> Virginia White<br>1968-1969</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1969"><img src="<?php echo BASE_URL;?>images/GWA Photos/36 Virginia White.jpg" alt="GWA"/>
+             <div id="GWATitles"> Virginia White<br>1968-1969</div></a>
            </div>
          </td>
          <td>
@@ -37,8 +37,8 @@
          </td>
         <td>
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/35 Jacquelyn Rae Wilson.jpg"  alt="GWA"/>
-             <div id="GWATitles">Jacquelyn Rae Wilson <br>1967-1968</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=1968"><img src="<?php echo BASE_URL;?>images/GWA Photos/35 Jacquelyn Rae Wilson.jpg"  alt="GWA"/>
+             <div id="GWATitles">Jacquelyn Rae Wilson <br>1967-1968</div></a>
              
            </div>
  

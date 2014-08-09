@@ -13,7 +13,7 @@
 
   <div id="mainContent">
   <?php include(LOGIN . "login_header.php"); ?>
-  	<h1>New Mexico Historical Assemblies</h1>
+      <div class="freehand-h1"><div class="Indigo">New Mexico Historical Assemblies</div></div>
     <div id="FullBorderTable">
     <table >
       <tr>

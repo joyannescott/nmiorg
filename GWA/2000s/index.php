@@ -26,8 +26,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/76 Amber Deveraux.jpg" alt="GWA"/>
-             <div id="GWATitles"> Amber Deveraux<br>2008-2009</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2009"><img src="<?php echo BASE_URL;?>images/GWA Photos/76 Amber Deveraux.jpg" alt="GWA"/>
+             <div id="GWATitles"> Amber Deveraux<br>2008-2009</div></a>
            </div>
          </td>
          <td>
@@ -37,8 +37,8 @@
          </td>
         <td>
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/75 Keilyn Wright.jpg"  alt="GWA"/>
-             <div id="GWATitles">Keilyn Wright <br>2007-2008</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2008"><img src="<?php echo BASE_URL;?>images/GWA Photos/75 Keilyn Wright.jpg"  alt="GWA"/>
+             <div id="GWATitles">Keilyn Wright <br>2007-2008</div></a>
              
            </div>
  
@@ -50,8 +50,8 @@
          </td>
         <td>
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/74 Bianca Smoker.jpg" alt="GWA"/>
-             <div id="GWATitles">Bianca Smoker <br>2006-2007</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2007"><img src="<?php echo BASE_URL;?>images/GWA Photos/74 Bianca Smoker.jpg" alt="GWA"/>
+             <div id="GWATitles">Bianca Smoker <br>2006-2007</div></a>
            </div>
  
          </td>
@@ -69,8 +69,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/73 Katy Boyles.jpg" alt="GWA"/>
-             <div id="GWATitles">Katy Boyles<br>2005-2006</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2006"><img src="<?php echo BASE_URL;?>images/GWA Photos/73 Katy Boyles.jpg" alt="GWA"/>
+             <div id="GWATitles">Katy Boyles<br>2005-2006</div></a>
            </div>
          </td>
          <td>
@@ -80,8 +80,8 @@
          </td>
         <td>
              <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/72 Lisa Wallin.jpg" alt="GWA"/>
-             <div id="GWATitles">Lisa Wallin <br>2004-2005</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2005"><img src="<?php echo BASE_URL;?>images/GWA Photos/72 Lisa Wallin.jpg" alt="GWA"/>
+             <div id="GWATitles">Lisa Wallin <br>2004-2005</div></a>
            </div>
  
          </td>
@@ -102,7 +102,7 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/71 Kimberly Rioux.jpg" alt="GWA"/>
+             <a href="<?php echo BASE_URL;?>GWA?y=2004"><img src="<?php echo BASE_URL;?>images/GWA Photos/71 Kimberly Rioux.jpg" alt="GWA"/>
              <div id="GWATitles"> Kimberly Rioux<br>2003-2004</div></a>
            </div>
          </td>
@@ -113,8 +113,8 @@
          </td>
         <td>
             <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/70 Chandra Galindo.jpg" alt="GWA"/>
-             <div id="GWATitles">Chandra Galindo <br>2002-2003</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2003"><img src="<?php echo BASE_URL;?>images/GWA Photos/70 Chandra Galindo.jpg" alt="GWA"/>
+             <div id="GWATitles">Chandra Galindo <br>2002-2003</div></a>
   
          </td>
          <td>
@@ -124,8 +124,8 @@
          </td>
         <td>
             <div id="GWAHeadPic" align="center">
-              <img src="<?php echo BASE_URL;?>images/GWA Photos/69 Erin Atkins.jpg" alt="GWA"/>
-             <div id="GWATitles">Erin Atkins<br>2001-2002</div>
+              <a href="<?php echo BASE_URL;?>GWA?y=2002"><img src="<?php echo BASE_URL;?>images/GWA Photos/69 Erin Atkins.jpg" alt="GWA"/>
+             <div id="GWATitles">Erin Atkins<br>2001-2002</div></a>
             
            </div>
  
@@ -144,8 +144,8 @@
          </td>
          <td >        
            <div id="GWAHeadPic" align="center">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/68 Erika Waters.jpg" alt="GWA"/>
-             <div id="GWATitles">Erika Waters <br>2000-2001</div>
+             <a href="<?php echo BASE_URL;?>GWA?y=2001"><img src="<?php echo BASE_URL;?>images/GWA Photos/68 Erika Waters.jpg" alt="GWA"/>
+             <div id="GWATitles">Erika Waters <br>2000-2001</div></a>
            </div>
          </td>
          <td>

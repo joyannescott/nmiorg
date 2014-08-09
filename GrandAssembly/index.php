@@ -11,6 +11,7 @@
 
   <div id="mainContent">
   <?php include(LOGIN . "login_header.php"); ?>
+        <div class="freehand-h1"><div class="Blue">Grand Assembly</div></div>
     <FORM name="clock" id="clock">
   <div id="FullBorderTable">
     
