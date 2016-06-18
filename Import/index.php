@@ -19,7 +19,6 @@
    include( INC . 'sidebar.php');   
 
  if($_SERVER["REQUEST_METHOD"] == "POST") {
-	echo "Hello";
 	$type = $_POST["type"];
 
 	if ($_FILES[csv][size] > 0) { 
@@ -226,7 +225,6 @@
 		$success=TRUE; 	
 	} 
 }
-echo "Hello";
 ?> 
   <div id="mainContent">
     <?php include(LOGIN . "login_header.php"); ?>

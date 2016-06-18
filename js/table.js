@@ -45,7 +45,7 @@ $BTN.click(function () {
     
     // Use the headers from earlier to name our hash keys
     headers.forEach(function (header, i) {
-      h[header] = $td.eq(i).text();   
+      h[header] = $td.eq(i).text().trim();
     });
     
     data.push(h);
