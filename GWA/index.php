@@ -15,7 +15,7 @@
    $grandOfficers = get_floor_officers($year);
    $grandReps = get_reps($year);
    $gcct = get_gcct($year);
-   $pages = get_grand_pages($year);
+   //$pages = get_grand_pages($year);
    
    if(get_most_recent_year() != $year && (count($grandReps) !=0)) { 
       $pageHeight = "GWAFullHeight";

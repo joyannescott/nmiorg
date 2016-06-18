@@ -315,7 +315,7 @@ function get_gcct($year){
 	return $gcct;
  
 }
-function get_pages($year){
+function get_grand_pages($year){
  require("database.php");
   	try{
 		$results = $db->prepare("SELECT first_name, last_name, nickname, assembly, pages.title 
