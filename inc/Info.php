@@ -55,6 +55,78 @@ function get_assemblies(){
  
 }
 
+function get_gec(){
+ require("database.php");
+  	try{
+		$results = $db->prepare("SELECT * FROM gec");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$gec = $results->fetchAll(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump($gec);
+	return $gec;
+
+}
+
+function get_gd(){
+ require("database.php");
+  	try{
+		$results = $db->prepare("SELECT * FROM gd");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$gd = $results->fetchAll(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump($gd);
+	return $gd;
+
+}
+
+function get_foundation(){
+ require("database.php");
+  	try{
+		$results = $db->prepare("SELECT * FROM foundation");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$foundation = $results->fetchAll(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump($foundation);
+	return $foundation;
+
+}
+
+function get_schedule(){
+ require("database.php");
+  	try{
+		$results = $db->prepare("SELECT * FROM schedule");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$schedule = $results->fetchAll(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump($schedule);
+	return $schedule;
+
+}
+
 function get_latest_year(){
 	return 2015;
 }
@@ -243,7 +315,7 @@ function get_gcct($year){
 	return $gcct;
  
 }
-function get_grand_pages($year){
+function get_pages($year){
  require("database.php");
   	try{
 		$results = $db->prepare("SELECT first_name, last_name, nickname, assembly, pages.title 
