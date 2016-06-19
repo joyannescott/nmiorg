@@ -1,12 +1,14 @@
 <?php 
    require($_SERVER["DOCUMENT_ROOT"] . "/inc/defines.php");
    require( INC . "database.php");
+   require_once(INC . 'Info.php');
 
    $pageType   = "GA";
    $pageSubType = "GACount";
 
    include( INC . 'header.php');
    include( INC . 'sidebar.php');
+   $year = get_ending_year();
   ?>
 
   <div id="mainContent">
@@ -18,7 +20,7 @@
     <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 width="760" 
         style="margin-left:0px">
   
-    <TD ALIGN=CENTER WIDTH="514" rowspan="2"><h4><b><br />Countdown to Grand Assembly<br>2015</b></h4></TD>
+    <TD ALIGN=CENTER WIDTH="514" rowspan="2"><h4><b><br />Countdown to Grand Assembly<br><?php echo $year?></b></h4></TD>
     <TD ALIGN=CENTER WIDTH="111" ><b>Days</b></TD>
       <TD ALIGN=CENTER WIDTH="111" ><b>Hours</b></TD>
     <TD ALIGN=CENTER WIDTH="112" ><b>Minutes</b></TD>

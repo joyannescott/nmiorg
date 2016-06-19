@@ -7,6 +7,13 @@
 <head>
 <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
 
+<?php
+   $ga_date = get_ga_date();
+   $date = "'" . $ga_date["date"] . ', ' . $ga_date["end"] . ' ' . $ga_date["time"]. "'";
+   $year = "'" . $ga_date["end"] . "'";
+   $load = '"javascript:countdown(' . $date . ',' . $year . ');"';
+?>
+
 <?php if($pageType == "Home"){?>
   <title>New Mexico: International Order of the Rainbow for Girls</title>
 <?php } ?>
@@ -98,7 +105,7 @@
 	
 </head>
 <body class="twoColElsLtHdr" <?php if($pageSubType == "GACount"){
-	                        echo 'OnLoad="javascript:countdown();"';} ?> >
+	                        echo 'OnLoad=' . $load; }?> >
  
 <div id="container">
 

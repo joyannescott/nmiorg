@@ -55,32 +55,36 @@ $(function() {
 
 
 //change your event date event here.      
-var eventdate = new Date("June 16, 2015 02:00:00 MST");
+
 function toSt(n)
-{s=""
-if(n<10) s+="0"; 
-return s+n.toString();
+{
+  s=""
+  if(n<10) s+="0";
+  return s+n.toString();
 }
-function countdown() 
-{cl=document.clock;
-d=new Date(); 
-count=Math.floor((eventdate.getTime()-d.getTime())/1000);
-if(count<=0)
-{cl.days.value="";
-cl.hours.value="";
-cl.mins.value="";
-cl.secs.value="";
-alert("Grand Assembly 2014"); // Message which appears when time is out
-return;
-}
-cl.secs.value=toSt(count%60);
-count=Math.floor(count/60);
-cl.mins.value=toSt(count%60);
-count=Math.floor(count/60);
-cl.hours.value=toSt(count%24);
-count=Math.floor(count/24);
-cl.days.value=count;
-setTimeout("countdown()",500);
+
+function countdown(date, year)
+{
+  var eventdate = new Date(date);
+  cl=document.clock;
+  d=new Date();
+  count=Math.floor((eventdate.getTime()-d.getTime())/1000);
+  if (count<=0) {
+    cl.days.value="";
+    cl.hours.value="";
+    cl.mins.value="";
+    cl.secs.value="";
+    alert("Grand Assembly " + year); // Message which appears when time is out
+    return;
+  }
+  cl.secs.value=toSt(count%60);
+  count=Math.floor(count/60);
+  cl.mins.value=toSt(count%60);
+  count=Math.floor(count/60);
+  cl.hours.value=toSt(count%24);
+  count=Math.floor(count/24);
+  cl.days.value=count;
+  setTimeout("countdown('" + date + "','"  + year + "')",500);
 }
 
 $("#uploadTrigger").click(function(){

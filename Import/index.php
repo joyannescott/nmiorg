@@ -21,12 +21,12 @@
  if($_SERVER["REQUEST_METHOD"] == "POST") {
 	$type = $_POST["type"];
 
-	if ($_FILES[csv][size] > 0) {
-		$file = $_FILES[csv][tmp_name];
-		$handle = fopen($file,"r");
+	if ($_FILES[csv][size] > 0) { 
+		$file = $_FILES[csv][tmp_name]; 
+		$handle = fopen($file,"r"); 
 		// Get header row
         $header = fgetcsv($handle,1000,",","'");
-
+		
 	    if($type == "GWA"){
 	    	//echo "GWA";
 		  $db->query("CREATE TABLE IF NOT EXISTS gwa(
@@ -41,26 +41,26 @@
 					  swa BOOLEAN);");
           $db->query("TRUNCATE TABLE gwa");
 
-		  do {
-			if ($data[0]) {
+		  do { 
+			if ($data[0]) { 
 				//echo "found data " . $data[0] . "last_name " . $data[4] . "\n";
-				$db->query("INSERT INTO gwa
-				 (number, year, first_name, middle_name, last_name, married_name,
-				  install_year, assembly, swa) VALUES
-					(
-						'".addslashes($data[0])."',
-						'".addslashes($data[1])."',
-						'".addslashes($data[2])."',
-						'".addslashes($data[3])."',
-						'".addslashes($data[4])."',
-						'".addslashes($data[5])."',
-						'".addslashes($data[6])."',
-						'".addslashes($data[7])."',
-						'".addslashes($data[8])."'
-						)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,",","'"));
+				$db->query("INSERT INTO gwa 
+				 (number, year, first_name, middle_name, last_name, married_name, 
+				  install_year, assembly, swa) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+						'".addslashes($data[1])."', 
+						'".addslashes($data[2])."', 
+						'".addslashes($data[3])."', 
+						'".addslashes($data[4])."', 
+						'".addslashes($data[5])."', 
+						'".addslashes($data[6])."', 
+						'".addslashes($data[7])."', 
+						'".addslashes($data[8])."' 
+						) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",","'")); 
 		}
 	    if($type == "Term"){
 		  $db->query("CREATE TABLE IF NOT EXISTS term(
@@ -69,19 +69,19 @@
 					  details TEXT);");
           $db->query("TRUNCATE TABLE term");
 
-		  do {
-			if ($data[0]) {
+		  do { 
+			if ($data[0]) { 
 				//echo "term year " . $data[0];
-				$db->query("INSERT INTO term
-			 (year, description, details) VALUES
-					(
-						'".addslashes($data[0])."',
-				   		'".addslashes($data[1])."',
-						'".addslashes($data[2])."'
-					)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,","));
+				$db->query("INSERT INTO term 
+			 (year, description, details) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+				   		'".addslashes($data[1])."', 
+						'".addslashes($data[2])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
 		if($type == "Girls"){
 		  $db->query("CREATE TABLE IF NOT EXISTS girls(
@@ -93,21 +93,21 @@
 					  title VARCHAR(30));");
           $db->query("TRUNCATE TABLE girls");
 
-		  do {
-			if ($data[0]) {
-				$db->query("INSERT INTO girls
-			 (number, first_name, last_name, nickname, assembly, title) VALUES
-					(
-						'".addslashes($data[0])."',
-						'".addslashes($data[1])."',
-						'".addslashes($data[2])."',
-						'".addslashes($data[3])."',
-				   		'".addslashes($data[4])."',
-						'".addslashes($data[5])."'
-					)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,","));
+		  do { 
+			if ($data[0]) { 
+				$db->query("INSERT INTO girls 
+			 (number, first_name, last_name, nickname, assembly, title) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+						'".addslashes($data[1])."', 
+						'".addslashes($data[2])."', 
+						'".addslashes($data[3])."', 
+				   		'".addslashes($data[4])."', 
+						'".addslashes($data[5])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
 	    if($type == "GrandOfficers"){
 		  $db->query("CREATE TABLE IF NOT EXISTS floor(
@@ -118,20 +118,20 @@
 					  protem INTEGER);");
           $db->query("TRUNCATE TABLE floor");
 
-		  do {
-			if ($data[0]) {
-				$db->query("INSERT INTO floor
-			        (year, rank, office, girl,protem) VALUES
-					(
-						'".addslashes($data[0])."',
-						'".addslashes($data[1])."',
-				   		'".addslashes($data[2])."',
-						'".addslashes($data[3])."',
-						'".addslashes($data[4])."'
-					)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,","));
+		  do { 
+			if ($data[0]) { 
+				$db->query("INSERT INTO floor 
+			        (year, rank, office, girl,protem) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+						'".addslashes($data[1])."', 
+				   		'".addslashes($data[2])."', 
+						'".addslashes($data[3])."', 
+						'".addslashes($data[4])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
 	    if($type == "GrandReps"){
 		  $db->query("CREATE TABLE IF NOT EXISTS reps(
@@ -140,20 +140,20 @@
 					  girl INTEGER);");
           $db->query("TRUNCATE TABLE reps");
 
-		  do {
-			if ($data[0]) {
-				$db->query("INSERT INTO reps
-			        (year, office, girl) VALUES
-					(
-						'".addslashes($data[0])."',
-				   		'".addslashes($data[1])."',
-						'".addslashes($data[2])."'
-					)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,","));
+		  do { 
+			if ($data[0]) { 
+				$db->query("INSERT INTO reps 
+			        (year, office, girl) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+				   		'".addslashes($data[1])."', 
+						'".addslashes($data[2])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
-
+		
 	    if($type == "GCCT"){
 		  $db->query("CREATE TABLE IF NOT EXISTS gcct(
 					  year INTEGER,
@@ -161,20 +161,20 @@
 					  title VARCHAR(50));");
           $db->query("TRUNCATE TABLE gcct");
 
-		  do {
-			if ($data[0]) {
-				$db->query("INSERT INTO gcct
-			        (year, girl, title) VALUES
-					(
-						'".addslashes($data[0])."',
-				   		'".addslashes($data[1])."',
-						'".addslashes($data[2])."'
-					)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,","));
+		  do { 
+			if ($data[0]) { 
+				$db->query("INSERT INTO gcct 
+			        (year, girl, title) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+				   		'".addslashes($data[1])."', 
+						'".addslashes($data[2])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
-
+		
 	    if($type == "Pages"){
 		  $db->query("CREATE TABLE IF NOT EXISTS pages(
 					  year INTEGER,
@@ -182,18 +182,18 @@
 					  title VARCHAR(50));");
           $db->query("TRUNCATE TABLE pages");
 
-		  do {
-			if ($data[0]) {
-				$db->query("INSERT INTO pages
-			        (year, girl, title) VALUES
-					(
-						'".addslashes($data[0])."',
-				   		'".addslashes($data[1])."',
-						'".addslashes($data[2])."'
-					)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,","));
+		  do { 
+			if ($data[0]) { 
+				$db->query("INSERT INTO pages 
+			        (year, girl, title) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+				   		'".addslashes($data[1])."', 
+						'".addslashes($data[2])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
 	    if($type == "Assemblies"){
 		  $db->query("CREATE TABLE IF NOT EXISTS assemblies(
@@ -205,28 +205,28 @@
 					  active INTEGER);");
           $db->query("TRUNCATE TABLE assemblies");
 
-		  do {
-			if ($data[0]) {
-				$db->query("INSERT INTO assemblies
-			        (num, name, location, ma, email, active) VALUES
-					(
-						'".addslashes($data[0])."',
-						'".addslashes($data[1])."',
-				   		'".addslashes($data[2])."',
-						'".addslashes($data[3])."',
-						'".addslashes($data[4])."',
-						'".addslashes($data[5])."'
-					)
-				");
-			}
-		  } while ($data = fgetcsv($handle,1000,","));
+		  do { 
+			if ($data[0]) { 
+				$db->query("INSERT INTO assemblies 
+			        (num, name, location, ma, email, active) VALUES 
+					( 
+						'".addslashes($data[0])."', 
+						'".addslashes($data[1])."', 
+				   		'".addslashes($data[2])."', 
+						'".addslashes($data[3])."', 
+						'".addslashes($data[4])."', 
+						'".addslashes($data[5])."' 
+					) 
+				"); 
+			} 
+		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
 		if($type == "GEC"){
       //echo "Grand Executive Committee";
       $db->query("CREATE TABLE IF NOT EXISTS gec(
                   number INTEGER,
                   name VARCHAR(60),
-                  title VARCHAR(30));");
+                  title VARCHAR(60));");
       $db->query("TRUNCATE TABLE gec");
 
       do {
@@ -248,12 +248,12 @@
       $db->query("CREATE TABLE IF NOT EXISTS gd(
                   number INTEGER,
                   name VARCHAR(60),
-                  title VARCHAR(30));");
+                  title VARCHAR(60));");
       $db->query("TRUNCATE TABLE gd");
 
       do {
         if ($data[0]) {
-          //echo "found data " . $data[0] . "name " . $data[1] . "\n";
+          echo "found data " . $data[0] . "name " . $data[1] . "\n";
           $db->query("INSERT INTO gd
            (number, name, title) VALUES
             (
@@ -270,7 +270,7 @@
       $db->query("CREATE TABLE IF NOT EXISTS foundation(
                   number INTEGER,
                   name VARCHAR(60),
-                  title VARCHAR(30));");
+                  title VARCHAR(60));");
       $db->query("TRUNCATE TABLE foundation");
 
       do {
@@ -309,15 +309,39 @@
         }
       } while ($data = fgetcsv($handle,1000,",","'"));
     }
+    if($type == "Dates"){
+          //echo "Dates";
+          $db->query("CREATE TABLE IF NOT EXISTS dates(
+                      begin INTEGER,
+                      end INTEGER,
+                      date VARCHAR(30),
+                      time VARCHAR(30));");
+          $db->query("TRUNCATE TABLE dates");
 
-		$success=TRUE;
-	}
+          do {
+            if ($data[0]) {
+              //echo "found data " . $data[1] . "date " . $data[2] . "\n";
+              $db->query("INSERT INTO dates
+               (begin, end, date, time) VALUES
+                (
+                  '".addslashes($data[0])."',
+                  '".addslashes($data[1])."',
+                  '".addslashes($data[2])."',
+                  '".addslashes($data[3])."'
+                  )
+              ");
+            }
+          } while ($data = fgetcsv($handle,1000,",","'"));
+        }
+
+		$success=TRUE; 	
+	} 
 }
-?>
+?> 
   <div id="mainContent">
     <?php include(LOGIN . "login_header.php"); ?>
 
-<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1"> 
   <h4> Choose your import type: </h4>
   <center>
 	  <select id="type" name="type" requried>
@@ -334,6 +358,7 @@
 	    <option value = "GD"> Grand Deputies</option>
 	    <option value = "Foundation"> Foundation Board</option>
 	    <option value = "Schedule"> Schedule</option>
+	    <option value = "Dates"> Dates</option>
 	  </select> 
   </center>
 

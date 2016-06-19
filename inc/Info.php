@@ -131,6 +131,55 @@ function get_latest_year(){
 	return 2015;
 }
 
+function get_beginning_year() {
+   require("database.php");
+  	try{
+		$results = $db->prepare("SELECT begin FROM dates");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$begin = $results->fetch(PDO::FETCH_ASSOC);
+	return reset($begin);
+}
+
+function get_ending_year() {
+   require("database.php");
+  	try{
+		$results = $db->prepare("SELECT end FROM dates");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$end = $results->fetch(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump(reset($end));
+	return reset($end);
+}
+
+function get_ga_date() {
+   require("database.php");
+  	try{
+		$results = $db->prepare("SELECT * FROM dates");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$date = $results->fetch(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump($date);
+	return $date;
+}
+
 function get_gwa_info_range($start, $end){
    require("database.php");
   	try{
