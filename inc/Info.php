@@ -50,9 +50,28 @@ function get_assemblies(){
 	
 	$assemblies = $results->fetchAll(PDO::FETCH_ASSOC);
 	//echo "<pre>";
-	//var_dump($gwa);
+	//var_dump($assemblies);
 	return $assemblies;
  
+}
+
+function get_current_assemblies(){
+ require("database.php");
+  	try{
+		$results = $db->prepare("SELECT * FROM assemblies WHERE active=1
+			                     ORDER BY num ASC");
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$assemblies = $results->fetchAll(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump($assemblies);
+	return $assemblies;
+
 }
 
 function get_gec(){
