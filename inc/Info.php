@@ -403,6 +403,26 @@ function get_grand_pages($year){
 	return $pages;
  
 }
+function get_junior_execs($year){
+ require("database.php");
+  	try{
+		$results = $db->prepare("SELECT first_name, last_name, nickname, assembly, je.title
+		                         FROM je JOIN girls ON je.girl = girls.number
+								             WHERE year=?");
+		$results->bindParam(1, $year, PDO::PARAM_INT);
+		$results->execute();
+
+	} catch (Execption $e) {
+			echo "Could not retrieve data";
+			exit;
+	}
+
+	$jes = $results->fetchAll(PDO::FETCH_ASSOC);
+	//echo "<pre>";
+	//var_dump($jes);
+	return $jes;
+
+}
 
 function get_all_assemblies(){
  require("database.php");

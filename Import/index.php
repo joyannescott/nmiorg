@@ -174,6 +174,26 @@
 			} 
 		  } while ($data = fgetcsv($handle,1000,",")); 
 		}
+		if($type == "JE"){
+      $db->query("CREATE TABLE IF NOT EXISTS je(
+            year INTEGER,
+            girl INTEGER,
+            title VARCHAR(50));");
+          $db->query("TRUNCATE TABLE je");
+
+      do {
+      if ($data[0]) {
+        $db->query("INSERT INTO je
+              (year, girl, title) VALUES
+          (
+            '".addslashes($data[0])."',
+            '".addslashes($data[1])."',
+            '".addslashes($data[2])."'
+          )
+        ");
+      }
+      } while ($data = fgetcsv($handle,1000,","));
+    }
 		
 	    if($type == "Pages"){
 		  $db->query("CREATE TABLE IF NOT EXISTS pages(
@@ -212,7 +232,7 @@
 					( 
 						'".addslashes($data[0])."', 
 						'".addslashes($data[1])."', 
-				   		'".addslashes($data[2])."', 
+				   	'".addslashes($data[2])."',
 						'".addslashes($data[3])."', 
 						'".addslashes($data[4])."', 
 						'".addslashes($data[5])."' 
@@ -352,6 +372,7 @@
 	    <option value = "GrandOfficers"> Grand Floor Officers</option>
 	    <option value = "GrandReps"> Grand Representatives</option>
 	    <option value = "GCCT"> Grand Cross Of Color Team</option>
+	    <option value = "JE"> Junior Executives</option>
 	    <option value = "Pages"> Pages</option>
 	    <option value = "Assemblies"> Assemblies</option>
 	    <option value = "GEC"> Executive Committee</option>
