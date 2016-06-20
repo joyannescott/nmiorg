@@ -121,7 +121,7 @@
                           alt="Spacer" border="0" /></div>
 
    <div class="fltlft"><a href="<?php echo BASE_URL;?>" class="homeButton"></a></div>  
-   <div class="fltlft"><a href="<?php echo BASE_URL;?>GWA?y=<?php echo get_latest_year(); ?>" 
+   <div class="fltlft"><a href="<?php echo BASE_URL;?>GWA?y=<?php echo get_ending_year(); ?>"
                                                                         class="GWAButton"></a></div>
    <div class="fltlft"><a href="<?php echo BASE_URL;?>GrandOfficers"    class="GOButton"></a></div>
    <div class="fltlft"><a href="<?php echo BASE_URL;?>SupremeDeputy" class="SIButton"></a></div>
@@ -149,7 +149,7 @@
                   <td><div class="fb-m-wrap"><a href='http://www.facebook.com/groups/227617923946860'><div class="fb-m"></div></a></div></td>
           <?php }?>
           <?php if($pageType == "GWA"){?>
-                      <td><a href="<?php echo BASE_URL;?>GWA/2010s">2010 - 2014</a></td>
+                      <td><a href="<?php echo BASE_URL;?>GWA/2010s">2010 - <?php echo get_ending_year(); ?></a></td>
                       <td><a href="<?php echo BASE_URL;?>GWA/2000s">2000 - 2009</a></td>
                       <td><a href="<?php echo BASE_URL;?>GWA/1990s">1990 - 1999</a></td>
                       <td><a href="<?php echo BASE_URL;?>GWA/1980s">1980 - 1989</a></td>

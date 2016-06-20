@@ -7,8 +7,8 @@
     $start = $pageSubType;
     $end = floor($start/10)*10 + 9;
 
-	  if($end > get_latest_year()) {
-        $end = get_latest_year();
+	  if($end > get_ending_year()) {
+        $end = get_ending_year();
 	  }
     $gwaRange = get_gwa_info_range($start, $end);
   }
@@ -19,6 +19,8 @@
       <div id="no-sidebar">
   <?php } else { ?>
       <div id="sidebar">
+      <div class="sidebar-flex">
+       <div class="sidebar-nav">
   <?php } ?>
     <ul class="nav">
       <?php if($pageType == "GWA"){ ?>
@@ -149,11 +151,12 @@
       <?php } ?>
       <?php } ?>
       </ul> <!-- nav -->
+      </div>
      <div class="iorg">
   	  <p align="center"><a href="http://www.gorainbow.org/"><img src="<?php echo BASE_URL;?>images/icon.gif" alt="star" width="107" 
          height="111" border="0" /></a><br />
        <a href="http://www.gorainbow.org/">Visit Our <br /> International Website</a><p/>          
     </div>
-  
-   <p>&nbsp;</p>
+
+   </div>
   </div>

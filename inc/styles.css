@@ -160,6 +160,7 @@ h1 {
 	display: none;
 }
 #sidebar, #sidebarGWA{
+	display: block;
     -webkit-flex: none;
    -moz-box-flex: none;
 -webkit-box-flex: none;
@@ -239,7 +240,16 @@ h1 {
 	list-style: none;
 }
 #sidebar {
+	display: block;
  }
+.sidebar-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.sidebar-nav {
+	flex: 10 0 0;
+}
 #sideBarItem, #multiline, #sideBarItem_bs {  
 	text-align:center;
 	font-variant:small-caps;

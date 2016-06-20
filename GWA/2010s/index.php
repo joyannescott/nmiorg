@@ -8,8 +8,6 @@
    include( INC . 'header.php');
    include( INC . 'sidebar.php');
    require_once(INC . 'Info.php');
-   
-
   ?>
 
   <div id="mainContent">
@@ -19,6 +17,51 @@
       </table></div>
 
     <div id="ClearFiveColumnTable">
+    <table width="760" >
+      <tr>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="20" alt="" />
+             </div>
+         </td>
+         <td >
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
+             </div>
+         </td>
+         </td>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="100" alt="" />
+             </div>
+         </td>
+        <td>
+           <div id="GWAHeadPic" align="center">
+             <a href="<?php echo BASE_URL;?>GWA?y=2017"> <img src="<?php echo BASE_URL;?>images/GWA Photos/84 Jessica Campbell.jpg"  alt="GWA"/>
+             <div id="GWATitles">Jessica Campbell<br>2016-2017</div></a>
+           </div>
+
+         </td>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="100" alt="" />
+             </div>
+         </td>
+        <td>
+         <td>
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
+             </div>
+         </td>
+
+         </td>
+         <td>
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="20" alt="" />
+         </td>
+      </tr>
+      </table>
+
     <table width="760" >
     <tr>  <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" height="30" alt="" /></tr>
          <tr>
@@ -35,13 +78,14 @@
          </td>
          <td>
              <div id="GWABlankPic">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="100" alt="" />
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
              </div>
          </td>
          <td>
-             <div id="GWABlankPic">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
-             </div>
+           <div id="GWAHeadPic" align="center">
+             <a href="<?php echo BASE_URL;?>GWA?y=2016"><img src="<?php echo BASE_URL;?>images/GWA Photos/83 Carley Casey.jpg" alt="GWA"/>
+             <div id="GWATitles">Carley Casey<br>2015-2016</div></a>
+           </div>
          </td>
          <td>
              <div id="GWABlankPic">
