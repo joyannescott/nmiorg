@@ -49,11 +49,9 @@
              </div>
          </td>
         <td>
-           <div id="GWAHeadPic" align="center">
-             <a href="<?php echo BASE_URL;?>GWA?y=1987"><img src="<?php echo BASE_URL;?>images/GWA Photos/54 Rebecca Warinner.jpg" alt="GWA"/>
-             <div id="GWATitles">Rebecca Warinner <br>1986-1987</div></a>
-           </div>
- 
+             <div id="GWABlankPic">
+             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="100" alt="" />
+             </div>
          </td>
          <td>
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="20" alt="" />
