@@ -24,13 +24,13 @@
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="20" alt="" />
              </div>
          </td>
-         <td >
          <td>
-             <div id="GWABlankPic">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
-             </div>
-         </td>
-         </td>
+          <td>
+              <div id="GWABlankPic">
+              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
+              </div>
+          </td>
+          </td>
          <td>
              <div id="GWABlankPic">
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="100" alt="" />
@@ -38,23 +38,20 @@
          </td>
         <td>
            <div id="GWAHeadPic" align="center">
-             <a href="<?php echo BASE_URL;?>GWA?y=2017"> <img src="<?php echo BASE_URL;?>images/GWA Photos/84 Jessica Campbell.jpg"  alt="GWA"/>
-             <div id="GWATitles">Jessica Campbell<br>2016-2017</div></a>
+             <a href="<?php echo BASE_URL;?>GWA?y=2018"> <img src="<?php echo BASE_URL;?>images/GWA Photos/85 Faith Schifani.jpg"  alt="GWA"/>
+             <div id="GWATitles">Faith Schifani<br>2017-2018</div></a>
            </div>
-
          </td>
          <td>
              <div id="GWABlankPic">
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="100" alt="" />
              </div>
          </td>
-        <td>
          <td>
-             <div id="GWABlankPic">
-             <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
-             </div>
-         </td>
-
+           <div id="GWAHeadPic" align="center">
+             <a href="<?php echo BASE_URL;?>GWA?y=2017"> <img src="<?php echo BASE_URL;?>images/GWA Photos/84 Jessica Campbell.jpg"  alt="GWA"/>
+             <div id="GWATitles">Jessica Campbell<br>2016-2017</div></a>
+           </div>
          </td>
          <td>
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="20" alt="" />
@@ -70,21 +67,21 @@
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
              </div>
          </td>
-         <td >        
-           <div id="GWAHeadPic" align="center">
-             <a href="<?php echo BASE_URL;?>GWA?y=2015"><img src="<?php echo BASE_URL;?>images/GWA Photos/82 Alexa Templeton.jpg" alt="GWA"/>
-             <div id="GWATitles">Alexa Templeton<br>2014-2015</div></a>
-           </div>
-         </td>
+          <td>
+            <div id="GWAHeadPic" align="center">
+              <a href="<?php echo BASE_URL;?>GWA?y=2016"><img src="<?php echo BASE_URL;?>images/GWA Photos/83 Carley Casey.jpg" alt="GWA"/>
+              <div id="GWATitles">Carley Casey<br>2015-2016</div></a>
+            </div>
+          </td>
          <td>
              <div id="GWABlankPic">
              <img src="<?php echo BASE_URL;?>images/GWA Photos/GWABlank.gif" width="140" alt="" />
              </div>
          </td>
-         <td>
+         <td >
            <div id="GWAHeadPic" align="center">
-             <a href="<?php echo BASE_URL;?>GWA?y=2016"><img src="<?php echo BASE_URL;?>images/GWA Photos/83 Carley Casey.jpg" alt="GWA"/>
-             <div id="GWATitles">Carley Casey<br>2015-2016</div></a>
+             <a href="<?php echo BASE_URL;?>GWA?y=2015"><img src="<?php echo BASE_URL;?>images/GWA Photos/82 Alexa Templeton.jpg" alt="GWA"/>
+             <div id="GWATitles">Alexa Templeton<br>2014-2015</div></a>
            </div>
          </td>
          <td>
