@@ -18,8 +18,8 @@
 
     <p><a href="../Board">Rainbow Girls Foundation of New  Mexico, Inc.</a></p>
     <p>  Please print and complete this page, and send it with your contribution to:<br>
-         Mr. Ernest Pompeo, Treasurer <br />
-         9820 Signal Avenue NE, Albuquerque, NM 87122</p>
+         Mrs. Chandra McCray, Treasurer <br />
+         1921 Caramesa Dr. SE Rio Rancho, NM 87124</p>
 
     <div id="FullBorderTable">
       <table width="650" border="2" cellspacing="2" cellpadding="0" bgcolor="#ffffff">
