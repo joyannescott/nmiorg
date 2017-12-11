@@ -9,6 +9,9 @@
    include( INC . 'header.php');
    include( INC . 'sidebar.php');
    $year = get_ending_year();
+   $ga_date = get_ga_date();
+   $date = $ga_date["date"] . '-' . $ga_date["dateRange"] . ', ' . $ga_date["end"];
+   $place = $ga_date["place"] . ', ' . $ga_date["city"] . ', ' . ' ' . $ga_date["state"];
   ?>
 
   <div id="mainContent">
@@ -46,8 +49,7 @@
       <center>   
         <p>&nbsp;</p>
         <h1>Grand Assembly of New Mexico</h1>
-        <h4>June 17 - 20, 2014<br>
-            Sheraton Albuquerque Airport Hotel, Albuquerque, NM</h4>      
+        <h4><?php echo $date?><br><?php echo $place?></h4>
         <h2><a href="Gallery"> Grand Assembly 2014 Photo Gallery</a></h2>
         <!--<h2><a href="Registration"> <img src="<?php //echo BASE_URL;?>images/GAReg.gif" 
                alt="Grand Assembly Registration" /></a></h2> -->

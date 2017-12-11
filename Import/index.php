@@ -331,23 +331,32 @@
     }
     if($type == "Dates"){
           //echo "Dates";
+          $db->query("DROP TABLE dates");
           $db->query("CREATE TABLE IF NOT EXISTS dates(
                       begin INTEGER,
                       end INTEGER,
                       date VARCHAR(30),
-                      time VARCHAR(30));");
+                      dateRange VARCHAR(30),
+                      time VARCHAR(30),
+                      place VARCHAR(60),
+                      city VARCHAR(30),
+                      state VARCHAR(30));");
           $db->query("TRUNCATE TABLE dates");
 
           do {
             if ($data[0]) {
               //echo "found data " . $data[1] . "date " . $data[2] . "\n";
               $db->query("INSERT INTO dates
-               (begin, end, date, time) VALUES
+               (begin, end, date, dateRange, time, place, city, state) VALUES
                 (
                   '".addslashes($data[0])."',
                   '".addslashes($data[1])."',
                   '".addslashes($data[2])."',
-                  '".addslashes($data[3])."'
+                  '".addslashes($data[3])."',
+                  '".addslashes($data[4])."',
+                  '".addslashes($data[5])."',
+                  '".addslashes($data[6])."',
+                  '".addslashes($data[7])."'
                   )
               ");
             }
