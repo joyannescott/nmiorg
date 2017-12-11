@@ -31,7 +31,7 @@
                   <?php $end_decade = $decade + 9;?>
                   <?php if($decade == 1930) $decade = 1933; ?>
                   <li id="GWADate">
-                    <a href="<?php echo BASE_URL . 'GWA/' . floor($decade/10)*10 . 's';?>">
+                    <a href="<?php echo BASE_URL . 'GWA/Decades/?y=' . floor($decade/10)*10;?>">
                        <?php echo $decade . " &ndash; " . $end_decade; ?></a>
                   </li>
                     <?php if($pageSubType == $decade){ ?>

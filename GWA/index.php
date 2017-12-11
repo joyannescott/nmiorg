@@ -7,7 +7,7 @@
      $year = intval($_GET["y"]);
    }
    if(empty($year)){
-	   header("Location: " . BASE_URL . "index.php");
+	   //header("Location: " . BASE_URL . "index.php");
    }
    $pageSubType = floor($year/10) * 10;
    $gwa = get_gwa_info($year);
